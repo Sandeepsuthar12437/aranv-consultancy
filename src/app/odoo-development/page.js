@@ -4,6 +4,7 @@ import ExpertiseSection from "@/components/ExpertiseSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HowWeDo from "@/components/HowWeDo";
+import OthreBanner from "@/components/OtherBanner";
 import { OurCulture } from "@/components/OurCulture";
 import SectionComponent from "@/components/SectionComponent";
 import { WhyUsSection } from "@/components/WhyUsSection";
@@ -13,12 +14,7 @@ const page = () => {
   return (
     <>
       <Header data={data.Header} />
-      <Banner data={data.aboutBanner} />
-      <SectionComponent data={data.sectiondataAbout} />
-      <HowWeDo data={data.howWeDoData} />
-      <ExpertiseSection data={data.ExpertiseSectionAbout} />
-      <WhyUsSection data={data.whyUsDataAbout} />
-      <OurCulture data={data.OurCulture} />
+      <OthreBanner data={data.odooBanner} />
       <ContactSection data={data.contactdata} />
       <Footer data={data.footer} />
     </>

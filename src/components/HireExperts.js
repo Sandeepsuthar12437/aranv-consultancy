@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HireExperts = ({ data }) => {
@@ -26,14 +27,14 @@ const HireExperts = ({ data }) => {
         <p className="text-[20px] text-center text-[#424242]">
           {data.description}
         </p>
-        <a
+        <Link
           href={data.button.link}
           className="relative mx-auto max-w-[344px] mt-5 md:mt-20 text-red-500 h-[60px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] block overflow-hidden bg-[linear-gradient(to_right,_black_50%,_white_50%)] border-[1px] border-black transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
         >
           <span className="block text-center text-[22px] font-normal transition-all duration-600 ease-out">
             {data.button.text}
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   );

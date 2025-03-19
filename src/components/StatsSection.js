@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const StatsSection = ({ data }) => {
@@ -14,18 +15,18 @@ const StatsSection = ({ data }) => {
             </p>
 
             <div className="relative inline-block cursor-pointer group">
-              <a
+              <Link
                 href={data.link.url}
                 className="text-red-500 text-lg mb-4 md:mb-0 font-medium relative block"
               >
                 {data.link.text}
-              </a>
-              <a
+              </Link>
+              <Link
                 href={data.link.url}
                 className="absolute top-0 left-0 text-black text-lg mb-4 md:mb-0 font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
               >
                 {data.link.text}
-              </a>
+              </Link>
             </div>
           </div>
 

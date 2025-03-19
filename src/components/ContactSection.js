@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const ContactSection = ({ data }) => {
@@ -20,15 +21,18 @@ export const ContactSection = ({ data }) => {
             </strong>
             <div className="mb-6 border-b border-[#f7a09b] text-[18px]">
               <label className="font-semibold">Call:</label>
-              <a href="tel:(347)460-9278‬" className="text-white">
+              <Link href="tel:(347)460-9278‬" className="text-white">
                 {data.phone}
-              </a>
+              </Link>
             </div>
             <div className="mb-6 border-b border-[#f7a09b] text-[18px]">
               <label className="font-semibold">Skype:</label>
-              <a href="skype:sales.aranv?chat" className="text-white underline">
+              <Link
+                href="skype:sales.aranv?chat"
+                className="text-white underline"
+              >
                 {data.skype}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

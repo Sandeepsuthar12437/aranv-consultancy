@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const SocialMediaLinks = ({ data }) => {
   return (
     <div className="flex flex-row my-4 gap-4 px-4 items-center">
       {data.map((item) => (
         <div key={item.id} className="w-[2.3rem]">
-          <a href={item.href}>
+          <Link href={item.href}>
             <svg
               focusable="false"
               aria-hidden="true"
@@ -13,7 +15,7 @@ const SocialMediaLinks = ({ data }) => {
             >
               <path fill="black" d={item.svgPath}></path>
             </svg>
-          </a>
+          </Link>
         </div>
       ))}
     </div>

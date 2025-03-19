@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BusinessSections = ({ data }) => {
@@ -11,7 +13,13 @@ const BusinessSections = ({ data }) => {
           >
             {section.image && (
               <div className="mb-12">
-                <img src={section.image} alt={section.alt} className="w-full" />
+                <Image
+                  src={section.image}
+                  alt={section.alt}
+                  className="w-full"
+                  width={469}
+                  height={330}
+                />
               </div>
             )}
             <h2 className="text-2xl md:text-[40px] font-bold text-red-500 md:leading-[48px] mb-5">
@@ -21,18 +29,18 @@ const BusinessSections = ({ data }) => {
               {section.description}
             </p>
             <div className="relative inline-block cursor-pointer group">
-              <a
+              <Link
                 href={section.link}
                 className="text-red-500 text-lg font-medium relative block"
               >
                 Learn More &gt;
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="absolute top-0 left-0 text-black text-lg font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
               >
                 Learn More &gt;
-              </a>
+              </Link>
             </div>
           </div>
         ))}

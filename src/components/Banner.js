@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 
 const Banner = ({ data }) => {
@@ -18,12 +20,9 @@ const Banner = ({ data }) => {
               {data.heading}
             </h1>
             <div className="text-white font-bold">
-              <a
-                href="../dist/index.html"
-                className="after:content-['/'] after:px-2"
-              >
+              <Link href="/" className="after:content-['/'] after:px-2">
                 Home
-              </a>
+              </Link>
               <span>About</span>
             </div>
           </div>
@@ -31,11 +30,12 @@ const Banner = ({ data }) => {
         {data?.arrowImage && (
           <>
             <div className="bg-no-repeat hidden lg:block max-w-[380px] xl:max-w-[749px] mr-[3%] w-full absolute top-auto bottom-0 right-0 mb-4">
-              <img
+              <Image
                 src={data.arrowImage}
-                title="Run Business uninterruptedly with High-tech Solutions"
                 alt="Run Business uninterruptedly with High-tech Solutions"
                 loading="lazy"
+                width={500}
+                height={500}
               />
             </div>
           </>

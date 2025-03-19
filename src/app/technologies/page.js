@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import HireExperts from "@/components/HireExperts";
 import Services from "@/components/Services";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
+import Technologies from "@/components/Technologies";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import data from "@data/data.json";
 
@@ -13,8 +14,10 @@ const page = () => {
     <div>
       <Header data={data.Header} />
       <Banner data={data.technologiesBanner} />
+      <Technologies data={data.technologies} />
       <TechnologiesSection data={data.technologieReactNative} />
       <Services data={data.reeactNativeServices} />
+
       <TechnologiesSection data={data.technologieReact} />
       <Services data={data.reeactServices} />
 

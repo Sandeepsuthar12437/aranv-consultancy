@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HomeBanner = ({ data }) => {
@@ -18,9 +19,9 @@ const HomeBanner = ({ data }) => {
             {data.subHeading}
           </div>
           <div className="text-white text-lg max-w-[198px] mx-auto md:mx-0 w-full bg-red-500 hover:bg-red-700 transition duration-500 text-center px-1.5 py-3.5 my-3.5 rounded-full">
-            <a href={data.ctaLink} className="btn btn-lets-talk">
+            <Link href={data.ctaLink} className="btn btn-lets-talk">
               {data.ctaText}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

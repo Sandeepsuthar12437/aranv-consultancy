@@ -1,7 +1,7 @@
 {
   "Header": {
     "logoImage": "/images/logo.png",
-    "logoLink": "../dist/index.html",
+    "logoLink": "/",
     "toggleNavImage": "/images/toggle-navmenu-img.png",
     "contactLink": "../dist/contact.html",
     "getInTouchImage": "/images/get-in-touch.png",
@@ -27,22 +27,22 @@
     "services": [
       {
         "label": "Mobile App Development",
-        "url": "../dist/mobile-app-development.html"
+        "url": "/mobile-app-development"
       },
-      { "label": "E-Commerce", "url": "../dist/ecommerce-development.html" },
+      { "label": "E-Commerce", "url": "/ecommerce-development" },
       {
         "label": "Content Management",
-        "url": "../dist/content-management-system.html"
+        "url": "/content-management-system"
       },
       {
         "label": "Business Intelligence",
-        "url": "../dist/Business-Intelligence.html"
+        "url": "/Business-Intelligence"
       },
-      { "label": "Cloud", "url": "../dist/cloud-computing-service.html" },
-      { "label": "Odoo", "url": "../dist/odoo-development.html" },
+      { "label": "Cloud", "url": "/cloud-computing-service" },
+      { "label": "Odoo", "url": "/odoo-development" },
       {
         "label": "Seo and Digital Marketing",
-        "url": "../dist/marketing-strategy-consultants.html"
+        "url": "/marketing-strategy-consultants"
       }
     ]
   },
@@ -51,7 +51,7 @@
     "heading": "Run Business uninterruptedly with High-tech Solutions",
     "subHeading": "We create solutions to take your business to next level",
     "ctaText": "Let’s Talk >",
-    "ctaLink": "../dist/contact.html",
+    "ctaLink": "/contact",
     "bannerImage": "/images/",
     "bannerImageTitle": "Run Business uninterruptedly with High-tech Solutions",
     "bannerImageAlt": "Run Business uninterruptedly with High-tech Solutions"
@@ -99,23 +99,23 @@
           "items": [
             {
               "text": "Mobile App Development",
-              "href": "../dist/mobile-app-development.html"
+              "href": "mobile-app-development"
             },
             {
               "text": "E-Commerce",
-              "href": "../dist/ecommerce-development.html"
+              "href": "/ecommerce-development"
             },
             {
               "text": "React JS",
-              "href": "../dist/technologies.html"
+              "href": "/technologies"
             },
             {
               "text": "Angular",
-              "href": "../dist/technologies.html"
+              "href": "/technologies"
             },
             {
               "text": "Node JS",
-              "href": "../dist/technologies.html"
+              "href": "/technologies"
             }
           ]
         },
@@ -123,19 +123,19 @@
           "items": [
             {
               "text": "Cloud",
-              "href": "../dist/cloud-computing-service.html"
+              "href": "/cloud-computing-service"
             },
             {
               "text": "SEO and Digital Marketing",
-              "href": "../dist/marketing-strategy-consultants.html"
+              "href": "/marketing-strategy-consultants"
             },
             {
               "text": "Content Management",
-              "href": "../dist/content-management-system.html"
+              "href": "/content-management-system"
             },
             {
               "text": "Business Intelligence",
-              "href": "../dist/Business-Intelligence.html"
+              "href": "/Business-Intelligence"
             }
           ]
         },
@@ -143,15 +143,15 @@
           "items": [
             {
               "text": "React Native",
-              "href": "../dist/technologies.html"
+              "href": "/technologies"
             },
             {
               "text": "Odoo",
-              "href": "../dist/odoo-development.html"
+              "href": "/odoo-development"
             },
             {
               "text": "ERC",
-              "href": "../dist/employee-retention-credit-free-assessment-and-consultation.html"
+              "href": "/employee-retention-credit-free-assessment-and-consultation"
             }
           ]
         }
@@ -196,7 +196,7 @@
         "description": "Boost your business functioning with the most amazing mobile app and also connect with your customers better",
         "image": "/images/mobile-home.jpg",
         "alt": "mobile-home",
-        "link": "../dist/mobile-app-development.html",
+        "link": "/mobile-app-development",
         "marginBottom": "lg:mb-28",
         "marginTop": ""
       },
@@ -205,7 +205,7 @@
         "description": "High-end e-commerce solutions with improved user experience can bring more sales, revenue and strengthen your bottom line.",
         "image": "/images/ecommerce.jpg",
         "alt": "ecommerce",
-        "link": "../dist/ecommerce-development.html",
+        "link": "/ecommerce-development",
         "marginBottom": "",
         "marginTop": "lg:-mt-[18rem]"
       },
@@ -214,7 +214,7 @@
         "description": "Transform your data into business insights using the best BI solutions for an improved and smooth functioning of business",
         "image": "/images/business-inte.jpg",
         "alt": "business-inte",
-        "link": "../dist/Business-Intelligence.html",
+        "link": "/Business-Intelligence",
         "marginBottom": "lg:mb-28",
         "marginTop": ""
       },
@@ -223,7 +223,7 @@
         "description": "Make the best of your resources, technical apps and projects without incurring any additional costs.",
         "image": "/images/cloud-home.jpg",
         "alt": "cloud-home",
-        "link": "../dist/cloud-computing-service.html",
+        "link": "/cloud-computing-service",
         "marginBottom": "",
         "marginTop": "lg:-mt-[18rem]"
       },
@@ -232,7 +232,7 @@
         "description": "Expand your business to a wider market harnessing the updated SEO and digital marketing nuances and strategies",
         "image": "/images/seo-img.jpg",
         "alt": "seo-img",
-        "link": "../dist/marketing-strategy-consultants.html",
+        "link": "/marketing-strategy-consultants",
         "marginBottom": "lg:mb-28",
         "marginTop": ""
       }
@@ -240,6 +240,7 @@
   },
   "ExpertiseSection": {
     "cartImage": "/images/cart.png",
+    "heading": "Cutting edge Technology <br/> Solutions",
     "technologies": [
       { "name": "Ruby on Rails", "image": "/images/ror.png" },
       { "name": "Magento", "image": "/images/magento.png" },
@@ -260,6 +261,12 @@
         "image": "/images/cloud-tech-cutting-edge.png"
       }
     ]
+  },
+  "ExpertiseSectionAbout": {
+    "cartImage": "/images/cart.png",
+    "heading": "A unique squad of technocrats to serve the most profitable and sustainable business solutions.",
+
+    "image": "/images/creative-approach-img.jpg"
   },
   "ResearchData": {
     "heading": " Our Research and Daily Market Analysis",
@@ -487,6 +494,7 @@
     "reverse": false
   },
   "businessData": {
+    "heading": "We create Apps for",
     "card": [
       {
         "image": "/images/enterprise-apps.jpg",
@@ -509,7 +517,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "ecommersedata": {
@@ -535,7 +543,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "cmsdata": {
@@ -561,7 +569,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "clouddata": {
@@ -587,7 +595,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "bigdata": {
@@ -613,7 +621,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "odddata": {
@@ -639,7 +647,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "userServicedata": {
@@ -665,7 +673,7 @@
     ],
     "cta": {
       "text": "Let's Start >",
-      "link": "../dist/ecommerce-development.html"
+      "link": "/ecommerce-development"
     }
   },
   "socialMediaData": [
@@ -867,6 +875,333 @@
       {
         "title": "App Maintenance & Support",
         "description": "Get a contract system for support and maintenance to make sure your apps are compatible with the most advanced OS platforms and versions. This led us to deliver excellent pre and post-mobile app development support."
+      }
+    ]
+  },
+  "howWeDoData": [
+    {
+      "id": "01",
+      "image": "/images/heart.png",
+      "title": "Passion to Serving",
+      "description": "Our passion for serving our clients the best way is our strength. This sets us apart as we go the extra mile to serve you anytime, anywhere with equal passion and compassion."
+    },
+    {
+      "id": "02",
+      "image": "/images/bulb.png",
+      "title": "Innovative Aptitude",
+      "description": "Innovation is the best way to compete. We leave no stone unturned to be the best fit. Innovation is everywhere – in our thought, process, approach, and delivery."
+    },
+    {
+      "id": "03",
+      "image": "/images/heart.png",
+      "title": "Ethical Charter",
+      "description": "We have laid out a detailed ethical code. It sails us through every project with equal ease. You get the most ethical, friendly, and easy access to a team of experts."
+    },
+    {
+      "id": "04",
+      "image": "/images/bulb.png",
+      "title": "Best-of-Art Infrastructure",
+      "description": "Be it technology, tools, systems, integration, reporting, or follow-up – we have the most updated tools and mechanisms to bring you the best technology solution."
+    }
+  ],
+  "OurCulture:": {
+    "heading": "  Our Culture",
+    "images": [
+      {
+        "src": "/images/culture1.jpg",
+        "alt": "culture 1 "
+      },
+      {
+        "src": "/images/culture2.jpg",
+        "alt": "culture 2"
+      },
+      {
+        "src": "/images/culture3.jpg",
+        "alt": "culture 2"
+      }
+    ]
+  },
+  "technologies": {
+    "heading": "Technologies that bring innovation",
+    "description": "Innovation and technology change the way of doing business making it more reachable, approachable, and faster."
+  },
+  "MobileBanner": {
+    "title": "Mobile App Development that Connects",
+    "subtitle": "Our apps connect with your customers for better UX",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "Services Mobile App Development"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "BusinessIntelligenceBanner": {
+    "title": "Business <br/> Intelligence <br/> Solutions",
+    "subtitle": "Business Intelligence Solutions Now enjoy Aranv’s Business Intelligence services. We help you to gain insights <br/> from huge data. Our tools help clients in generating better BI (business inputs). <br/> Aranv’s analytics and database software covers all grounds.",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "Business Intelligence"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "CloudBanner": {
+    "title": "Cloud Computing <br/> Services",
+    "subtitle": "We provide some of the best cloud computing services available out there. There <br/> is a team of developers that goes through the  development and execution on the <br/> server so that it is in safe hands. Our team is expert in what they do.",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": " Cloud solution"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "ContentManagementBanner": {
+    "title": "Transform your <br/> Content Management <br/> System",
+    "subtitle": "Aranv’s cost-effective and customized content management solutions are <br/> scalable, business-oriented, and SEO-friendly. The solutions are crafted to <br/> elevate and enhance your app, website, and social media network and to <br/> integrate with your business’s existing CMS solutions",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": " CMS Development"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "ecommerseBanner": {
+    "title": "eCommerce <br/> Development",
+    "subtitle": "eCommerce Development Get a robust and secure eCommerce <br/> store with Aranv’s superior tools. We help you build a <br/> customizable online store with secure payment gateways. Start <br/> selling immediately with us!",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": " Ecommerce Solutions"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "employeeBanner": {
+    "title": "Claim the Employee Retention Credit Now!",
+
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": " ERC"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "seoBanner": {
+    "title": "SEO and Digital <br/> Marketing",
+    "subtitle": "Hire only the best marketing strategy consultants that specialize in both SEO and <br/> Digital Marketing at Aranv. These marketing strategy consultants will elevate your <br/> business to new horizons online and digitally.",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "SEO and Digital Marketing"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "mobileAppBanner": {
+    "title": "Mobile App <br/> Development that <br/> Connects",
+    "subtitle": "Our apps connect with your <br/> customers for better UX",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "Services Mobile App Development"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "odooBanner": {
+    "title": "Odoo Development <br/> Solutions",
+    "subtitle": "At Aranv, you can experience some of the best odoo development solutions that <br/> can expand your growth when it comes to the online retail industry. We provide <br/> quick, efficient, as well as ergonomic Odoo development solutions.",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "Odoo Solutions"
+      }
+    ],
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
+  "mobileappbanner": {
+    "title": "Increase your efficiency to deliver the best products",
+    "techSideImage": "/images/react-native-tech-img.jpg",
+    "paragraphs": [
+      "We are a mobile app development company helping businesses to build fully customized mobile apps with minimal time and cost investment. Aranv is the first choice whether you are looking to create an app for iOS, Android, Windows Mobile or to build a cross-platform app.",
+      "As smartphones and mobile devices have become ubiquitous, mobile app development has seen an upward spurt. Mobile technology has transformed everything around us. With the tremendous growth in smartphone users, every business is taking advantage of the technology that comes with these devices."
+    ],
+    "reverseLayout": true
+  },
+  "iosData": {
+    "title": "iOS App Development",
+    "techSideImage": "/images/mobile-ios-app-development-service.jpg",
+    "paragraphs": [
+      "We deliver full-service iOS development solutions. As the iPhone dominates smartphone technology, it is the most looked-for service to build iPhone apps on the App Store. Our team is reliable and well accustomed to the latest tools and technologies. We also help you create, develop and submit your app to the App Store. It is the sole point of distribution for mobile apps on iOS and is developed and maintained by Apple Inc."
+    ],
+    "subtitle": "What we Do",
+    "services": [
+      "iPhone App Development",
+      "iOS App with MLKit",
+      "iOS App with SiriKit",
+      "iOS App Testing",
+      "iPad App Development",
+      "Apple TV Apps",
+      "iOS App with ARKit"
+    ],
+
+    "reverseLayout": false
+  },
+  "appData": {
+    "title": "Android App Development",
+    "techSideImage": "/images/mobile-android-app-development-service.jpg",
+    "paragraphs": [
+      "Aranv offers end-to-end is a well-versed Android development team. Our team makes the most of the platform. As Android is the most widely used mobile OS, it powers hundreds of millions of mobile devices. It is a world-class platform for developing apps and games for Android users. Android helps develop apps, games, and other digital content. It is flexible and takes advantage of the hardware capabilities available on the device."
+    ],
+    "subtitle": "What we Do",
+    "services": [
+      " Android Smartphone Apps",
+      "Android Apps with Dialogflow",
+      " Android Tablet Apps",
+      "Firebase Integration",
+      "Android Things Apps",
+      "Android TV Apps",
+      "Chromebook Apps"
+    ],
+
+    "reverseLayout": true
+  },
+  "specializedDevelopers": {
+    "title": "Full-Service Develpment from Specialized Developers",
+    "items": [
+      {
+        "title": "Cross Platforms Apps",
+        "iconSrc": "/images/desktop-mobile-full-service.png",
+        "description": "Build a cross-platform application that can run on various operating systems, instead of creating different app versions for each platform."
+      },
+      {
+        "title": "Progressive Web Apps",
+        "iconSrc": "/images/pwa-full-service.png",
+        "description": "We create progressive web apps for web browser APIs. You can also feature it along with traditional progressive enhancement strategy. Deliver a native app-like user experience to your customers."
+      },
+      {
+        "title": "Hybrid Apps",
+        "iconSrc": "/images/hybrid-app-service.png",
+        "description": "We develop hybrid apps for web browsers and native applications designed for a particular platform that needs to be installed on a device."
+      },
+      {
+        "title": "Ionic Apps",
+        "iconSrc": "/images/lonic-service.png",
+        "description": "Trade information uses data integration. Effective trade details include different services. We offer analytics and reporting. Our team provides powerful data tools. We enable our clients. We use Enterprise BI services. Our services help to create a single source of data."
+      },
+      {
+        "title": "React Native",
+        "iconSrc": "/images/reactjs-mobile-service.png",
+        "description": "With the best-in-class JavaScript library, we create react native apps combining the best parts of native development with React."
+      },
+      {
+        "title": "Cloud Apps",
+        "iconSrc": "/images/google-cloud-mobile-devep-service.png",
+        "description": "Simplify your functioning with extremely secure and cost-effective cloud apps. Not only boost your business functioning but also your employee productivity."
       }
     ]
   }

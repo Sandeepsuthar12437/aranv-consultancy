@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = ({ data }) => {
@@ -38,18 +40,13 @@ const Header = ({ data }) => {
                       key={index}
                       className="text-2xl lg:text-[40px] text-white font-normal mb-3"
                     >
-                      <a href={link.url}>{link.label}</a>
+                      <Link href={link.url}>{link.label}</Link>
                     </li>
                   ))}
                 </ul>
                 <div className="flex flex-row gap-5 my-9">
                   {data.socialLinks.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link key={index} href={social.url}>
                       <i>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +56,7 @@ const Header = ({ data }) => {
                           <path d={social.path}></path>
                         </svg>
                       </i>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -68,34 +65,31 @@ const Header = ({ data }) => {
                   Service
                 </h2>
                 <ul>
-                  {data.services.map((service, index) => (
+                  {data.services.map((link, index) => (
                     <li
                       key={index}
                       className="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
                     >
-                      <a
-                        href={service.url}
-                        className="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
-                      >
-                        {service.label}
-                      </a>
+                      <Link href={link.url}>{link.label}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="md:w-[33%] xl:w-[48%]">
                 <div className="relative px-10 py-10 md:pt-28 xl:py-[78px] md:pr-10 xl:pr-[78px] md:pl-20 xl:pl-[130px] md:h-screen flex flex-col">
-                  <img
+                  <Image
                     src={data.toggleNavImage}
                     alt=""
+                    width={400}
+                    height={400}
                     className="mx-auto mb-[130px] w-[45%] md:w-[65%]"
                   />
-                  <a
+                  <Link
                     href={data.contactLink}
                     className="text-3xl lg:text-[40px] text-black mx-auto font-bold after:content-['>'] after:absolute after:px-4 after:text-red-500 after:font-normal"
                   >
                     Get In Touch
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -105,51 +99,50 @@ const Header = ({ data }) => {
         <div className="hidden flex-row md:flex">
           <ul className="flex flex-row items-center">
             {data.navLinks.slice(0, 3).map((link, index) => (
-              <li key={index} className="mr-5">
-                <div className="relative inline-block cursor-pointer group">
-                  <a
-                    href={link.url}
-                    className="text-[#6a6a6a] text-lg font-medium relative block"
-                  >
-                    {link.label}
-                  </a>
-                  <a
-                    href="#"
-                    className="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block mr-5 align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
-                  >
-                    {link.label}
-                  </a>
-                </div>
+              <li
+                key={index}
+                className="text-2xl mr-5 lg:text-[40px] text-white font-normal mb-3"
+              >
+                <Link
+                  href={link.url}
+                  className="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="absolute left-0 right-0 mx-auto max-w-[120px] lg:max-w-[233px]">
-          <a href={data.logoLink}>
-            <img
+          <Link href={data.logoLink}>
+            <Image
               src={data.logoImage}
               alt="aranv"
+              width={233}
+              height={73}
               title="aranv"
               loading="lazy"
             />
-          </a>
+          </Link>
         </div>
         <div className="ml-auto">
-          <a
+          <Link
             href={data.contactLink}
             className="relative hidden md:block ml-auto min-w-[140px] lg:min-w-[199px] text-white lg:h-[58px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] hover:text-white overflow-hidden bg-[linear-gradient(to_right,_black_50%,_red_50%)] transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
           >
             <span className="block text-center text-[16px] font-bold transition-all duration-600 ease-out">
               Get in Touch
             </span>
-          </a>
-          <a href={data.contactLink} className="ml-auto">
-            <img
+          </Link>
+          <Link href={data.contactLink} className="ml-auto">
+            <Image
               src={data.getInTouchImage}
               alt=""
+              width={56}
+              height={56}
               className="md:hidden block w-14 h-14 border-[1px] border-black p-[6px] rounded-full"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </header>
