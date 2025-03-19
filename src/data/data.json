@@ -1,0 +1,873 @@
+{
+  "Header": {
+    "logoImage": "/images/logo.png",
+    "logoLink": "../dist/index.html",
+    "toggleNavImage": "/images/toggle-navmenu-img.png",
+    "contactLink": "../dist/contact.html",
+    "getInTouchImage": "/images/get-in-touch.png",
+    "navLinks": [
+      { "label": "About", "url": "/about" },
+      { "label": "Services", "url": "/services" },
+      { "label": "Technologies", "url": "/technologies" },
+      { "label": "Blog", "url": "/blog" },
+      { "label": "Contact", "url": "/contact" }
+    ],
+    "socialLinks": [
+      {
+        "url": "#",
+        "viewBox": "0 0 320 512",
+        "path": "M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+      },
+      {
+        "url": "#",
+        "viewBox": "0 0 448 512",
+        "path": "M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+      }
+    ],
+    "services": [
+      {
+        "label": "Mobile App Development",
+        "url": "../dist/mobile-app-development.html"
+      },
+      { "label": "E-Commerce", "url": "../dist/ecommerce-development.html" },
+      {
+        "label": "Content Management",
+        "url": "../dist/content-management-system.html"
+      },
+      {
+        "label": "Business Intelligence",
+        "url": "../dist/Business-Intelligence.html"
+      },
+      { "label": "Cloud", "url": "../dist/cloud-computing-service.html" },
+      { "label": "Odoo", "url": "../dist/odoo-development.html" },
+      {
+        "label": "Seo and Digital Marketing",
+        "url": "../dist/marketing-strategy-consultants.html"
+      }
+    ]
+  },
+  "homeBanner": {
+    "backgroundImage": "/images/home-banner-back.jpg",
+    "heading": "Run Business uninterruptedly with High-tech Solutions",
+    "subHeading": "We create solutions to take your business to next level",
+    "ctaText": "Let’s Talk >",
+    "ctaLink": "../dist/contact.html",
+    "bannerImage": "/images/",
+    "bannerImageTitle": "Run Business uninterruptedly with High-tech Solutions",
+    "bannerImageAlt": "Run Business uninterruptedly with High-tech Solutions"
+  },
+  "StatsSection": {
+    "heading": "Committed to serving our customers the best way for 7 years of our existence",
+    "description": "As a web development company, we have served 100+ clients, managed 30+ projects with an expert team of 50+ members. We believe our ethical and professional approach is our forte.",
+    "link": {
+      "text": "Know More About Us >",
+      "url": "/about"
+    },
+    "stats": [
+      {
+        "value": "30 +",
+        "label": "Projects",
+        "bgColor": "bg-black",
+        "textColor": "text-white"
+      },
+      {
+        "value": "100 +",
+        "label": "Clients",
+        "bgColor": "bg-red-500",
+        "textColor": "text-white"
+      },
+      {
+        "value": "100 +",
+        "label": "Employee",
+        "bgColor": "",
+        "textColor": "text-black"
+      }
+    ],
+    "image": "/images/smile.png"
+  },
+  "footer": {
+    "logo": {
+      "src": "/images/logo.png",
+      "alt": "aranv",
+      "title": "aranv",
+      "href": "/"
+    },
+    "services": {
+      "title": "Services",
+      "columns": [
+        {
+          "items": [
+            {
+              "text": "Mobile App Development",
+              "href": "../dist/mobile-app-development.html"
+            },
+            {
+              "text": "E-Commerce",
+              "href": "../dist/ecommerce-development.html"
+            },
+            {
+              "text": "React JS",
+              "href": "../dist/technologies.html"
+            },
+            {
+              "text": "Angular",
+              "href": "../dist/technologies.html"
+            },
+            {
+              "text": "Node JS",
+              "href": "../dist/technologies.html"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "text": "Cloud",
+              "href": "../dist/cloud-computing-service.html"
+            },
+            {
+              "text": "SEO and Digital Marketing",
+              "href": "../dist/marketing-strategy-consultants.html"
+            },
+            {
+              "text": "Content Management",
+              "href": "../dist/content-management-system.html"
+            },
+            {
+              "text": "Business Intelligence",
+              "href": "../dist/Business-Intelligence.html"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "text": "React Native",
+              "href": "../dist/technologies.html"
+            },
+            {
+              "text": "Odoo",
+              "href": "../dist/odoo-development.html"
+            },
+            {
+              "text": "ERC",
+              "href": "../dist/employee-retention-credit-free-assessment-and-consultation.html"
+            }
+          ]
+        }
+      ]
+    },
+    "copyright": {
+      "text": "Aranv Consultancy & Digital Services © 2021, All rights reserved by the company."
+    }
+  },
+  "contactdata": {
+    "address": "5820 N Canton Center Rd, Suite 170, Canton MI 48187",
+    "phone": "(347) 460-9278‬",
+    "skype": "sales.aranv",
+    "backgroundImage": "/images/address-city-1.jpg"
+  },
+  "indexBanner": {
+    "backgroundImage": "/images/metting-arrange.jpg",
+    "handleCss": true
+  },
+  "quoteBanner": {
+    "backgroundImage": "/images/cloud-solution-middle-banner.jpg",
+    "quote": {
+      "text": "When you bring Aranv on board, it’s like having a best friend in the web and IT field. Too many companies trivialize their own work. We don’t do that. It’s not simply a matter of ‘You pay, we do a good job’. Of course, we do a good job. But it’s more than that. It’s about being really, really good.",
+      "author": "George Gates",
+      "position": "CEO Micro Group"
+    },
+    "commaImage": "/images/comma-shape.png"
+  },
+  "businessSection": {
+    "sections": [
+      {
+        "title": "We know your business well",
+        "description": "Having worked as Web Development Company and handled a range of projects of similar nature are conversant with your business needs well in the first place",
+        "image": "",
+        "alt": "",
+        "link": "",
+        "marginBottom": "",
+        "marginTop": ""
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Boost your business functioning with the most amazing mobile app and also connect with your customers better",
+        "image": "/images/mobile-home.jpg",
+        "alt": "mobile-home",
+        "link": "../dist/mobile-app-development.html",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      },
+      {
+        "title": "E-Commerce",
+        "description": "High-end e-commerce solutions with improved user experience can bring more sales, revenue and strengthen your bottom line.",
+        "image": "/images/ecommerce.jpg",
+        "alt": "ecommerce",
+        "link": "../dist/ecommerce-development.html",
+        "marginBottom": "",
+        "marginTop": "lg:-mt-[18rem]"
+      },
+      {
+        "title": "Business Intelligence",
+        "description": "Transform your data into business insights using the best BI solutions for an improved and smooth functioning of business",
+        "image": "/images/business-inte.jpg",
+        "alt": "business-inte",
+        "link": "../dist/Business-Intelligence.html",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      },
+      {
+        "title": "Cloud",
+        "description": "Make the best of your resources, technical apps and projects without incurring any additional costs.",
+        "image": "/images/cloud-home.jpg",
+        "alt": "cloud-home",
+        "link": "../dist/cloud-computing-service.html",
+        "marginBottom": "",
+        "marginTop": "lg:-mt-[18rem]"
+      },
+      {
+        "title": "SEO and Digital Marketing",
+        "description": "Expand your business to a wider market harnessing the updated SEO and digital marketing nuances and strategies",
+        "image": "/images/seo-img.jpg",
+        "alt": "seo-img",
+        "link": "../dist/marketing-strategy-consultants.html",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      }
+    ]
+  },
+  "ExpertiseSection": {
+    "cartImage": "/images/cart.png",
+    "technologies": [
+      { "name": "Ruby on Rails", "image": "/images/ror.png" },
+      { "name": "Magento", "image": "/images/magento.png" },
+      { "name": "React JS", "image": "/images/reactJs.png" },
+      { "name": "Odoo", "image": "/images/odoo.png" },
+      { "name": "SAP", "image": "/images/sap.png" },
+      { "name": "Node JS", "image": "/images/nodeJs.png" },
+      { "name": "MySQL", "image": "/images/mySql.png" },
+      { "name": "Redis", "image": "/images/redis.png" },
+      { "name": "Angular JS", "image": "/images/angularJs.png" },
+      { "name": "WordPress", "image": "/images/wordpress.png" },
+      { "name": "MongoDB", "image": "/images/mongoDb.png" },
+      { "name": "PHP", "image": "/images/php.png" },
+      { "name": "Laravel", "image": "/images/laravell.png" },
+      { "name": "PostgreSQL", "image": "/images/postgreSql.png" },
+      {
+        "name": "Cloud Technology",
+        "image": "/images/cloud-tech-cutting-edge.png"
+      }
+    ]
+  },
+  "ResearchData": {
+    "heading": " Our Research and Daily Market Analysis",
+    "Button": {
+      "text": "View All",
+      "link": "/"
+    },
+    "Research": [
+      {
+        "image": "/images/business-inte.jpg",
+        "researchheading": " Business Development",
+        "researchdescription": " What Would the World Be Like If Artificial Intelligence Did Not Exist?",
+        "readmore": {
+          "text": "Read More",
+          "link": "/"
+        }
+      },
+      {
+        "image": "/images/Essential-Checklist-For-Improving-B2C-Web-Design.png",
+        "researchheading": " Web Design",
+        "researchdescription": " Essential Checklist For Improving B2C Web Design",
+        "readmore": {
+          "text": "Read More",
+          "link": "/"
+        }
+      },
+      {
+        "image": "/images/What-Would-the-World-Be-Like-If-Artificial-Intelligence-Did-Not-Exist.jpg",
+        "researchheading": "   Digital Marketing",
+        "researchdescription": "  Guide and Ways to Boost Your Digital Presence",
+        "readmore": {
+          "text": "Read More",
+          "link": "/"
+        }
+      }
+    ]
+  },
+  "whyUsData": {
+    "heading": "why us",
+    "bgImage": "/images/bolding-work.jpg",
+    "points": [
+      {
+        "title": " We Understand",
+        "description": "We take time to understand your business and its unique needs in the first place. This helps us serve you better with the most accurate solutions."
+      },
+      {
+        "title": " We Partner",
+        "description": "  Our collaboration with you helps us deliver the most suitable  and complex solutions. As a leading web development company we build web solutions suitable for your business."
+      },
+      {
+        "title": "  We build Relations",
+        "description": " Our work does not stop after delivering the project but we develop a bonding to make sure they grow using our solutions."
+      }
+    ]
+  },
+  "whyUsDataAbout": {
+    "heading": "why us",
+    "bgImage": "/images/bolding-work.jpg",
+    "points": [
+      {
+        "title": "We’re Technology Partners",
+        "description": "Being a web development company, we have a dedicated team of technocrats who are experts in their respective domains. We deliver solutions that help thrive and sustain your business for longer."
+      },
+      {
+        "title": " We Collaborate",
+        "description": " Our association with business brings a unique set of innovative technology solutions that gives you an edge over others. Making your business stay ahead of the competition."
+      },
+      {
+        "title": "We help build business",
+        "description": " We are business enablers. Easy to reach and collaborate but difficult to ignore. Our business bonding sustains and sails through the rough patch of your business also."
+      }
+    ]
+  },
+  "aboutBanner": {
+    "bgImage": "/images/company-banner.jpg",
+    "heading": "About",
+    "handleheight": true
+  },
+
+  "serviceBanner": {
+    "bgImage": "/images/company-banner.jpg",
+    "heading": "Build a futuristic and sustainable business",
+    "arrowImage": "/images/services-banner-right-img.png"
+  },
+  "technologiesBanner": {
+    "bgImage": "/images/company-banner.jpg",
+    "heading": "Transform business with viable Solutions",
+    "arrowImage": "/images/services-banner-right-img.png"
+  },
+  "sectiondataServices": {
+    "title": "Churn out business proficiency offering an improved user experience",
+    "description": "Our web and mobile solutions are packed with oodles of ways to recoup your operational cost. You can get the best and most advanced enterprise solutions for the improved and seamless functioning of your business. It also provides your customers an enhanced user experience thus driving more revenue.",
+    "images": [
+      {
+        "src": "/images/android-technology.png",
+        "alt": "Android Technology"
+      },
+      { "src": "/images/ios-technology.png", "alt": "iOS Technology" },
+      {
+        "src": "/images/reactjs-technology.png",
+        "alt": "ReactJS Technology"
+      }
+    ],
+    "mainImage": "/images/user-experience.jpg",
+    "reverse": false
+  },
+  "sectiondataEcommerse": {
+    "title": "Build your full-featured and optimized e-Commerce System",
+    "description": "Pull out every piece of effort that can build a future-ready e-commerce solution. It ensures amazing growth addressing the defined target. Whatever online industry you represent makes your presence felt in all directions. Use the right platform, solution, and people to work for your business for the best results.",
+    "images": [
+      {
+        "src": "/images/shopify-technology.png",
+        "alt": "Shopify Technology"
+      },
+      {
+        "src": "/images/magento-technology.png",
+        "alt": "Magento Technology"
+      },
+      {
+        "src": "/images/reactjs-technology.png",
+        "alt": "ReactJS Technology"
+      },
+      {
+        "src": "/images/odoo-technology.png",
+        "alt": "Odoo Technology"
+      }
+    ],
+    "mainImage": "/images/e-commerce-solutions.jpg",
+    "reverse": false
+  },
+  "sectiondataCms": {
+    "title": "Tailor-made CMS Solutions addressing all your business needs and objectives",
+    "description": "Relying on the right CMS is the key to the right online business management. It offers the right control and all the required updates easily and instantly. Keep yourself updated and in full control of your business without having any major technical know-how. This helps you grow and compete faster and better in this competitive eco-system of global entrepreneurship.",
+    "images": [
+      {
+        "src": "/images/wordpress-technology.png",
+        "alt": "Android Technology"
+      },
+      { "src": "/images/drupal-technology.png", "alt": "iOS Technology" },
+      {
+        "src": "/images/joomla-technology.png",
+        "alt": "ReactJS Technology"
+      }
+    ],
+    "mainImage": "/images/cms-solutions.jpg",
+    "reverse": false
+  },
+  "sectiondataCloud": {
+    "title": "Use Cloud for reduced cost and improved performance of the business",
+    "description": "It’s time to change your storage style and way of performing your business online. Put your business on the cloud making it safer, easier to access, and better to leverage and store.",
+    "images": [
+      {
+        "src": "/images/aws-cloud-technology.png",
+        "alt": "AWS Cloud Technology"
+      },
+      {
+        "src": "/images/heroku-cloud-technology.png",
+        "alt": "Heroku Cloud Technology"
+      },
+      {
+        "src": "/images/google-cloud-technology.png",
+        "alt": "Google Cloud Technology"
+      },
+      {
+        "src": "/images/digital-ocean-cloud-technology.png",
+        "alt": "Digital Ocean Cloud Technology"
+      },
+      {
+        "src": "/images/rackspace-cloud-technology.png",
+        "alt": "Rackspace Cloud Technology"
+      }
+    ],
+    "mainImage": "/images/business-continuity.jpg",
+    "reverse": false
+  },
+  "sectionBigData": {
+    "title": "Utilize big data for great business decision and improved customer experience",
+    "description": "Craft, create, and implement the right enterprise functions to support, manage and integrate technology apps and third-party platforms. Make the best of business and infrastructure apps for business intelligence platforms, analytics requirements, and data logistics infrastructure.",
+    "images": [
+      {
+        "src": "/images/other-technology1.png",
+        "alt": "other technology1"
+      },
+      {
+        "src": "/images/other-technology2.png",
+        "alt": "other technology2"
+      }
+    ],
+    "mainImage": "/images/business-decisions.jpg",
+    "reverse": false
+  },
+  "sectiondataAbout": {
+    "heading": "What We Do",
+    "title": "We deliver 360-degree Web Solutions to Business",
+    "description": "We have been in the business for 7 years now and know the ins and outs of tech-industry and web requirements of any business. We offer the most suitable and innovative business solutions to help you grow fast and sustain in this competitive ecosystem.",
+    "mainImage": "/images/advanced-technologies-img.png",
+    "reverse": true
+  },
+  "sectiondataOdoo": {
+    "title": "Get the right set of an enterprise application to function your business the best way",
+    "description": "Be it eCommerce, enterprise, or business tools, having a suite of business apps and tools will help you grow a large and sustainable business ecosystem. Get the most befitting ERP solutions.",
+    "images": [
+      {
+        "src": "/images/odoo-technology.png",
+        "alt": "odoo technology"
+      }
+    ],
+    "mainImage": "/images/manage-entire-business.jpg",
+    "reverse": false
+  },
+  "sectiondataUser": {
+    "title": "Be visible and get found online quickly by your users and customers",
+    "description": "Let your customers find you easily online anytime anywhere. Making the best SEO and digital strategies is the best way to make your presence felt for a long time.",
+    "images": [
+      {
+        "src": "/images/facebook-social-media.png",
+        "alt": "facebook social media"
+      },
+      {
+        "src": "/images/linkdin-social-media.png",
+        "alt": "linkdin social media"
+      }
+    ],
+    "mainImage": "/images/manage-entire-business.jpg",
+    "reverse": false
+  },
+  "businessData": {
+    "card": [
+      {
+        "image": "/images/enterprise-apps.jpg",
+        "alt": "Enterprise Apps",
+        "title": "Enterprise Apps",
+        "description": "Get the most promising and efficient enterprise software /app to help manage your large business. Easy to implement and efficient for running an enterprise."
+      },
+      {
+        "image": "/images/business-apps.jpg",
+        "alt": "Business Apps",
+        "title": "Business Apps",
+        "description": "Improve your day-to-day business operations using our unique business applications recouping your Capital and operational investment."
+      },
+      {
+        "image": "/images/consumers-apps.jpg",
+        "alt": "Consumer Apps",
+        "title": "Consumers Apps",
+        "description": "Make your customers happy and delighted with improved connectivity and feature-rich business apps. These help access your business from any time anywhere."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "ecommersedata": {
+    "card": [
+      {
+        "image": "/images/custom-online-store.jpg",
+        "alt": "Custom Online Store",
+        "title": "Custom Online Store",
+        "description": "Build the best and fully-functional online custom e-store given your unique business need and strategy."
+      },
+      {
+        "image": "/images/b2c-marketplaces.jpg",
+        "alt": "B2C Marketplaces",
+        "title": "B2C Marketplaces",
+        "description": "Connect with consumers directly building the scalable, and robust B2C marketplace using our right e-commerce solutions."
+      },
+      {
+        "image": "/images/b2b-trade-portal.jpg",
+        "alt": "B2B Trade Portals",
+        "title": "B2B Trade Portals",
+        "description": "Stay connected with your vendors, shareholders, and strategically chosen partners creating scalable and well-built trade portals."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "cmsdata": {
+    "card": [
+      {
+        "image": "/images/document-management-system (1).jpg",
+        "alt": "document-management-system",
+        "title": "Document Management System",
+        "description": "Store, access and control your documents under a single and centralized space to make the best of your data anytime anywhere."
+      },
+      {
+        "image": "/images/enterprise-content-management-system.jpg",
+        "alt": "enterprise-content-management-system",
+        "title": "Enterprise Content Management System",
+        "description": "Right business content management goes a long way in nurturing your products and services the best way possible. Bring the right CMS for the right results."
+      },
+      {
+        "image": "/images/web-content-management-system.jpg",
+        "alt": "web-content-management-system",
+        "title": "Web Content Management System",
+        "description": "Edit, access, delete, modify and control your web CMS the way you want. You know best what works for your online business using the right CMS system."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "clouddata": {
+    "card": [
+      {
+        "image": "/images/cloud-strategy.jpg",
+        "alt": "cloud-strategy",
+        "title": "Cloud Strategy",
+        "description": "Without moving everything on cloud develop the right cloud strategy that you want to put on the cloud to reduce the CAPEX and OPEX."
+      },
+      {
+        "image": "/images/cloud-management (2).jpg",
+        "alt": "cloud-management",
+        "title": "Cloud management",
+        "description": "Improve your cloud computing containment and performance by right cloud management system adhering to cloud computing practices."
+      },
+      {
+        "image": "/images/cloud-migration.jpg",
+        "alt": "cloud-migration",
+        "title": "Cloud Migration",
+        "description": "Make your customers happy and delighted with improved connectivity and feature-rich business apps. These help access your business from any time anywhere.Move your data, business and tools, and operations to the cloud. It requires a lot of practice, preparation, and expertise resulting in better saving and wider flexibility."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "bigdata": {
+    "card": [
+      {
+        "image": "/images/document-management-system.jpg",
+        "alt": "cloud-strategy",
+        "title": "Self-Service BI",
+        "description": "Use everyday data for the right decision to hit the goal. Thus create a new culture of using everyday data for your business growth."
+      },
+      {
+        "image": "/images/enterprise-content-management-system.jpg",
+        "alt": "cloud-management",
+        "title": "Enterprise BI",
+        "description": "Get a complex and sophisticated business intelligence platform to increase your productivity and efficiency and create a sustainable enterprise."
+      },
+      {
+        "image": "/images/web-content-management-system.jpg",
+        "alt": "cloud-migration",
+        "title": "BI on Marketplace",
+        "description": "Use the BI for crafting the best strategies and leveraging the right technologies for data analysis to identify new avenues and implement an effective business strategy for a competitive marketplace."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "odddata": {
+    "card": [
+      {
+        "image": "/images/odoo-erp-solutions.jpg",
+        "alt": "odoo erp solutions",
+        "title": "Odoo ERP Solution",
+        "description": "It is one of the finest and most suitable ERP solutions with loads of built-in modules like the point of sales, CRM, CRM, HR, project, and more."
+      },
+      {
+        "image": "/images/odoo-ecommerce.jpg",
+        "alt": "odoo ecommerce",
+        "title": "Odoo E-commerce",
+        "description": "Create a beautiful fully functional e-store with loads of modules, easy checkout, and a wide range of functionalities to make it look and feel great using Odoo."
+      },
+      {
+        "image": "/images/odoo-hrmis.jpg",
+        "alt": "odoo hrmis",
+        "title": "Odoo HRMIS",
+        "description": "Employee management is the core of any business. Humans are assets and managing them the right way is what Odoo promises. Run business the right way."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "userServicedata": {
+    "card": [
+      {
+        "image": "/images/website-seo-audit.jpg",
+        "alt": "odoo erp solutions",
+        "title": "PPC Services",
+        "description": "Create a customized PPC campaign to propel your conversions and ROI for your business with PPC management solution"
+      },
+      {
+        "image": "/images/social-media-marketing.jpg",
+        "alt": "odoo ecommerce",
+        "title": "Social Media Marketing",
+        "description": "Leverage the most astounding results of social media marketing for improved CX and better social platform coverage."
+      },
+      {
+        "image": "/images/search-engine-marketing.jpg",
+        "alt": "odoo hrmis",
+        "title": "Search Engine Marketing",
+        "description": "Improve your search results to increase your brand awareness and visibility utilizing professional SEM solutions."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "../dist/ecommerce-development.html"
+    }
+  },
+  "socialMediaData": [
+    {
+      "id": "facebook",
+      "href": "",
+      "svgPath": "M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16",
+      "hasBorder": true
+    },
+    {
+      "id": "twitter",
+      "href": "",
+      "svgPath": "M28 8.557a10 10 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.7 9.7 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.94 4.94 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a5 5 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174q-.476-.001-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.9 9.9 0 0 1-6.114 2.107q-.597 0-1.175-.068a13.95 13.95 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013q0-.32-.015-.637c.96-.695 1.795-1.56 2.455-2.55z",
+      "hasBorder": true
+    },
+    {
+      "id": "email",
+      "href": "",
+      "svgPath": "M27 21.775v-9.9s-10.01 6.985-10.982 7.348C15.058 18.878 5 11.875 5 11.875v9.9c0 1.375.293 1.65 1.65 1.65h18.7c1.393 0 1.65-.242 1.65-1.65m-.017-11.841c0-1.002-.291-1.359-1.633-1.359H6.65c-1.38 0-1.65.429-1.65 1.43l.016.154s9.939 6.842 11 7.216C17.14 16.941 27 10.005 27 10.005z",
+      "hasBorder": false
+    }
+  ],
+  "hireExpert": {
+    "bgImage": "/images/bg-proven.png",
+    "images": [
+      {
+        "src": "/images/proven-experience-devloper1.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper2.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper3.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      }
+    ],
+    "heading": "Hire the best technology expert or squad of experts with years of cumulative experience",
+    "description": "Find the right fit for your specific enterprise project considering their expertise, experience, and approach from a pool of technology nerds. You will be delighted to know all our technology experts are specialists in their domain with years of respective experience. Hire the best developer and get awesome results.",
+    "button": {
+      "text": "Hire Dedicated Experts",
+      "link": "../dist/contact.html"
+    }
+  },
+  "technologieReactNative": {
+    "title": "React Native",
+    "techImage": "/images/reactjs-technology-lg.png",
+    "techSideImage": "/images/react-native-tech-img.jpg",
+    "paragraphs": [
+      "Aranv is one of the pioneers of React Native App Development Company with the capabilities to adopt innovative web and mobile technologies. A Facebook framework, react-native has the capabilities to deliver the most updated mobile application solutions for iOS and Android platforms.",
+      "Being open-source, React Native features the building blocks which are reusable also for any more projects. It has a more agile approach for mobile app solutions to deliver the speed, appeal, and functionalities of a native app."
+    ],
+    "reverseLayout": true
+  },
+  "reeactNativeServices": {
+    "title": "React Native App Development Services",
+    "services": [
+      {
+        "title": "Prototyping, Wireframes & Mockups",
+        "description": "We offer a range of wireframes and deliver a repertoire of options to our worldwide clients. Our prototyping, wireframing, and mockups help them navigate the digital landscape to help them get the right outcomes."
+      },
+      {
+        "title": "Custom React Native App Development",
+        "description": "We create extremely secure and custom react native app solutions for an engaging business application with the right layout and interactive user interface. We deliver the most suitable and interactive UI for great results."
+      },
+      {
+        "title": "Integration of AI & ML Capabilities",
+        "description": "Machine learning and AI support the operations of your project and deliver the most engaging customer service. It is an innovative idea giving you more reasons to think of ways in which you can develop your brands."
+      },
+      {
+        "title": "Quality Assurance & App Testing",
+        "description": "We understand that your app should deliver value to your customers. It should be bug-free and fully functional. All these we attain by the best quality assurance and repetitive application testing."
+      },
+      {
+        "title": "Server Side APIs Integration",
+        "description": "We deliver secure server-side APIs. These are integrated with the application of your choice to transform them into a robust and dynamic tool allowing them to converse with each other smoothly."
+      },
+      {
+        "title": "App Maintenance & Support",
+        "description": "Get a contract system for support and maintenance to make sure your apps are compatible with the most advanced OS platforms and versions. This led us to deliver excellent pre and post-mobile app development support."
+      }
+    ]
+  },
+  "technologieReact": {
+    "title": "React Js",
+    "techImage": "/images/reactjs-technology-lg.png",
+    "techSideImage": "/images/reactjs-tech-img.jpg",
+    "paragraphs": [
+      "We have been a pioneer in technology innovation, assuring our end-users of high-quality solutions. Our dedicated team of experts are highly skilled and technology experts, who work in collaboration to develop best-of-breed ReactJS applications and solutions.",
+      "ReactJS is one of the widely popular JavaScript UI platforms being widely used due to its high rendering functionalities. It is the best bet for ReactJS experts with a scalable and robust framework for application UI solutions. It is an ideal platform for crafting and deploying dynamic apps with stunning UI."
+    ],
+    "reverseLayout": false
+  },
+  "reeactServices": {
+    "title": "React Native App Development Services",
+    "services": [
+      {
+        "title": "ReactJS UI/UX Development",
+        "description": "We design interactive and enticing User Interface layout for your applications and web interfaces."
+      },
+      {
+        "title": "ReactJS Custom Development",
+        "description": "Looking for a customized ReactJS app addressing your specific business needs? We offer the best custom ReactJS development solutions."
+      },
+      {
+        "title": "ReactJS Plugins",
+        "description": "Get tailor-made extensions and plugins for your ReactJS mobile and web applications and channelize a new revenue avenue."
+      },
+      {
+        "title": "ReactJS Migration",
+        "description": "With Aranv, migrating your current apps to ReactJS is smooth and seamless. Our ReactJS experts manage the migration without affecting your business."
+      },
+      {
+        "title": "ReactJS Web App Development",
+        "description": "We build highly scalable web applications leveraging ReactJS. The web applications we craft for you are responsive, SEO-friendly, and high-performing."
+      },
+      {
+        "title": "Maintenance and Support Services",
+        "description": "We, at Aranv, assure you of friendly and 24 hours ReactJS development support as our word did not complete with the completion of the project."
+      }
+    ]
+  },
+  "technologieAngularjs": {
+    "title": "Angular JS",
+    "techImage": "/images/angular-technology-lg.png",
+    "techSideImage": "/images/angularjs-tech-img.jpg",
+    "paragraphs": [
+      "As a reputed AngularJS development company, we identify the full stack of JS technologies. Leveraging our key understanding of technology and development, we deliver reliable AngularJS development solutions to deploy scalable AngularJS mobile apps for all types of business enterprises.",
+      "Moreover, AngularJS app development has an excellent user-interface pushing users and business views. Our dedicated Angular JS developer also put the best efforts to restructure development and customization issues leveraging robust AngularJS technology."
+    ],
+    "reverseLayout": true
+  },
+  "angularServices": {
+    "title": "Angular JS App Development Services",
+    "services": [
+      {
+        "title": "Custom Angular JS Development",
+        "description": "Our years of cumulative domain expertise enable us in delivering scalable, secure, feature-rich, and responsive web application development solutions."
+      },
+      {
+        "title": "Hybrid AngularJS Apps",
+        "description": "Building a mobile app using Angular and Ionic is beneficial to scale up your progression in a hybrid style. It provides interactive UI, the right connection, executing and debugging tech-savvy businesses."
+      },
+      {
+        "title": "API/Backend Development",
+        "description": "As a leading AngularJS development company offers high-end and scalable enterprise-level API development solutions given your specific business needs."
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Our specialist AngularJS development squad offers innovative and eye-grabbing web and mobile apps with specific UI/UX development solutions in line with the latest designing trends."
+      },
+      {
+        "title": "AngularJS Version Migration",
+        "description": "Migrate your existing website to AngularJS or upgrade to the latest version, leveraging the expertise of our experts. Hire AngularJS developers from Aranv to get a smooth and seamless migration."
+      },
+      {
+        "title": "Hire AngularJS Developers",
+        "description": "Hire Angular developers with years of cumulative experience on a monthly, hourly, or full-time arrangement. Stay updated with the latest versions and keep getting top-rated bespoke web apps for your business."
+      }
+    ]
+  },
+  "technologieNodejs": {
+    "title": "Node JS",
+    "techImage": "/images/angular-technology-lg.png",
+    "techSideImage": "/images/angularjs-tech-img.jpg",
+    "paragraphs": [
+      "Keep a step ahead of your competition with our robust andenterprise-level Node.js web application development solutions. Weare the pioneer in the US that delivers Node.js development specialization with the latest tools and technologies to cater to the specific enterprise needs of global clients across different segments.",
+      "With more than 7 years of domain expertise, we have earned a rapport in the Node.js web development services. Get the best out of this technology by hiring our expert team of NodeJS squad."
+    ],
+    "reverseLayout": false
+  },
+  "nodejsServices": {
+    "title": "Node JS App Development Services",
+    "services": [
+      {
+        "title": "Web Application Development",
+        "description": "Create the best and full-fledged web applications for the smooth functioning of your business and other systems leveraging the powerful NodeJS. We know what it takes to compete in this highly competitive global market."
+      },
+      {
+        "title": "Mobile App Service",
+        "description": "Our developers create lightweight, interactive, and user-friendly mobile applications for your business leveraging Express.js which is a super-fast, minimalist web framework for Node.js."
+      },
+      {
+        "title": "NodeJS Customization",
+        "description": "We also add tailor-made functionalities and make customization given your specific project and business requirement. Get the best of this technology using our expertise and years of experience."
+      },
+      {
+        "title": "Back-end Dashboard Development",
+        "description": "We develop a powerful backend and CMS systems in your existing system through which you can perform your data management. You can keep your web app updated and relevant for staying competitive."
+      },
+      {
+        "title": "NodeJS UI/UX Development",
+        "description": "Create the most interactive and attractive UI/UX solutions for your web applications to entice your customers and vendors. Make your business UI and UX offbeat thus attracting more customers and ROI."
+      },
+      {
+        "title": "App Maintenance & Support",
+        "description": "Get a contract system for support and maintenance to make sure your apps are compatible with the most advanced OS platforms and versions. This led us to deliver excellent pre and post-mobile app development support."
+      }
+    ]
+  }
+}
