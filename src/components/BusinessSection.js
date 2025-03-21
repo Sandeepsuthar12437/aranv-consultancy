@@ -1,49 +1,39 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const BusinessSections = ({ data }) => {
   return (
-    <section className="py-10 md:py-[89px]">
-      <div className="max-w-[1200px] mx-auto px-[15px] flex flex-col md:flex-row flex-wrap justify-center sm:justify-between">
-        {data.sections.map((section, index) => (
-          <div
-            key={index}
-            className={`max-w-full lg:max-w-[470px] my-10 ${section.marginBottom} ${section.marginTop}`}
-          >
-            {section.image && (
-              <div className="mb-12">
-                <Image
-                  src={section.image}
-                  alt={section.alt}
-                  className="w-full"
-                  width={469}
-                  height={330}
-                />
-              </div>
-            )}
-            <h2 className="text-2xl md:text-[40px] font-bold text-red-500 md:leading-[48px] mb-5">
-              {section.title}
-            </h2>
-            <p className="text-lg md:text-xl text-[#424242] mb-5">
-              {section.description}
-            </p>
-            <div className="relative inline-block cursor-pointer group">
-              <Link
-                href={section.link}
-                className="text-red-500 text-lg font-medium relative block"
-              >
+    <section className="py-[30px] md:pt-5 md:pb-10 xl:py-[89px]">
+      <div className="container">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center sm:justify-between">
+          {data.sections.map((section, index) => (
+            <div
+              key={index}
+              className={`max-w-full mt-0 md:my-10 md:max-w-[48%] lg:max-w-[470px] ${
+                section.marginTop
+              } ${index === 0 || index === 5 ? section.marginBottom : "mb-9"}`}
+            >
+              {section.image && (
+                <div className="mb-[25px] lg:mb-[30px] xl:mb-12 2xl:mb-[61px]">
+                  <img
+                    src={section.image}
+                    alt={section.alt}
+                    className="w-full"
+                  />
+                </div>
+              )}
+              <h2
+                dangerouslySetInnerHTML={{ __html: section.title }}
+                className="text-2xl font-bold text-black mb-[5px] leading-[normal] md:text-[28px] md:mb-2 lg:text-[35px] lg:mb-[13px] xl:text-[40px] xl:leading-[48px]"
+              />
+              <p className="text-[18px] leading-[22px] md:text-[20px] md:leading-[26px] text-[#424242] mb-[15px]">
+                {section.description}
+              </p>
+              <a href={section.link} className="red-link text-[18px]">
                 Learn More &gt;
-              </Link>
-              <Link
-                href="#"
-                className="absolute top-0 left-0 text-black text-lg font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
-              >
-                Learn More &gt;
-              </Link>
+              </a>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

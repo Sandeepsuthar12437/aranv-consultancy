@@ -1,7 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-const GridSection = ({ data, path }) => {
+const GridSection = ({ data }) => {
+  const path = usePathname();
+  console.log("data seo", data, path);
+
   return (
     <section className="pt-14 pb-20">
       <div className="max-w-[1200px] px-[15px] mx-auto">
@@ -20,18 +25,26 @@ const GridSection = ({ data, path }) => {
             >
               <div
                 className={`${
-                  path === "/mobile-app-development"
-                    ? "mb-6 w-12 h-12"
-                    : "bg-[#ffe9e8] rounded-full  mb-6  flex items-center h-[89px]  w-[89px] justify-center  "
-                } `}
+                  path === "/mobile-app-development" ||
+                  path === "/ecommerce-development"
+                    ? "my-6 w-12 h-12"
+                    : "bg-[#ffe9e8]  rounded-full w-[89px] h-[89px] my-6 flex items-center justify-center"
+                }`}
               >
                 <Image
                   src={item.iconSrc}
                   alt={item.title}
-                  width={52}
-                  height={46}
+                  width={300}
+                  height={200}
+                  className={`${
+                    path === "/mobile-app-development" ||
+                    path === "/ecommerce-development"
+                      ? "w-12 h-12"
+                      : "w-[40px] h-[40px]"
+                  }`}
                 />
               </div>
+
               <h3 className="text-[25px] font-bold leading-[30px] mb-3">
                 {item.title}
               </h3>

@@ -7,6 +7,7 @@ import HowWeDo from "@/components/HowWeDo";
 import OthreBanner from "@/components/OtherBanner";
 import { OurCulture } from "@/components/OurCulture";
 import SectionComponent from "@/components/SectionComponent";
+import TechnologiesSection from "@/components/TechnologiesSection";
 import { WhyUsSection } from "@/components/WhyUsSection";
 import data from "@data/data.json";
 
@@ -15,8 +16,8 @@ const page = () => {
     <>
       <Header data={data.Header} />
       <OthreBanner data={data.BusinessIntelligenceBanner} />
+      <TechnologiesSection data={data.technologiesCMSData} />
       <ContactSection data={data.contactdata} />
-
       <Footer data={data.footer} />
     </>
   );

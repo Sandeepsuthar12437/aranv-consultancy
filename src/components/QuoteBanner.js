@@ -7,7 +7,7 @@ const QuoteBanner = ({ data }) => {
         className={
           !data.handleCss
             ? "max-w-[1583px] mx-auto min-h-[500px] md:min-h-[600px] lg:min-h-[629px] relative my-6 md:my-10 lg:my-24 object-fill bg-cover"
-            : "bg-no-repeat bg-center bg-cover max-w-full h-[455px]"
+            : "bg-no-repeat bg-center bg-cover max-w-full min-h-[350px] md:min-h-[455px]"
         }
         style={{ backgroundImage: `url(${data.backgroundImage})` }}
       >

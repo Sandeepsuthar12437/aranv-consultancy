@@ -1,38 +1,33 @@
 "use client";
-import Banner from "@/components/Banner";
+import CaliberSection from "@/components/CaliberSection";
 import { ContactSection } from "@/components/ContactSection";
-import ExpertiseSection from "@/components/ExpertiseSection";
 import Footer from "@/components/Footer";
 import GridSection from "@/components/GridSection";
 import Header from "@/components/Header";
 import HireExperts from "@/components/HireExperts";
-import HowWeDo from "@/components/HowWeDo";
 import OthreBanner from "@/components/OtherBanner";
-import { OurCulture } from "@/components/OurCulture";
-import SectionComponent from "@/components/SectionComponent";
+import ProcessSection from "@/components/ProcessSection";
 import ServiceCard from "@/components/ServiceCard";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import TechnologiesSection from "@/components/TechnologiesSection";
-import { WhyUsSection } from "@/components/WhyUsSection";
+import WhyUs from "@/components/WhyUs";
 import data from "@data/data.json";
-import { usePathname } from "next/navigation";
 
 const page = () => {
-  const path = usePathname();
-
   return (
     <>
       <Header data={data.Header} />
       <OthreBanner data={data.mobileAppBanner} />
-      <TechnologiesSection data={data.mobileappbanner} path={path} />
-      <ServiceCard data={data.businessData} path={path} />
-      <TechnologiesSection data={data.iosData} path={path} />
-      <TechnologiesSection data={data.appData} path={path} />
+      <TechnologiesSection data={data.mobileappbanner} />
+      <ServiceCard data={data.businessData} />
+      <TechnologiesSection data={data.iosData} />
+      <TechnologiesSection data={data.appData} />
       <SocialMediaLinks data={data.socialMediaData} />
-
+      <GridSection data={data.specializedDevelopers} />
       <HireExperts data={data.hireExpert} />
-
-      <GridSection data={data.specializedDevelopers} path={path} />
+      <ProcessSection data={data.processSectionData} />
+      <WhyUs data={data.WhyUsData} />
+      <CaliberSection data={data.mobileCaliberData} />
       <ContactSection data={data.contactdata} />
       <Footer data={data.footer} />
     </>

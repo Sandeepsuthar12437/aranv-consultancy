@@ -1,22 +1,24 @@
+"use client";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-const TechnologiesSection = ({ data, path }) => {
+const TechnologiesSection = ({ data }) => {
+  const path = usePathname();
+
   return (
     <section>
-      <div className="w-full lg:relative">
+      <div className={`w-full lg:relative ${data.bgColor ? data.bgColor : ""}`}>
         <div
           className={`${
             path === "/mobile-app-development"
               ? "max-w-[1200px] mx-auto px-[15px] min-h-[680px] flex items-center"
-              : '"max-w-[1200px] mx-auto px-[15px] lg:h-[556px] text-center lg:text-left'
+              : "max-w-[1200px] mx-auto px-[15px] lg:h-[556px] text-center lg:text-left flex items-center "
           }`}
         >
           <div
             className={`${
-              data.reverseLayout
-                ? "lg:max-w-[600px] mr-auto  pb-8 lg:pb-0 lg:pr-5"
-                : "lg:max-w-[600px] ml-auto  pb-8 lg:pb-0 lg:pr-5"
-            }`}
+              data.reverseLayout ? "mr-auto" : " ml-auto "
+            } lg:max-w-[600px] pb-8 lg:pb-0 lg:pr-5`}
           >
             {data.techImage && (
               <div>
@@ -27,7 +29,7 @@ const TechnologiesSection = ({ data, path }) => {
                 />
               </div>
             )}
-            <h2 className="text-3xl md:text-[50px] font-bold my-4 md:my-10">
+            <h2 className="!text-[40px] md:text-[50px] font-bold my-4 md:my-10">
               {data.title}
             </h2>
             {data.paragraphs.map((text, index) => (
@@ -55,6 +57,16 @@ const TechnologiesSection = ({ data, path }) => {
                   </li>
                 ))}
               </ul>
+            )}
+            {data.button && (
+              <a
+                href={data.button.href}
+                className="max-w-[199px] mt-6 md:mt-8 lg:mt-12 text-red-500 h-[58px] px-[10px] py-[5px] leading-[46px] rounded-[30px] block hover:text-white overflow-hidden bg-[linear-gradient(to_right,_red_50%,_white_50%)] transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
+              >
+                <span className="block text-center text-[18px] font-semibold transition-all duration-600 ease-out">
+                  {data.button.text}&gt;
+                </span>
+              </a>
             )}
           </div>
         </div>

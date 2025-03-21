@@ -14,8 +14,6 @@ const ExpertiseSection = ({ data }) => {
               <img
                 src={data.cartImage}
                 alt="Cutting-edge Web Development Solutions"
-                title="Cutting-edge Web Development Solutions"
-                loading="lazy"
                 className="w-1/2"
               />
             </i>

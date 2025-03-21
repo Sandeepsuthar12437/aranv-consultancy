@@ -3,7 +3,7 @@
     "logoImage": "/images/logo.png",
     "logoLink": "/",
     "toggleNavImage": "/images/toggle-navmenu-img.png",
-    "contactLink": "../dist/contact.html",
+    "contactLink": "/contact",
     "getInTouchImage": "/images/get-in-touch.png",
     "navLinks": [
       { "label": "About", "url": "/about" },
@@ -14,14 +14,12 @@
     ],
     "socialLinks": [
       {
-        "url": "#",
-        "viewBox": "0 0 320 512",
-        "path": "M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+        "class": "fa fa-facebook fb-clr",
+        "url": "https://www.facebook.com/aranvconsultancy"
       },
       {
-        "url": "#",
-        "viewBox": "0 0 448 512",
-        "path": "M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+        "class": "fa fa-linkedin lnkd-clr",
+        "url": "https://www.linkedin.com/company/aranv-consultancy-digital-services-inc/"
       }
     ],
     "services": [
@@ -29,7 +27,7 @@
         "label": "Mobile App Development",
         "url": "/mobile-app-development"
       },
-      { "label": "E-Commerce", "url": "/ecommerce-development" },
+      { "label": "E-Commerce", "url": "../dist/ecommerce-development.html" },
       {
         "label": "Content Management",
         "url": "/content-management-system"
@@ -65,19 +63,19 @@
     },
     "stats": [
       {
-        "value": "30 +",
+        "value": "30",
         "label": "Projects",
         "bgColor": "bg-black",
         "textColor": "text-white"
       },
       {
-        "value": "100 +",
+        "value": "100",
         "label": "Clients",
-        "bgColor": "bg-red-500",
+        "bgColor": "bg-[#ef4036]",
         "textColor": "text-white"
       },
       {
-        "value": "100 +",
+        "value": "100",
         "label": "Employee",
         "bgColor": "",
         "textColor": "text-black"
@@ -171,6 +169,15 @@
     "backgroundImage": "/images/metting-arrange.jpg",
     "handleCss": true
   },
+  "quoteBannerData": {
+    "backgroundImage": "/images/cloud-solution-middle-banner.jpg",
+    "quote": {
+      "commaImage": "/images/comma-shape.png",
+      "text": "When you bring Aranv on board, it’s like having a best friend in the web and IT field. Too many companies trivialize their own work. We don’t do that. It’s not simply a matter of ‘You pay, we do a good job’. Of course, we do a good job. But it’s more than that.It’s about being really, really good",
+      "position": "George gates ,CEO Micro Group"
+    },
+    "handleCss": false
+  },
   "quoteBanner": {
     "backgroundImage": "/images/cloud-solution-middle-banner.jpg",
     "quote": {
@@ -180,61 +187,111 @@
     },
     "commaImage": "/images/comma-shape.png"
   },
-  "businessSection": {
+  "quoteSeoBanner": {
+    "backgroundImage": "/images/seo-banner-caption.jpg",
+    "quote": {
+      "text": "As a Digital <br/> Marketing Company, <br/>  always ace the <br/>  competition to  <br/>  target the bigger <br/>   audience",
+      "author": "George Gates",
+      "position": "CEO Micro Group"
+    },
+    "commaImage": "/images/comma-shape.png",
+    "handleCss": false
+  },
+  "ecommerseSection": {
     "sections": [
       {
-        "title": "We know your business well",
-        "description": "Having worked as Web Development Company and handled a range of projects of similar nature are conversant with your business needs well in the first place",
-        "image": "",
+        "title": "Custom Online Store",
+        "description": "Get a customized, engaging, and appealing custom online store. We give your business an edge. Now enjoy an online platform that helps you grow. We support eCommerce and also make you stand out in the marketplace. Our custom eCommerce solutions help nurture your business and help you evolve. We use all the tools you need for your business to succeed.",
+        "image": "/images/ecommerce-custom-online-stores.jpg",
         "alt": "",
         "link": "",
         "marginBottom": "",
         "marginTop": ""
       },
       {
-        "title": "Mobile Application",
-        "description": "Boost your business functioning with the most amazing mobile app and also connect with your customers better",
-        "image": "/images/mobile-home.jpg",
+        "title": "B2C Marketplaces",
+        "description": "Build a web platform that vendors use. You can showcase your business on the web platform. Build all processes including ordering and checkout. Get payment and delivery services. Enjoy cutting-edge technology. We help with machine learning. We enable marketplaces to leverage growth. Get personalized results. We offer custom eCommerce development services.",
+        "image": "/images/ecommerce-b2c-marketplaces.jpg",
         "alt": "mobile-home",
         "link": "/mobile-app-development",
         "marginBottom": "lg:mb-28",
         "marginTop": ""
       },
       {
+        "title": "AI-Powered Ecommerce",
+        "description": "We give tandem to AI and eCommerce app development. Our products and services are discoverable across channels. We aim at minimizing the importance of keyword-centric search. We build up an optimal purchase path for your customers. Our cutting-edge AI tools help to grow your business.",
+        "image": "/images/ecommerce-ai-powered.jpg",
+        "alt": "AI-Powered Ecommerce",
+        "link": "/ecommerce-development",
+        "marginBottom": "",
+        "marginTop": "lg:-mt-[18rem]"
+      },
+      {
+        "title": "B2B Trade Portals",
+        "description": "Get a premium B2B experience with us. We simplify product searches. Our experts offer price comparison and multi-channel adaptability. Elevate your outreach with our solutions. We enhance merchant penetration. Explore a B2B portal with us. We manage customer relationships. Our partners and distributors use a single platform. We help manage accounts and place orders.",
+        "image": "/images/ecommerce-b2b-trade.jpg",
+        "alt": "business-inte",
+        "link": "/Business-Intelligence",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      }
+    ]
+  },
+  "businessSection": {
+    "sections": [
+      {
+        "title": "We know <br/>your business well",
+        "description": "Having worked as Web Development Company and handled a range of projects of similar nature are conversant with your business needs well in the first place",
+        "image": "",
+        "alt": "",
+        "link": "",
+        "marginBottom": "mb-6 md:mb-10",
+        "marginTop": "mt-0 md:mt-8 lg:mt-[30px]"
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Boost your business functioning with the most amazing mobile app and also connect with your customers better",
+        "image": "/images/mobile-home.jpg",
+        "alt": "mobile-home",
+        "link": "../dist/mobile-app-development.html",
+        "marginBottom": "lg:mb-28",
+        "marginTop": "mt-0 xl:mt-10"
+      },
+      {
         "title": "E-Commerce",
         "description": "High-end e-commerce solutions with improved user experience can bring more sales, revenue and strengthen your bottom line.",
         "image": "/images/ecommerce.jpg",
         "alt": "ecommerce",
-        "link": "/ecommerce-development",
+        "link": "../dist/ecommerce-development.html",
         "marginBottom": "",
-        "marginTop": "lg:-mt-[18rem]"
+        "marginTop": "md:mt-[-170px] xl:mt-[-248px]"
       },
       {
         "title": "Business Intelligence",
         "description": "Transform your data into business insights using the best BI solutions for an improved and smooth functioning of business",
         "image": "/images/business-inte.jpg",
         "alt": "business-inte",
-        "link": "/Business-Intelligence",
+        "link": "../dist/Business-Intelligence.html",
         "marginBottom": "lg:mb-28",
-        "marginTop": ""
+        "marginTop": "lg:mt-8"
       },
       {
         "title": "Cloud",
         "description": "Make the best of your resources, technical apps and projects without incurring any additional costs.",
         "image": "/images/cloud-home.jpg",
         "alt": "cloud-home",
-        "link": "/cloud-computing-service",
+        "link": "../dist/cloud-computing-service.html",
         "marginBottom": "",
-        "marginTop": "lg:-mt-[18rem]"
+        "marginTop": "md:mt-[-170px] xl:mt-[-252px]"
       },
       {
         "title": "SEO and Digital Marketing",
         "description": "Expand your business to a wider market harnessing the updated SEO and digital marketing nuances and strategies",
         "image": "/images/seo-img.jpg",
         "alt": "seo-img",
-        "link": "/marketing-strategy-consultants",
-        "marginBottom": "lg:mb-28",
-        "marginTop": ""
+        "link": "../dist/marketing-strategy-consultants.html",
+        "marginBottom": "mb-2.5 md:mb-5",
+        "marginTop": "md:mt-7 xl:mt-7"
       }
     ]
   },
@@ -520,6 +577,52 @@
       "link": "/ecommerce-development"
     }
   },
+  "seoDomainData": {
+    "heading": "Some of the domains we work on",
+    "card": [
+      {
+        "image": "/images/website-seo-audit.jpg",
+        "alt": "website-seo-audit",
+        "title": "SEO",
+        "description": "Aranv has served many SEO clients in the past and offers optimally optimizing solutions to our clients to battle the dynamically-changing Google algorithm. Hire us to move up from where you are stuck already at."
+      },
+      {
+        "image": "/images/social-media-marketing.jpg",
+        "alt": "social-media-marketing",
+        "title": "Social Media Marketing",
+        "description": "Increase your number of customers, brand awareness, and website traffic with the help of the many Social Media Marketing services that our company provides. We provide efficient and optimum results to our clients."
+      },
+      {
+        "image": "/images/search-engine-marketing.jpg",
+        "alt": "Consumer Apps",
+        "title": "Search Engine Marketing",
+        "description": "Our team at Aranv combines both SEO and pay-per-click in our search engine marketing services to reach those who are searching for the products that you are selling. Hire us to connect with your clients quickly and more conveniently."
+      }
+    ]
+  },
+  "cmsDomainData": {
+    "heading": "We create CMS for",
+    "card": [
+      {
+        "image": "/images/document-management-system.jpg",
+        "alt": "Document Management System",
+        "title": "Document Management System",
+        "description": "Benefit from our secure and effective Electronic Document Storage services, we ensure quick retrieval & processing. Keep your records secure with Atharva’s State-of-Art facility. Keep your documents safe and handy with our online document management system. Access the most user-friendly DMS in the world!"
+      },
+      {
+        "image": "/images/enterprise-content-management-system.jpg",
+        "alt": "social-media-marketing",
+        "title": "Enterprise Content Management System",
+        "description": "Explore our custom enterprise-level Content Management Solution with robust and centralized platforms. We service all types of businesses and promise optimized control and visibility over our client’s data, content, SEO, and campaigns, scalable paper-to-digital solutions, records integration into Enterprise Content Management system."
+      },
+      {
+        "image": "/images/web-content-management-system.jpg",
+        "alt": "Web Content Management System",
+        "title": "Web Content Management System",
+        "description": "We help create and manage personalized website pages, optimized for various devices and conversions. You can depend on our developers for creating flexible themes and unique content structures. Get a secure and personalized experience. Maintain, control and reassemble content on a web page with a Web Content Management System."
+      }
+    ]
+  },
   "ecommersedata": {
     "card": [
       {
@@ -729,6 +832,16 @@
     "paragraphs": [
       "Aranv is one of the pioneers of React Native App Development Company with the capabilities to adopt innovative web and mobile technologies. A Facebook framework, react-native has the capabilities to deliver the most updated mobile application solutions for iOS and Android platforms.",
       "Being open-source, React Native features the building blocks which are reusable also for any more projects. It has a more agile approach for mobile app solutions to deliver the speed, appeal, and functionalities of a native app."
+    ],
+    "reverseLayout": true
+  },
+  "technologieEcommerse": {
+    "title": "Build an online presence with our eCommerce Development",
+
+    "techSideImage": "/images/ecommerce-solutions.jpg",
+    "paragraphs": [
+      "We are a mobile app development company helping businesses to build fully customized mobile apps with minimal time and cost investment. Aranv is the first choice whether you are looking to create an app for iOS, Android, Windows Mobile or to build a cross-platform app.",
+      "As smartphones and mobile devices have become ubiquitous, mobile app development has seen an upward spurt. Mobile technology has transformed everything around us. With the tremendous growth in smartphone users, every business is taking advantage of the technology that comes with these devices."
     ],
     "reverseLayout": true
   },
@@ -1151,6 +1264,25 @@
 
     "reverseLayout": false
   },
+  "seoIosData": {
+    "title": "Expanding businesses by being socially interactive",
+    "techSideImage": "/images/social-awareness.jpg",
+    "paragraphs": [
+      "Social awareness has become a key factor in expanding a business. Social lifestyle impacts one’s business a lot more than one could imagine. It is quite a leveraging element in business expansion strategies."
+    ],
+    "subtitle": "Social Media Marketing Comprises of: ",
+    "services": [
+      "Looking out for the target audience",
+      "Social Media Intelligence and Auditing",
+      "Reports, Research, and Analysis",
+      "Blog layout, optimization, and setup",
+      "Strategic Social Media Events",
+      "Content and Promotions",
+      "Implementation of social media on the website"
+    ],
+
+    "reverseLayout": false
+  },
   "appData": {
     "title": "Android App Development",
     "techSideImage": "/images/mobile-android-app-development-service.jpg",
@@ -1202,6 +1334,516 @@
         "title": "Cloud Apps",
         "iconSrc": "/images/google-cloud-mobile-devep-service.png",
         "description": "Simplify your functioning with extremely secure and cost-effective cloud apps. Not only boost your business functioning but also your employee productivity."
+      }
+    ]
+  },
+  "seoGridData": {
+    "title": "Full-Service Develpment from Specialized Developers",
+    "items": [
+      {
+        "title": "Website SEO Audit",
+        "description": "The quickest and most efficient way to understand the reasons why your website isn’t ranking any higher than it should be is through SEO auditing. We offer 100% transparent SEO auditing services and you will always be the first to know where your money goes.",
+        "iconSrc": "/images/store.png"
+      },
+      {
+        "title": "On-Page Optimization",
+        "description": "Our team of experts specializes in optimizing websites for SEO. Our SEO Company will take up the task to enhance your website’s ranking in the Google search engine to improve its ranking better than what it is currently. Hire us to get optimum results.",
+        "iconSrc": "/images/basket.png"
+      },
+      {
+        "title": "Off-Page Optimization",
+        "description": "Our team of professionals is trained in handling the SEO optimization of your website offline as well. Some of the techniques that our experts can handle efficiently are earning social media shares, disavowing links, building links, etc.",
+        "iconSrc": "/images/notebook.png"
+      },
+      {
+        "title": "Content Optimization",
+        "description": "Our SEO Company is also capable of optimizing your existing as well as future content to show real business results. We do not believe in re-inventing the same content but optimizing it. Our team of experts will take a nosedive into the kind of content.",
+        "iconSrc": "/images/store.png"
+      },
+      {
+        "title": "Link Building",
+        "description": "Our professionals can interlink your website efficiently and offer only contextual as well as quality link-building services. These are the natural forms of SEO. We can also be quite affordable and flexible to deliver the project under the deadline.",
+        "iconSrc": "/images/basket.png"
+      },
+      {
+        "title": "Google Analytics",
+        "description": "Our team of experts offers you the quintessential google analytics services that will precisely track your online performance. Our experts also provide many insights into our clients’ online marketing efforts and make sure that there are no errors in the process.",
+        "iconSrc": "/images/notebook.png"
+      }
+    ]
+  },
+  "cmsGridData": {
+    "title": "CMS Platforms ",
+    "items": [
+      {
+        "title": "WordPress",
+        "description": "At Aranv, we offer WordPress solutions, the popular CMS. Enjoy the best custom WordPress themes. They support small to medium and big businesses. Use easy to customize and awesome WordPress themes. The layouts are pre-designed and pre-built for the customer’s website. Use WordPress dashboard to manage website content and themes libraries.",
+        "iconSrc": "/images/wordpress-technology.png"
+      },
+      {
+        "title": "Drupal",
+        "description": "Enjoy Drupal to drive web content. Create a multichannel and personalized experience. Get business to connect with customers and website visitors. Leverage the potential of Drupal. Create compelling digital experiences. Deliver tangible business results. Our Drupal developers are ready to create applications suiting your business needs.",
+        "iconSrc": "/images/drupal-technology.png"
+      },
+      {
+        "title": "Joomla",
+        "description": "Enjoy our custom CMS development solutions. We help power your business. Joomla Content Management solutions provide data reporting. We offer integrated eCommerce systems and inventory control. We offer custom product catalogs. Our developers provide custom tools and storage, blogs and banners, RSS feeds, language manager, and navigation management.",
+        "iconSrc": "/images/joomla-technology.png"
+      },
+      {
+        "title": "WooCommerce",
+        "description": "Enjoy WooCommerce and watch out for the growth. Enjoy extensions and free themes. We enable various features to WooCommerce. Enjoy simple store set-up, flexible and secure payments. We provide easy-to-manage orders with a modern and neat interface with WooCommerce. We provide a mobile app for your e-store for iOS and Android.",
+        "iconSrc": "/images/woo-commerce-technology-lg.png"
+      },
+      {
+        "title": "Shopify",
+        "description": "Launch an eCommerce store with our Shopify platforms. They are ready to sell. Bring an array of versatile features. It enables you to set up a successful online store fast. We help you get going. Shopify enables high conversions. Customize the storefront with templates’ intuitive settings. Get full access to the HTML and CSS. Enable mobile commerce shopping cart.",
+        "iconSrc": "/images/shopify-technology.png"
+      },
+      {
+        "title": "Magento",
+        "description": "Give your eCommerce website development process the winning advantage. Invest in Magento CMS platforms and development services. Magento has opened new opportunities for online stores. We deliver better performance, more features, and higher scalability. Discover the possibilities with the latest version of the platform. Give great shopping experiences to the customers.",
+        "iconSrc": "/images/magento-technology.png"
+      }
+    ]
+  },
+  "mobileCaliberData": {
+    "title": "Are you looking for someone of this caliber? You can rely on us for all your mobile app-related needs!",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
+  "seoCaliberData": {
+    "title": "We are all ears to hear about the innovative <br/> applications you have in mind and will always try to <br/> deliver something better",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
+  "cmsCaliberData": {
+    "title": "Do you have any specific CMS in mind? <br/> If not, we can help you pick and implement the most <br/> suitable one.",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
+  "processSectionData": [
+    {
+      "id": "01",
+      "image": "/images/bulb.png",
+      "title": "Consulting and App Strategy",
+      "description": "Our Application Strategy is focused on bringing an alignment between stakeholders and the goals of the application, choice of technologies, and business needs. We evaluate frameworks and mobile platforms to choose suitable options. We also conceptualize the life cycle of the mobile app. The outcome of this cycle is an Application strategy with a roadmap report."
+    },
+    {
+      "id": "02",
+      "image": "/images/heart.png",
+      "title": "UX/UI Design",
+      "description": "Mobile apps need a strong creative design for an amazing UI/UX experience. Our team has developed the dexterity to build such solutions. We have a dedicated UI / UX team with consumer, business & enterprise attention. Our team works on emerging mobility technologies and we build solutions that accelerate time to market."
+    },
+    {
+      "id": "03",
+      "image": "/images/code-development.png",
+      "title": "Coding & Development",
+      "description": "With mobile application development services, we provide end-to-end mobile app designing, testing services, and development services across multiple platforms. Our skilled developers have years of experience in implementing mobile apps using mobile implementation methodology that leads to mobile app deployments."
+    },
+    {
+      "id": "04",
+      "image": "/images/rocket.png",
+      "title": "Testing and Delivery",
+      "description": "We perform end-to-end testing and delivery of the mobile apps. We carry out manual and automated testing, as well as compatibility testing. We test the server performance and on-device performance along with security testing and cross-functional testing to make sure we deliver the perfect mobile app."
+    }
+  ],
+
+  "WhyUsData": {
+    "content": [
+      {
+        "title": "For Unsurpassed Experience",
+        "description": "Aranv has excellent specially built for Mobility with experts in mobile technology. We have hands-on experience in developing almost every kind of mobile application."
+      },
+      {
+        "title": "Topmost iOS Developers",
+        "description": "Our highly motivated and technically strong team of designers, developers, and testers have deep knowledge of iOS development environment along with SDK and APIs."
+      },
+      {
+        "title": "In House Code",
+        "description": "Our expert developers create professional and superior in-house software that allows them to build visually stunning and superior applications."
+      },
+      {
+        "title": "Custom Agile Development",
+        "description": "We work on the latest mobile technology stack and produce enterprise-grade as well as consumer apps for diverse domains. Our customized services ensure higher satisfaction."
+      },
+      {
+        "title": "Complete App Store Deployment",
+        "description": "Our team has experience in developing visually attractive, fully functional, and efficient apps for iOS, Android, and others. This makes Aranv a complete app development and deployment company. We have research-driven market-oriented experts who add value to your product."
+      },
+      {
+        "title": "Superior Maintenance & Support services",
+        "description": "We offer software augmentation and maintenance services by fixing glitches, streamlining and refinement services. Get superior support from the team."
+      }
+    ],
+    "src": "/images/bolding-work.jpg",
+    "alt": ""
+  },
+  "WhyUsSeoData": {
+    "content": [
+      {
+        "title": "Thoughtful Strategy",
+        "description": "Aranv has excellent specially built for Mobility with experts in mobile technology. We have hands-on experience in developing almost every kind of mobile application."
+      },
+      {
+        "title": "Professional Designers",
+        "description": "Our highly motivated and technically strong team of designers, developers, and testers have deep knowledge of iOS development environment along with SDK and APIs."
+      },
+      {
+        "title": "Improved Organic Traffic",
+        "description": "Our expert developers create professional and superior in-house software that allows them to build visually stunning and superior applications."
+      },
+      {
+        "title": "Reach newer horizons of success",
+        "description": "We work on the latest mobile technology stack and produce enterprise-grade as well as consumer apps for diverse domains. Our customized services ensure higher satisfaction."
+      },
+      {
+        "title": "Best Results",
+        "description": "Our team has experience in developing visually attractive, fully functional, and efficient apps for iOS, Android, and others. This makes Aranv a complete app development and deployment company. We have research-driven market-oriented experts who add value to your product."
+      },
+      {
+        "title": "Support and Maintenance",
+        "description": "We offer software augmentation and maintenance services by fixing glitches, streamlining and refinement services. Get superior support from the team."
+      }
+    ],
+    "src": "/images/bolding-work.jpg",
+    "alt": ""
+  },
+
+  "eCommerceWebsiteData": {
+    "title": "Full-Service Develpment from Specialized Developers",
+    "items": [
+      {
+        "title": "WordPress",
+        "iconSrc": "/images/wordpress-technology.png",
+        "description": "At Aranv, we offer WordPress solutions, the popular CMS. Enjoy the best custom WordPress themes. They support small to medium and big businesses. Use easy to customize and awesome WordPress themes. The layouts are pre-designed and pre-built for the customer’s website. Use WordPress dashboard to manage website content and themes libraries."
+      },
+      {
+        "title": "Drupal",
+        "iconSrc": "/images/drupal-technology.png",
+        "description": "Enjoy Drupal to drive web content. Create a multichannel and personalized experience. Get business to connect with customers and website visitors. Leverage the potential of Drupal. Create compelling digital experiences. Deliver tangible business results. Our Drupal developers are ready to create applications suiting your business needs."
+      },
+      {
+        "title": "Joomla",
+        "iconSrc": "/images/hybrid-app-service.png",
+        "description": "Enjoy our custom CMS development solutions. We help power your business. Joomla Content Management solutions provide data reporting. We offer integrated eCommerce systems and inventory control. We offer custom product catalogs. Our developers provide custom tools and storage, blogs and banners, RSS feeds, language manager, and navigation management."
+      },
+      {
+        "title": "WooCommerce",
+        "iconSrc": "/images/lonic-service.png",
+        "description": "Enjoy WooCommerce and watch out for the growth. Enjoy extensions and free themes. We enable various features to WooCommerce. Enjoy simple store set-up, flexible and secure payments. We provide easy-to-manage orders with a modern and neat interface with WooCommerce. We provide a mobile app for your e-store for iOS and Android."
+      },
+      {
+        "title": "Shopify",
+        "iconSrc": "/images/reactjs-mobile-service.png",
+        "description": "Launch an eCommerce store with our Shopify platforms. They are ready to sell. Bring an array of versatile features. It enables you to set up a successful online store fast. We help you get going. Shopify enables high conversions. Customize the storefront with templates’ intuitive settings. Get full access to the HTML and CSS. Enable mobile commerce shopping cart."
+      },
+      {
+        "title": "Magento",
+        "iconSrc": "/images/google-cloud-mobile-devep-service.png",
+        "description": "Give your eCommerce website development process the winning advantage. Invest in Magento CMS platforms and development services. Magento has opened new opportunities for online stores. We deliver better performance, more features, and higher scalability. Discover the possibilities with the latest version of the platform. Give great shopping experiences to the customers."
+      }
+    ]
+  },
+  "ecommerseServiceData": {
+    "heading": "Fully-Functional Custom Systems",
+    "content": [
+      {
+        "title": "Dedicated ERP System",
+        "description": "Aranv helps you develop a full-fledged ERP system from scratch. We offer ideal ERP strategies to run your eCommerce processes. Our ERP solutions improve your productivity in all spheres. Our scalable ERP development services offer customization. Complete your ERP system within a required time frame without any complexities.",
+        "image": "/images/store.png"
+      },
+      {
+        "title": "Marketplace Development",
+        "description": "Create an online marketplace where buyers can find various sellers/vendors in one place. We develop multi-vendor marketplace solutions. Use this solution to develop an online marketplace to acquire wider market pie with increased sales. Develop a long-term association between sellers and buyers and provide your customers excellent shopping experience.",
+        "image": "/images/basket.png"
+      },
+      {
+        "title": "Module and Plugin",
+        "description": "The evolving technologies are changing the e-commerce industry. Enterprises are opting to develop and deploy custom modules and extensions to push their e-stores to the next level. We are a leading company offering e-commerce services all over the globe. We deliver next-generation e-commerce, modules, and plugins development services.",
+        "image": "/images/notebook.png"
+      },
+      {
+        "title": "Storefront Design",
+        "description": "Designers at Aranv create great designs. We focus on innovation, quality & speed. Our eCommerce website development solutions are the best. Our developers use cutting-edge technology. This brings the best results to grow clients' businesses. We build payment gateways and portals. Also, get POS systems and e-wallets services.",
+        "image": "/images/erp-system.png"
+      },
+      {
+        "title": "Custom Shopping Cart",
+        "description": "We help build your eCommerce shopping cart. We help to sell online. We offer attractive designs with easy payment options. Our security compliance is good. We help develop scalable and robust online stores. Avail of our services to help your online store. We help you impress your target audience.",
+        "image": "/images/store.png"
+      },
+      {
+        "title": "CMS Development",
+        "description": "Aranv, an eCommerce Development Agency, offers cost-effective services. We offer custom content management solutions. They are scalable, business-oriented, and SEO-friendly. We design superior eCommerce development services; elevate and enhance your business. We integrate with your business's existing CMS and provide Enterprise CMS development systems.",
+        "image": "/images/basket.png"
+      },
+      {
+        "title": "Dedicated ERP System",
+        "description": "Aranv helps you develop a full-fledged ERP system from scratch. We offer ideal ERP strategies to run your eCommerce processes. Our ERP solutions improve your productivity in all spheres. Our scalable ERP development services offer customization. Complete your ERP system within a required time frame without any complexities.",
+        "image": "/images/magento-technology.png"
+      },
+      {
+        "title": "Marketplace Development",
+        "description": "Create an online marketplace where buyers can find various sellers/vendors in one place. We develop multi-vendor marketplace solutions. Use this solution to develop an online marketplace to acquire wider market pie with increased sales. Develop a long-term association between sellers and buyers and provide your customers excellent shopping experience.",
+        "image": "/images/erp-system.png"
+      },
+      {
+        "title": "Module and Plugin",
+        "description": "The evolving technologies are changing the e-commerce industry. Enterprises are opting to develop and deploy custom modules and extensions to push their e-stores to the next level. We are a leading company offering e-commerce services all over the globe. We deliver next-generation e-commerce, modules, and plugins development services.",
+        "image": "/images/notebook.png"
+      }
+    ]
+  },
+  "cloudServiceData": {
+    "heading": "Cloud Computing Solutions",
+    "content": [
+      {
+        "title": "Management and Optimization",
+        "image": "/images/store.png",
+        "description": "We can help you manage and optimize these services in an efficient way that is both effective and convenient for you to utilize. There needs to be a transparent strategy that companies need to prioritize. This can help in organizing the services better. That is something that we can provide."
+      },
+      {
+        "title": "Storage",
+        "image": "/images/basket.png",
+        "description": "We provide some of the best cloud storage services available in the market. We have an expert team in handling the storage services of the business. You wouldn't only save money by hiring us but also be able to access files from anywhere and perform backups even."
+      },
+      {
+        "title": "Strategy",
+        "image": "/images/notebook.png",
+        "description": "Establish an efficient and effective cloud strategy that obligates your company's innovative services. It can be an arduous task to follow. We provide excellent enterprise strategy and tactics that will help you slingshot your company to new greater heights."
+      },
+      {
+        "title": "Migration",
+        "image": "/images/erp-system.png",
+        "description": "We can help your brick and mortar business to transform into a digital spectacle with our migration services. With the help of the perfect strategy, flowchart, and workflow environment, we help you identify the best approach your company requires when it comes to migrating to the cloud."
+      },
+      {
+        "title": "Strategy",
+        "image": "/images/store.png",
+        "description": "Establish an efficient and effective cloud strategy that obligates your company's innovative services. It can be an arduous task to follow. We provide excellent enterprise strategy and tactics that will help you slingshot your company to new greater heights."
+      },
+      {
+        "title": "Migration",
+        "image": "/images/basket.png",
+        "description": "We can help your brick and mortar business to transform into a digital spectacle with our migration services. With the help of the perfect strategy, flowchart, and workflow environment, we help you identify the best approach your company requires when it comes to migrating to the cloud."
+      },
+      {
+        "title": "Management and Optimization",
+        "image": "/images/magento-technology.png",
+        "description": "We can help you manage and optimize these services in an efficient way that is both effective and convenient for you to utilize. There needs to be a transparent strategy that companies need to prioritize. This can help in organizing the services better. That is something that we can provide."
+      },
+      {
+        "title": "Marketplace Development",
+        "image": "/images/erp-system.png",
+        "description": "Create an online marketplace where buyers can find various sellers/vendors in one place. We develop multi-vendor marketplace solutions. Use this solution to develop an online marketplace to acquire wider market pie with increased sales. Develop a long-term association between sellers and buyers and provide your customers excellent shopping experience."
+      },
+      {
+        "title": "Module and Plugin",
+        "image": "/images/notebook.png",
+        "description": "The evolving technologies are changing the e-commerce industry. Enterprises are opting to develop and deploy custom modules and extensions to push their e-stores to the next level. We are a leading company offering e-commerce services all over the globe. We deliver next-generation e-commerce, modules, and plugins development services."
+      }
+    ]
+  },
+  "odooThemedata": {
+    "title": "Boost your Business with Multi-purpose",
+    "highlight": "Odoo Themes",
+    "description1": "Looking for a Futuristic and Customizable theme? We create a responsive and attractive theme for your eCommerce. If you are looking for e-store development then get Odoo. It is a suite of open-source business apps that covers all your needs. We offer eCommerce, CRM, accounting, inventory, point of sale, and project management.",
+    "description2": "Aranv assesses your eCommerce needs for immediate solutions. Our experts understand Odoo like no other. You can rely on us to create innovative and attractive eCommerce stores. We use a customer-centric approach using the best platforms.",
+    "buttonText": "Get Started >",
+    "buttonLink": "/contact",
+    "backgroundImage": "/images/multipurpose-odoo-themes-caption.png"
+  },
+  "technologiesCloudData": {
+    "title": "Establish Efficiency With Cloud Computing Solutions",
+
+    "techSideImage": "/images/cloud-solution-cover-image.jpg",
+    "paragraphs": [
+      "There are many benefits to profit from when it comes to this solution. It helps you in establishing a virtual office to make your organization much more flexible. You can access your organization anytime and anywhere. As modern technology is progressing, an increase in the number of web-enabled devices can help you access your data conveniently."
+    ],
+    "reverseLayout": true
+  },
+  "technologiesSeoData": {
+    "title": "Develop better relationships with your clients and become more popular",
+
+    "techSideImage": "/images/better-relationship.jpg",
+    "paragraphs": [
+      "Every digital marketing company’s success relies on their relationship with their clients and for how long they are credible to them. Reliability and fidelity are two of the most important elements while building a healthy relationship with your client. By doing this, your company will ascend to newer levels of recognition and popularity."
+    ],
+    "reverseLayout": true
+  },
+  "technologiesCMSData": {
+    "title": "Content Management System catering to your business needs",
+
+    "techSideImage": "/images/cms-streamline.jpg",
+    "paragraphs": [
+      "Benefit from our robust and cutting-edge Enterprise CMS development system and Open-Source Content Management Solution. We customize your content system and implement it as per the client’s existing workflows. Our scalable and easy-to-integrate solutions promise flexibility. ",
+      "Our team optimizes workflow by implementing customizable features, plugins, modules, and extensions within existing CMS platforms like Drupal, WordPress, Joomla, and Sitecore. Aranv is recognized as the foremost CMS Development Company worldwide."
+    ],
+
+    "reverseLayout": true
+  },
+  "technologiesSeoMarketingData": {
+    "title": "A successful digital marketing company plans out its every move",
+
+    "techSideImage": "/images/research-strategy.jpg",
+    "paragraphs": [
+      "Research and strategy will take your company to new realms of success. However, you should ensure that your strategy is plotted out evidently and carefully. Any precarious tactics or bland research can lead to your company’s eventual demise."
+    ],
+    "reverseLayout": true
+  },
+  "technologiesCmsData": {
+    "title": "CMS for E-commerce",
+
+    "techSideImage": "images/cms-ecommerce.jpg",
+    "paragraphs": [
+      "Benefit from the robust growth of eCommerce. We have expertise in both SaaS Content Management System and open-source CMS. Utilize from hosted CMS including BigCommerce, Shopify, Squarespace, and others. Our experts work on self-hosted, open-source software including WooCommerce and Magento.",
+      "Choose the best platform as per your business’s needs. We help you choose the CMS that builds a firm foundation for your eCommerce store. Manage updates or set up data storage with SaaS CMS. Also, enjoy our 24X7 customer support."
+    ],
+    "bgColor": "bg-black",
+    "button": {
+      "text": "Get Started",
+      "href": "/"
+    },
+    "reverseLayout": true
+  },
+  "technologiesBIData": {
+    "title": "Get better insights for improved CX",
+
+    "techSideImage": "/images/business-decision-cx.jpg",
+    "paragraphs": [
+      "Every business needs good CX. Thus, Aranv uses models to analyze client data. Our team has superior Business Intelligence Solutions. So, you get better results through data analysis. We build tools for customer-driven companies. You can trust us for better business decisions. We analyze your business information to provide results. Aranv understands how to plan business information projects. This helps our clients in making the right business decisions!"
+    ],
+
+    "reverseLayout": true
+  },
+  "technologiesAranvCmsData": {
+    "title": "Custom CMS Development",
+
+    "techSideImage": "/images/custom-cms-development.jpg",
+    "paragraphs": [
+      "Aranv is the topmost CMS development company that offers a customizable and flexible Content Management System with integrated modules, features, themes, extensions, and plugins. Our content solution enables you to manage and access your content, information, and assets. Our rapid development process and ingenious features like SEO friendliness and spontaneous user interface make the CMS web development process much more reliable. Our services enhance the existing solutions and also create custom-tailored solutions. We promise effective workflow and content management."
+    ],
+    "button": {
+      "text": "Get Started",
+      "href": "/"
+    },
+    "subtitle": "What we Do ",
+    "services": [
+      "Easy deployment",
+      "Content Support and Maintenance",
+      "Plugin development",
+      "CMS Application Development",
+      "Content Migrations",
+      "Custom Scalability",
+      "Integrations"
+    ],
+
+    "reverseLayout": false
+  },
+  "cloudSection": {
+    "sections": [
+      {
+        "title": "Switch to Cloud",
+        "description": "Automate your company and switch to the cloud. It is a smart move to play in the business industry nowadays. Switching to this system can catalyze your enterprise solutions a lot and keep your clients happy.",
+        "image": "/images/migrate-grow.jpg",
+        "alt": "",
+        "link": "",
+        "marginBottom": "",
+        "marginTop": ""
+      },
+      {
+        "title": "Smart Digitization Tool",
+        "description": "The cloud is capable of turning hours of work into minutes. It is a smart tool just like many web-enabled devices. It provides smart solutions to your clients and also attracts more of them.",
+        "image": "/images/stand-out.jpg",
+        "alt": "mobile-home",
+        "link": "/mobile-app-development",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      },
+      {
+        "title": "Revolutionizing Cloud Strategies",
+        "description": "Implement multiple cloud strategies in a business to expand its roots into the business industry. These strategies are quite handy and show immense progress.",
+        "image": "/images/modernize.jpg",
+        "alt": "AI-Powered Ecommerce",
+        "link": "/ecommerce-development",
+        "marginBottom": "",
+        "marginTop": "lg:-mt-[18rem]"
+      },
+      {
+        "title": "Discover unique ideas",
+        "description": "With this system up there, you can come up with unique and innovative enterprise strategies that can take your company to a whole new level. Dynamically changing ideas are something that can migrate your company to levels unknown.",
+        "image": "/images/innovative-thrive.jpg",
+        "alt": "business-inte",
+        "link": "/Business-Intelligence",
+        "marginBottom": "lg:mb-28",
+        "marginTop": ""
+      }
+    ]
+  },
+  "whyUsCloudData": {
+    "heading": "Why Choose Us?",
+    "bgImage": "/images/cloud-solution-why-us-cover-img.jpg",
+    "points": [
+      {
+        "title": " Unparalleled Service",
+        "description": "Most of our time is spent understanding our clients' needs and requirements. This helps suggest the appropriate solutions and strategies."
+      },
+      {
+        "title": "Team of Experts",
+        "description": " Our team comprises a bunch of highly skilled professionals that can help in optimizing and developing your site into a spectacle."
+      },
+      {
+        "title": "Business Benefits",
+        "description": "Our organization offers multiple business benefits that can benchmark your company as one of the best available in the market."
+      }
+    ]
+  },
+  "cloudtechdata": {
+    "title": "Expanding Businesses with some of the Best Service Providers On Our Side",
+    "items": [
+      {
+        "title": "Amazon Web Services",
+        "iconSrc": "/images/desktop-mobile-full-service.png",
+        "description": "Some of the best services you can get is from the best companies in business i.e. AWS. If you are looking for content delivery, computing power, better flexibility and scalability, and much more. We can offer that by collaborating with AWS."
+      },
+      {
+        "title": "Heroku",
+        "iconSrc": "/images/pwa-full-service.png",
+        "description": "Heroku is one of the absolute ultimates that is killing it in the business industries. We provide many cloud services through the Heroku platform. This can help your site in reaching new levels of management and optimization."
+      },
+      {
+        "title": "Digital Ocean",
+        "iconSrc": "/images/hybrid-app-service.png",
+        "description": "We provide cost-effective cloud computing in collaboration with Digital Ocean to prioritize the needs and desires of our clients. Just how cutting back on costs is important, offering a sharp and chiseled website is important as well. We do it with the help of Digital Ocean."
+      },
+      {
+        "title": "Rackspace",
+        "iconSrc": "/images/lonic-service.png",
+        "description": "With the help of Rackspace cloud computing solutions, we offer you effective, secure, virtual, and scalable solutions. It helps your company establish a stronghold in the market. Not just that, these solutions are quite affordable and budget-friendly as well."
+      },
+      {
+        "title": "React Native",
+        "iconSrc": "/images/reactjs-mobile-service.png",
+        "description": "With the best-in-class JavaScript library, we create react native apps combining the best parts of native development with React."
       }
     ]
   }

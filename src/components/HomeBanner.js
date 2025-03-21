@@ -7,25 +7,25 @@ const HomeBanner = ({ data }) => {
 
   return (
     <div
-      className="bg-center bg-cover bg-no-repeat min-h-[400px] xl:min-h-[730px] relative w-full overflow-hidden flex items-center pt-10"
+      className="home bg-center bg-cover bg-no-repeat min-h-[250px] relative w-full overflow-hidden flex items-center py-[30px] md:pb-0 lg:pt-6 xl:pt-10 md:min-h-[370px] lg:min-h-[400px] xl:min-h-[470px] 2xl:min-h-[730px]"
       style={{ backgroundImage: `url(${data?.backgroundImage || ""})` }}
     >
-      <div className="max-w-[1200px] w-full px-[15px] mx-auto">
-        <div className="max-w-[400px] lg:max-w-[600px] xl:max-w-[850px] mt-0 xl:mt-[60px] mx-auto md:mx-0 text-center md:text-left">
-          <h1 className="text-[33px] lg:text-5xl xl:text-7xl font-bold mb-4 leading-9 xl:leading-[82px] text-black -tracking-[2px]">
+      <div className="container">
+        <div className="max-w-full mt-0 mx-auto text-center md:mx-0 md:text-left md:max-w-[60%] lg:max-w-[70%] 2xl:max-w-[850px] 2xl:mt-[60px]">
+          <h1 className="text-[32px] leading-[normal] mb-2.5 font-bold text-black tracking-[-2.4px] md:text-[40px] md:leading-[46px] md:mb-2 lg:mb-[15px] lg:text-[48px] lg:leading-[58px] xl:text-[55px] xl:leading-[63px] 2xl:text-[72px] 2xl:leading-[82px] 2xl:mb-[17px]">
             {data.heading}
           </h1>
-          <div className="text-xl md:text-[26px] text-black max-w-[442px] w-full mb-5 xl:mb-10">
+          <div className="text-xl text-black max-w-[442px] w-full mb-5 tracking-normal md:mb-[25px] md:text-[26px] md:leading-[normal] lg:mb-5 2xl:mb-[50px]">
             {data.subHeading}
           </div>
-          <div className="text-white text-lg max-w-[198px] mx-auto md:mx-0 w-full bg-red-500 hover:bg-red-700 transition duration-500 text-center px-1.5 py-3.5 my-3.5 rounded-full">
+          <div className="button-banner">
             <Link href={data.ctaLink} className="btn btn-lets-talk">
               {data.ctaText}
             </Link>
           </div>
         </div>
       </div>
-      <div className="bg-no-repeat max-w-[380px] xl:max-w-[749px] mr-[3%] w-full absolute top-auto bottom-0 right-0 hidden md:block">
+      <div className="bg-no-repeat max-w-[380px] w-full absolute top-auto bottom-0 right-0 hidden md:block md:max-w-[355px] lg:max-w-[385px] xl:mr-[3%] xl:max-w-[450px] 2xl:max-w-[711px]">
         <img
           src={"/images/home-banner-img.png"}
           title={data?.bannerImageTitle}
