@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 const GridSection = ({ data }) => {
   const path = usePathname();
-  console.log("data seo", data, path);
 
   return (
     <section className="pt-14 pb-20">

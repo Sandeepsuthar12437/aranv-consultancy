@@ -5,8 +5,9 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import SplideWrapper from "./SplideWrapper";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
-export default function ServiceSlide({ data }) {
+export default function OdooThemeSlide({ data }) {
   const splideRef = useRef(null);
 
   const handleNext = () => {
@@ -65,31 +66,21 @@ export default function ServiceSlide({ data }) {
         <SplideWrapper options={splideOptions} ref={splideRef}>
           {data.content.map((service, index) => (
             <SplideSlide key={index}>
-              <div className="w-full md:w-[400px] lg:w-full h-auto sm:h-[450px] md:h-[480px] lg:h-[489px] p-6 sm:p-8 md:p-10 lg:p-[43px] shadow-lg mb-[29px] bg-white">
-                <div
-                  className={`${
-                    path === "/cloud-computing-service"
-                      ? "flex items-center justify-center w-[89px] h-[89px]  mb-6"
-                      : "bg-[#ffe9e8] flex items-center justify-center w-[89px] h-[89px] rounded-full mb-6"
-                  }`}
+              <div className="w-full text-center md:w-[400px] lg:ml-3 lg:w-full h-auto sm:h-[450px] md:h-[480px] lg:h-[489px] mb-[29px]">
+                <img
+                  src={service.image}
+                  alt="Neon Theme Preview"
+                  className="shadow-[5px_0_68px_rgba(0,0,0,0.16)] mb-10"
+                />
+                <h3 className="text-[25px] font-bold leading-[30px] mb-3">
+                  {service.title}
+                </h3>
+                <Link
+                  href="#"
+                  className="mt-[10px] pr-3 text-red-500 after:content-['>'] after:text-red-500 after:pl-2"
                 >
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                {service.title && (
-                  <h3 className="text-[25px] font-bold leading-[30px] mb-3">
-                    {service.title}
-                  </h3>
-                )}
-                {service.description && (
-                  <p className="text-[17px] leading-[26px] text-[#424242]">
-                    {service.description}
-                  </p>
-                )}
+                  Live Preview
+                </Link>
               </div>
             </SplideSlide>
           ))}

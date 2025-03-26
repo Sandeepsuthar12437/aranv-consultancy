@@ -8,7 +8,6 @@ const WhyUs = ({ data }) => {
   const toggleDescription = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   return (
     <section>
       <div className="w-full lg:relative bg-black">
@@ -24,14 +23,26 @@ const WhyUs = ({ data }) => {
               {data.content.map((item, index) => (
                 <div key={index} className="border-b-2 border-white">
                   <h3
-                    className="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative cursor-pointer"
+                    className={`text-[25px] font-bold pr-[50px] pt-[20px] pb-[23px] relative cursor-pointer relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:w-[14px] after:h-[9px] after:bg-no-repeat  ${
+                      activeIndex === index
+                        ? "text-[#ef4036] after:rotate-180 after:bg-[url('/images/accordion-dropdown-hover-arrow.png')]"
+                        : "text-white after:bg-[url('/images/contact-dropdown-arrow.png')]"
+                    }`}
                     onClick={() => toggleDescription(index)}
                   >
                     {item.title}
                   </h3>
-                  {activeIndex === index && (
-                    <p className="text-white">{item.description}</p>
-                  )}
+                  <div
+                    className={`grid transition-all duration-500 ease-in-out overflow-hidden ${
+                      activeIndex === index
+                        ? "grid-rows-[1fr] opacity-100 "
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <p className="overflow-hidden text-white mb-[23px]">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

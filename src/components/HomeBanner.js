@@ -2,12 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 const HomeBanner = ({ data }) => {
-  console.log("data", data);
-  console.log("++++", data.backgroundImage);
-
   return (
     <div
-      className="home bg-center bg-cover bg-no-repeat min-h-[250px] relative w-full overflow-hidden flex items-center py-[30px] md:pb-0 lg:pt-6 xl:pt-10 md:min-h-[370px] lg:min-h-[400px] xl:min-h-[470px] 2xl:min-h-[730px]"
+      className="home  bg-center bg-cover bg-no-repeat min-h-[250px] relative w-full overflow-hidden flex items-center py-[30px] md:pb-0 lg:pt-6 xl:pt-10 md:min-h-[370px] lg:min-h-[400px] xl:min-h-[470px] 2xl:min-h-[730px]"
       style={{ backgroundImage: `url(${data?.backgroundImage || ""})` }}
     >
       <div className="container">

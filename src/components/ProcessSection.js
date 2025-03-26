@@ -21,9 +21,26 @@ const ProcessSection = ({ data }) => {
                   : ""
               }`}
             >
-              <i>
-                <img src={item.image} alt="" className="mb-[30px]" />
-              </i>
+              <div className="relative">
+                <i>
+                  <img src={item.image} alt="" className="mb-[30px]" />
+                </i>
+                <span
+                  className={`absolute text-red-500 text-white text-lg ${
+                    index === 0
+                      ? "top-[42px] left-[37px]"
+                      : index === 1
+                      ? "top-[16px] left-[22px]"
+                      : index === 2
+                      ? "top-[21px] left-[28px]"
+                      : index === 3
+                      ? "top-[39px] left-[17px]"
+                      : "" // Default empty case to avoid errors
+                  }`}
+                >
+                  0{index + 1}
+                </span>
+              </div>
               <h2 className="text-xl lg:text-[30px] font-bold text-red-500 mb-4">
                 {item.title}
               </h2>

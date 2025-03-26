@@ -2,10 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
+import Breadcrumbs from "./Breadcrumbs";
 
 const Banner = ({ data }) => {
-  const router = useSearchParams();
-  console.log(router);
   return (
     <section>
       <div
@@ -16,15 +15,11 @@ const Banner = ({ data }) => {
       >
         <div className="max-w-[1200px] w-full px-[15px] mx-auto">
           <div className="max-w-[850px]">
-            <h1 className="text-7xl text-white font-bold leading-[82px] mb-4">
-              {data.heading}
-            </h1>
-            <div className="text-white font-bold">
-              <Link href="/" className="after:content-['/'] after:px-2">
-                Home
-              </Link>
-              <span>About</span>
-            </div>
+            <h1
+              className="text-7xl text-white font-bold leading-[82px] mb-4"
+              dangerouslySetInnerHTML={{ __html: data.heading }}
+            />
+            <Breadcrumbs breadcrumb={data.breadcrumbs} />
           </div>
         </div>
         {data?.arrowImage && (

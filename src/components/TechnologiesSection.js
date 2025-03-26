@@ -29,7 +29,7 @@ const TechnologiesSection = ({ data }) => {
                 />
               </div>
             )}
-            <h2 className="!text-[40px] md:text-[50px] font-bold my-4 md:my-10">
+            <h2 className="!text-[40px] leading-[42px] md:text-[50px] font-bold my-4 md:my-10">
               {data.title}
             </h2>
             {data.paragraphs.map((text, index) => (
@@ -41,18 +41,21 @@ const TechnologiesSection = ({ data }) => {
               </p>
             ))}
             {data.subtitle && (
-              <h4 className="font-semibold text-lg py-4 md:my-10 text-red-500">
+              <h4 className="font-semibold text-lg py-4 md:my-6 text-red-500">
                 {data.subtitle}
               </h4>
             )}
             {data.services && (
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <ul
+                className="grid grid-cols-2 
+               gap-2"
+              >
                 {data.services.map((service, index) => (
                   <li
                     key={index}
                     className="font-bold text-lg mb-3 flex items-center"
                   >
-                    <span className="text-red-500 mr-2">➤</span>
+                    <span className="text-red-500 mr-2">&gt;</span>
                     <span>{service}</span>
                   </li>
                 ))}

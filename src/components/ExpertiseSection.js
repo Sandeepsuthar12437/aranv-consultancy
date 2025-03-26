@@ -49,5 +49,4 @@ const ExpertiseSection = ({ data }) => {
     </section>
   );
 };
-
 export default ExpertiseSection;

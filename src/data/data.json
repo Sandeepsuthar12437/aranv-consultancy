@@ -6,11 +6,26 @@
     "contactLink": "/contact",
     "getInTouchImage": "/images/get-in-touch.png",
     "navLinks": [
-      { "label": "About", "url": "/about" },
-      { "label": "Services", "url": "/services" },
-      { "label": "Technologies", "url": "/technologies" },
-      { "label": "Blog", "url": "/blog" },
-      { "label": "Contact", "url": "/contact" }
+      {
+        "label": "About",
+        "url": "/about"
+      },
+      {
+        "label": "Services",
+        "url": "/services"
+      },
+      {
+        "label": "Technologies",
+        "url": "/technologies"
+      },
+      {
+        "label": "Blog",
+        "url": "/blog"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
     ],
     "socialLinks": [
       {
@@ -27,7 +42,10 @@
         "label": "Mobile App Development",
         "url": "/mobile-app-development"
       },
-      { "label": "E-Commerce", "url": "../dist/ecommerce-development.html" },
+      {
+        "label": "E-Commerce",
+        "url": "/ecommerce-development"
+      },
       {
         "label": "Content Management",
         "url": "/content-management-system"
@@ -36,8 +54,14 @@
         "label": "Business Intelligence",
         "url": "/Business-Intelligence"
       },
-      { "label": "Cloud", "url": "/cloud-computing-service" },
-      { "label": "Odoo", "url": "/odoo-development" },
+      {
+        "label": "Cloud",
+        "url": "/cloud-computing-service"
+      },
+      {
+        "label": "Odoo",
+        "url": "/odoo-development"
+      },
       {
         "label": "Seo and Digital Marketing",
         "url": "/marketing-strategy-consultants"
@@ -163,7 +187,13 @@
     "address": "5820 N Canton Center Rd, Suite 170, Canton MI 48187",
     "phone": "(347) 460-9278‬",
     "skype": "sales.aranv",
-    "backgroundImage": "/images/address-city-1.jpg"
+    "backgroundImage": "/images/address-city-1.jpg",
+    "handleLayout": true
+  },
+  "contactpagedata": {
+    "address": "5820 N Canton Center Rd, Suite 170, Canton MI 48187",
+    "backgroundImage": "/images/address-city-1.jpg",
+    "handleLayout": false
   },
   "indexBanner": {
     "backgroundImage": "/images/metting-arrange.jpg",
@@ -172,9 +202,18 @@
   "quoteBannerData": {
     "backgroundImage": "/images/cloud-solution-middle-banner.jpg",
     "quote": {
-      "commaImage": "/images/comma-shape.png",
       "text": "When you bring Aranv on board, it’s like having a best friend in the web and IT field. Too many companies trivialize their own work. We don’t do that. It’s not simply a matter of ‘You pay, we do a good job’. Of course, we do a good job. But it’s more than that.It’s about being really, really good",
-      "position": "George gates ,CEO Micro Group"
+      "position": "George gates ,CEO Micro Group",
+      "textcss": "md:text-xl text-white mb-2"
+    },
+    "commaImage": "/images/comma-shape.png",
+    "handleCss": false
+  },
+  "quoteBannerBiData": {
+    "backgroundImage": "/images/bi-caption-banner.jpg",
+    "quote": {
+      "text": "BI Solutions to <br/> increase business <br/> possibilities",
+      "textcss": "text-[20px] lg:text-[38px] leading-[50px] font-bold text-white"
     },
     "handleCss": false
   },
@@ -191,10 +230,8 @@
     "backgroundImage": "/images/seo-banner-caption.jpg",
     "quote": {
       "text": "As a Digital <br/> Marketing Company, <br/>  always ace the <br/>  competition to  <br/>  target the bigger <br/>   audience",
-      "author": "George Gates",
-      "position": "CEO Micro Group"
+      "textcss": "text-xl md:text-3xl lg:text-[38px] leading-10 font-bold text-white"
     },
-    "commaImage": "/images/comma-shape.png",
     "handleCss": false
   },
   "ecommerseSection": {
@@ -253,7 +290,7 @@
         "description": "Boost your business functioning with the most amazing mobile app and also connect with your customers better",
         "image": "/images/mobile-home.jpg",
         "alt": "mobile-home",
-        "link": "../dist/mobile-app-development.html",
+        "link": "/mobile-app-development",
         "marginBottom": "lg:mb-28",
         "marginTop": "mt-0 xl:mt-10"
       },
@@ -262,7 +299,7 @@
         "description": "High-end e-commerce solutions with improved user experience can bring more sales, revenue and strengthen your bottom line.",
         "image": "/images/ecommerce.jpg",
         "alt": "ecommerce",
-        "link": "../dist/ecommerce-development.html",
+        "link": "/ecommerce-development",
         "marginBottom": "",
         "marginTop": "md:mt-[-170px] xl:mt-[-248px]"
       },
@@ -271,7 +308,7 @@
         "description": "Transform your data into business insights using the best BI solutions for an improved and smooth functioning of business",
         "image": "/images/business-inte.jpg",
         "alt": "business-inte",
-        "link": "../dist/Business-Intelligence.html",
+        "link": "/Business-Intelligence",
         "marginBottom": "lg:mb-28",
         "marginTop": "lg:mt-8"
       },
@@ -280,7 +317,7 @@
         "description": "Make the best of your resources, technical apps and projects without incurring any additional costs.",
         "image": "/images/cloud-home.jpg",
         "alt": "cloud-home",
-        "link": "../dist/cloud-computing-service.html",
+        "link": "/cloud-computing-service",
         "marginBottom": "",
         "marginTop": "md:mt-[-170px] xl:mt-[-252px]"
       },
@@ -289,7 +326,7 @@
         "description": "Expand your business to a wider market harnessing the updated SEO and digital marketing nuances and strategies",
         "image": "/images/seo-img.jpg",
         "alt": "seo-img",
-        "link": "../dist/marketing-strategy-consultants.html",
+        "link": "/marketing-strategy-consultants",
         "marginBottom": "mb-2.5 md:mb-5",
         "marginTop": "md:mt-7 xl:mt-7"
       }
@@ -299,20 +336,62 @@
     "cartImage": "/images/cart.png",
     "heading": "Cutting edge Technology <br/> Solutions",
     "technologies": [
-      { "name": "Ruby on Rails", "image": "/images/ror.png" },
-      { "name": "Magento", "image": "/images/magento.png" },
-      { "name": "React JS", "image": "/images/reactJs.png" },
-      { "name": "Odoo", "image": "/images/odoo.png" },
-      { "name": "SAP", "image": "/images/sap.png" },
-      { "name": "Node JS", "image": "/images/nodeJs.png" },
-      { "name": "MySQL", "image": "/images/mySql.png" },
-      { "name": "Redis", "image": "/images/redis.png" },
-      { "name": "Angular JS", "image": "/images/angularJs.png" },
-      { "name": "WordPress", "image": "/images/wordpress.png" },
-      { "name": "MongoDB", "image": "/images/mongoDb.png" },
-      { "name": "PHP", "image": "/images/php.png" },
-      { "name": "Laravel", "image": "/images/laravell.png" },
-      { "name": "PostgreSQL", "image": "/images/postgreSql.png" },
+      {
+        "name": "Ruby on Rails",
+        "image": "/images/ror.png"
+      },
+      {
+        "name": "Magento",
+        "image": "/images/magento.png"
+      },
+      {
+        "name": "React JS",
+        "image": "/images/reactJs.png"
+      },
+      {
+        "name": "Odoo",
+        "image": "/images/odoo.png"
+      },
+      {
+        "name": "SAP",
+        "image": "/images/sap.png"
+      },
+      {
+        "name": "Node JS",
+        "image": "/images/nodeJs.png"
+      },
+      {
+        "name": "MySQL",
+        "image": "/images/mySql.png"
+      },
+      {
+        "name": "Redis",
+        "image": "/images/redis.png"
+      },
+      {
+        "name": "Angular JS",
+        "image": "/images/angularJs.png"
+      },
+      {
+        "name": "WordPress",
+        "image": "/images/wordpress.png"
+      },
+      {
+        "name": "MongoDB",
+        "image": "/images/mongoDb.png"
+      },
+      {
+        "name": "PHP",
+        "image": "/images/php.png"
+      },
+      {
+        "name": "Laravel",
+        "image": "/images/laravell.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "image": "/images/postgreSql.png"
+      },
       {
         "name": "Cloud Technology",
         "image": "/images/cloud-tech-cutting-edge.png"
@@ -322,7 +401,6 @@
   "ExpertiseSectionAbout": {
     "cartImage": "/images/cart.png",
     "heading": "A unique squad of technocrats to serve the most profitable and sustainable business solutions.",
-
     "image": "/images/creative-approach-img.jpg"
   },
   "ResearchData": {
@@ -338,7 +416,7 @@
         "researchdescription": " What Would the World Be Like If Artificial Intelligence Did Not Exist?",
         "readmore": {
           "text": "Read More",
-          "link": "/"
+          "link": "blog/world-if-artificial-intelligence-not-exist"
         }
       },
       {
@@ -347,7 +425,7 @@
         "researchdescription": " Essential Checklist For Improving B2C Web Design",
         "readmore": {
           "text": "Read More",
-          "link": "/"
+          "link": "blog/essential-checklist-for-improving-b2c-web-design"
         }
       },
       {
@@ -356,7 +434,7 @@
         "researchdescription": "  Guide and Ways to Boost Your Digital Presence",
         "readmore": {
           "text": "Read More",
-          "link": "/"
+          "link": "blog/guide-and-ways-boost-digital-presence"
         }
       }
     ]
@@ -400,18 +478,58 @@
   "aboutBanner": {
     "bgImage": "/images/company-banner.jpg",
     "heading": "About",
-    "handleheight": true
+    "handleheight": true,
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": " About"
+      }
+    ]
   },
-
   "serviceBanner": {
     "bgImage": "/images/company-banner.jpg",
     "heading": "Build a futuristic and sustainable business",
-    "arrowImage": "/images/services-banner-right-img.png"
+    "arrowImage": "/images/services-banner-right-img.png",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": " Services"
+      }
+    ]
   },
   "technologiesBanner": {
     "bgImage": "/images/company-banner.jpg",
-    "heading": "Transform business with viable Solutions",
-    "arrowImage": "/images/services-banner-right-img.png"
+    "heading": "Transform business <br/> with viable <br/> Solutions",
+    "arrowImage": "/images/services-banner-right-img.png",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": " Technologies"
+      }
+    ]
+  },
+  "contactBanner": {
+    "bgImage": "/images/company-banner.jpg",
+    "heading": "Connect with Us",
+    "arrowImage": "/images/services-banner-right-img.png",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": " Contact"
+      }
+    ]
   },
   "sectiondataServices": {
     "title": "Churn out business proficiency offering an improved user experience",
@@ -421,7 +539,10 @@
         "src": "/images/android-technology.png",
         "alt": "Android Technology"
       },
-      { "src": "/images/ios-technology.png", "alt": "iOS Technology" },
+      {
+        "src": "/images/ios-technology.png",
+        "alt": "iOS Technology"
+      },
       {
         "src": "/images/reactjs-technology.png",
         "alt": "ReactJS Technology"
@@ -462,7 +583,10 @@
         "src": "/images/wordpress-technology.png",
         "alt": "Android Technology"
       },
-      { "src": "/images/drupal-technology.png", "alt": "iOS Technology" },
+      {
+        "src": "/images/drupal-technology.png",
+        "alt": "iOS Technology"
+      },
       {
         "src": "/images/joomla-technology.png",
         "alt": "ReactJS Technology"
@@ -577,6 +701,33 @@
       "link": "/ecommerce-development"
     }
   },
+  "biData": {
+    "heading": "What do you get from Business Intelligence?",
+    "card": [
+      {
+        "image": "/images/document-management-system.jpg",
+        "alt": "document-management-system",
+        "title": "Self-Service BI",
+        "description": "Self-service Business Intelligence tools help to understand business details. Do this without depending on your workforce. Increase your decision-making skill with our tools. We help to create popular BI. Self-service trade info tools can integrate user interfaces. This makes your information accessible for everyone. Use our approach to data sharing."
+      },
+      {
+        "image": "/images/enterprise-content-management-system.jpg",
+        "alt": "enterprise-content-management-system",
+        "title": "Enterprise Business Intelligence",
+        "description": "Enterprise BI helps you to analyze information. This might be on the cloud. Our services improve mobility. You can also access business insights with our tools. We help execute a complete business analysis. It delivers professional support. BI helps businesses in meeting their need for information."
+      },
+      {
+        "image": "/images/web-content-management-system.jpg",
+        "alt": "web-content-management-system",
+        "title": "BI on Marketplace",
+        "description": "Aranv’s BI on marketplace services is useful. They enable companies in building better business analytics. We use dashboards and data warehousing. We also generate BI reports. Our team helps to leverage self-service BI solutions. The trade info on marketplace services enables information management."
+      }
+    ],
+    "cta": {
+      "text": "Let's Start >",
+      "link": "/ecommerce-development"
+    }
+  },
   "seoDomainData": {
     "heading": "Some of the domains we work on",
     "card": [
@@ -620,6 +771,29 @@
         "alt": "Web Content Management System",
         "title": "Web Content Management System",
         "description": "We help create and manage personalized website pages, optimized for various devices and conversions. You can depend on our developers for creating flexible themes and unique content structures. Get a secure and personalized experience. Maintain, control and reassemble content on a web page with a Web Content Management System."
+      }
+    ]
+  },
+  "odooData": {
+    "heading": "Some of our Odoo Development Services",
+    "card": [
+      {
+        "image": "/images/odoo-erp-solutions.jpg",
+        "alt": "odoo-erp-solutions",
+        "title": "ERP Solution",
+        "description": "Make better decisions in your business by implementing Odoo ERP solutions that are flexible and completely customizable. All of your business functions can be integrated into a single system automating information sharing between units like sales, stock, purchase, etc"
+      },
+      {
+        "image": "/images/odoo-ecommerce.jpg",
+        "alt": "odoo-ecommerce",
+        "title": "E-Commerce",
+        "description": "Enterprise BI helps you to analyze information. This might be on the cloud. Our services improve mobility. You can also access business insights with our tools. We help execute a complete business analysis. It delivers professional support. BI helps businesses in meeting their need for information."
+      },
+      {
+        "image": "/images/odoo-hrmis.jpg  ",
+        "alt": "odoo-hrmis",
+        "title": "HRMIS",
+        "description": "Our services aren’t just ranged to the organizational benefits. They also spread their reach to cope up with staff management of any scale. It is an all-in-one software offering various related functions that can speed up the process a lot and make it easier than before."
       }
     ]
   },
@@ -818,11 +992,89 @@
         "alt": "Proven Experience"
       }
     ],
-    "heading": "Hire the best technology expert or squad of experts with years of cumulative experience",
+    "heading": "Hire the best technology expert or squad <br/> of experts with years of cumulative <br/> experience",
     "description": "Find the right fit for your specific enterprise project considering their expertise, experience, and approach from a pool of technology nerds. You will be delighted to know all our technology experts are specialists in their domain with years of respective experience. Hire the best developer and get awesome results.",
     "button": {
       "text": "Hire Dedicated Experts",
-      "link": "../dist/contact.html"
+      "link": "/contact"
+    }
+  },
+  "hireMobileExpert": {
+    "bgImage": "/images/bg-proven.png",
+    "images": [
+      {
+        "src": "/images/proven-experience-devloper1.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper2.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper3.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      }
+    ],
+    "heading": "Hire a Mobile App Development <br/> Company With Proven Expertise!",
+    "description": "Avail the services of the best app developers in the industry with years of experience in the industry. We guarantee to save in terms of time and money with no compromise on quality. We have the technical ability and infrastructure to cater to almost all types of mobile apps. Our solutions transform and help upgrade apps with the changing platforms to gain maximum features and functionality.",
+    "button": {
+      "text": "Hire Dedicated Experts",
+      "link": "/contact.html"
+    }
+  },
+  "hireTechExpert": {
+    "bgImage": "/images/bg-proven.png",
+    "images": [
+      {
+        "src": "/images/proven-experience-devloper1.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper2.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper3.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      }
+    ],
+    "heading": "Hire a squad of developers with years of <br/> cumulative experience",
+    "description": "Upgrade your apps and mobile systems with our committed and experienced squad of dedicated, experienced, and expert developers who are capable of delivering your project to the given deadline with utmost commitment and a friendly approach.",
+    "button": {
+      "text": "Hire Dedicated Experts",
+      "link": "/contact"
+    }
+  },
+  "hireOdooExpert": {
+    "bgImage": "/images/bg-proven.png",
+    "images": [
+      {
+        "src": "/images/proven-experience-devloper1.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper2.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      },
+      {
+        "src": "/images/proven-experience-devloper3.png",
+        "title": "Proven Experience",
+        "alt": "Proven Experience"
+      }
+    ],
+    "heading": "Brief Odoo applications you want to build and <br/> our team will deliver a better product than that.",
+    "description": "We have a dedicated team of expert developers with years of cumulative experience in their respective subject matter! It makes it easy to hire the finest developer churning the best enterprise solutions. Hire our developers to get the best.",
+    "button": {
+      "text": "Hire Dedicated Experts",
+      "link": "/contact"
     }
   },
   "technologieReactNative": {
@@ -837,7 +1089,6 @@
   },
   "technologieEcommerse": {
     "title": "Build an online presence with our eCommerce Development",
-
     "techSideImage": "/images/ecommerce-solutions.jpg",
     "paragraphs": [
       "We are a mobile app development company helping businesses to build fully customized mobile apps with minimal time and cost investment. Aranv is the first choice whether you are looking to create an app for iOS, Android, Windows Mobile or to build a cross-platform app.",
@@ -920,6 +1171,33 @@
     "paragraphs": [
       "As a reputed AngularJS development company, we identify the full stack of JS technologies. Leveraging our key understanding of technology and development, we deliver reliable AngularJS development solutions to deploy scalable AngularJS mobile apps for all types of business enterprises.",
       "Moreover, AngularJS app development has an excellent user-interface pushing users and business views. Our dedicated Angular JS developer also put the best efforts to restructure development and customization issues leveraging robust AngularJS technology."
+    ],
+    "reverseLayout": true
+  },
+  "technologiePowerBi": {
+    "title": "Power BI",
+    "techImage": "/images/power-bi.png",
+    "techSideImage": "/images/power-bi-hero-img.jpg",
+    "paragraphs": [
+      "It provides self-service analytics. This benefits your enterprise. You can cut cost and complexity; Power trade information also reduces security risks. Our solutions scale from individuals to institutions. Our smart tools provide strong results. It helps to create useful insights. We use data visualizations and AI capabilities. Our team also works on excel integration. You can keep your information secure with Power BI’s data security capabilities."
+    ],
+    "reverseLayout": true
+  },
+  "technologieTableau": {
+    "title": "Tableau",
+    "techImage": "/images/tableau.png",
+    "techSideImage": "/images/tableau-hero-img.jpg",
+    "paragraphs": [
+      "ou can understand data with Tableau. It is a visual analytics platform. It changes the way people use information. Many businesses trust Tableau for their trade information. Tableau has built-in best practices. It provides visual technology and information exploration. Get most benefits without interrupting the flow of analysis. Gain business efficiency and results with Tableau!"
+    ],
+    "reverseLayout": false
+  },
+  "technologieElasticResearch": {
+    "title": "Elastic Search",
+    "techImage": "/images/elastic-search.png",
+    "techSideImage": "/images/elastic-search-hero-img.jpg",
+    "paragraphs": [
+      "Get access to a corporate information and Analytics tool – Elasticsearch. It is a well-distributed and RESTful search and analytics engine. Elastic search is capable of addressing a higher number of use cases. Being the heart of Elastic Stack, elastic search stores your data. It helps in faster search with better relevancy, and powerful analytics. It helps you scale with ease and enhances the user experience."
     ],
     "reverseLayout": true
   },
@@ -1104,6 +1382,15 @@
       "alt": "Run Business uninterruptedly with High-tech Solutions"
     }
   },
+  "aiBanner": {
+    "title": "What Would the World Be Like <br/> If Artificial Intelligence Did <br/> Not Exist?",
+
+    "image": {
+      "src": "/images/mobile-development-banner-right-img.png",
+      "title": "Run Business uninterruptedly with High-tech Solutions",
+      "alt": "Run Business uninterruptedly with High-tech Solutions"
+    }
+  },
   "ContentManagementBanner": {
     "title": "Transform your <br/> Content Management <br/> System",
     "subtitle": "Aranv’s cost-effective and customized content management solutions are <br/> scalable, business-oriented, and SEO-friendly. The solutions are crafted to <br/> elevate and enhance your app, website, and social media network and to <br/> integrate with your business’s existing CMS solutions",
@@ -1149,8 +1436,7 @@
     }
   },
   "employeeBanner": {
-    "title": "Claim the Employee Retention Credit Now!",
-
+    "title": "Claim the Employee <br/> Retention Credit <br/> Now!",
     "breadcrumbs": [
       {
         "label": "Home",
@@ -1261,7 +1547,6 @@
       "Apple TV Apps",
       "iOS App with ARKit"
     ],
-
     "reverseLayout": false
   },
   "seoIosData": {
@@ -1280,7 +1565,6 @@
       "Content and Promotions",
       "Implementation of social media on the website"
     ],
-
     "reverseLayout": false
   },
   "appData": {
@@ -1299,7 +1583,6 @@
       "Android TV Apps",
       "Chromebook Apps"
     ],
-
     "reverseLayout": true
   },
   "specializedDevelopers": {
@@ -1407,8 +1690,104 @@
       }
     ]
   },
+  "biGridData": {
+    "title": "CMS Platforms ",
+    "items": [
+      {
+        "title": "Data visualization",
+        "description": "Aranv's detail visualization services include strong elements. They represent information and data. We use effective graphs, charts, and maps. Apart from this, we use information visualization tools. They provide means to understand outliers. We also provide trends and its patterns. We use our technology for information visualization.",
+        "iconSrc": "/images/store.png"
+      },
+      {
+        "title": "Data Warehousing & ETL",
+        "description": "We create successful big details projects. This includes data obtained from different sources. We help with cloud and on-premises resources. Our analytics warehouse is popular with clients. It can handle details in various formats. There are many criteria for data warehousing.",
+        "iconSrc": "/images/basket.png"
+      },
+      {
+        "title": "Cloud Data Services",
+        "description": "Our team brings out the most from your cloud. We focus on flexibility and scalability. Our Cloud services include top-notch computing. These services help decrease workloads. Our team has years of experience in managing clouds. We focus on a customer-driven approach. Aranv has increased the benefit of the cloud.",
+        "iconSrc": "/images/notebook.png"
+      },
+      {
+        "title": "BI Integration",
+        "description": "Trade information uses data integration. Effective trade details include different services. We offer analytics and reporting. Our team provides powerful data tools. We enable our clients. We use Enterprise BI services. Our services help to create a single source of data.",
+        "iconSrc": "/images/store.png"
+      },
+      {
+        "title": "Expert Mobility BI Solutions",
+        "description": "We provide superior BI and mobility solutions. We use corporate information solutions and platforms. Our tools support mobile devices. We support android based devices and iOS devices. We design mobile dashboards.",
+        "iconSrc": "/images/basket.png"
+      },
+      {
+        "title": "Integration of third-party solutions",
+        "description": "Our BI software ensures better processes. We analyze and present business data. Our team uses dashboards to integrate with trade information Solutions. We also use BI to integrate. We also help to integrate with other organizations.",
+        "iconSrc": "/images/notebook.png"
+      }
+    ]
+  },
+  "odooDevelopmentGridData": {
+    "title": "Odoo Development Services ",
+    "items": [
+      {
+        "title": "Website Development",
+        "description": "We offer some of the best website development services when it comes to Odoo. All the development will take place by optimum utilization of resources. We are capable of developing high-maintenance websites with crisp graphics and smart elements with amazing functionalities.",
+        "iconSrc": "/images/odoo-development.png"
+      },
+      {
+        "title": "Apps Development",
+        "description": "Our App Development services will offer you some of the best customizable apps according to your specific requirements. Recruit our Apps Developer to develop some high-end customizable apps with all the in-built features embedded in them with the help of our services.",
+        "iconSrc": "/images/notebook.png"
+      },
+      {
+        "title": "eCommerce Store",
+        "description": "Our store developing professionals offer some of the best store development facilities like an attractive interface for enhanced engagement of the audience on your website. You will get access to optimized solution by syncing ERP with the eCommerce store.",
+        "iconSrc": "/images/store.png"
+      },
+      {
+        "title": "HRMIS",
+        "description": "Our HRMIS experts provide some of the best HRMIS services for your company to make it more efficient and operable. Our services will increase the ability to deal with the staff management and make the business more harmonic and ergonomic when it comes to managing it.",
+        "iconSrc": "/images/odoo-hrmis.png"
+      },
+      {
+        "title": "Customization",
+        "description": "Launch an eCommerce store with our Shopify platforms. They are ready to sell. Bring an array of versatile features. It enables you to set up a successful online store fast. We help you get going. Shopify enables high conversions. Customize the storefront with templates’ intuitive settings. Get full access to the HTML and CSS. Enable mobile commerce shopping cart.",
+        "iconSrc": "/images/odoo-customization.png"
+      },
+      {
+        "title": "Integration",
+        "description": "Our professionals at Aranv provide you with the best Integration services. We can function seamlessly while securing your data and running it without any bugs or glitches on the site. Our experts also help in integrating CRM and accounting services in your Odoo.",
+        "iconSrc": "/images/odoo-integration.png"
+      },
+      {
+        "title": "Migration",
+        "description": "Our experts can handle the migration of your website to Odoo end-to-end with unparalleled efficiency. Our strategies and tactics are proven to be seamless and we are renowned for keeping our client’s data secure and encrypted. You can migrate to your Odoo website effectively with our experts’ hands on deck.",
+        "iconSrc": "/images/odoo-migration.png"
+      },
+      {
+        "title": "Integration",
+        "description": "Our professionals at Aranv provide you with the best Integration services. We can function seamlessly while securing your data and running it without any bugs or glitches on the site. Our experts also help in integrating CRM and accounting services in your Odoo.",
+        "iconSrc": "/images/odoo-integration.png"
+      },
+      {
+        "title": "Support and Maintenance",
+        "description": "Our professionals at Aranv provide you with the best Integration services. We can function seamlessly while securing your data and running it without any bugs or glitches on the site. Our experts also help in integrating CRM and accounting services in your Odoo.",
+        "iconSrc": "/images/odoo-customization.png"
+      }
+    ]
+  },
   "mobileCaliberData": {
     "title": "Are you looking for someone of this caliber? You can rely on us for all your mobile app-related needs!",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
+  "blogCaliberData": {
+    "title": "What application do you have in mind? <br/> We are hands-on to deliver beyond your <br/> expectations",
     "buttonText": "Let’s Talk >",
     "buttonLink": "/contact",
     "images": [
@@ -1431,6 +1810,17 @@
   },
   "cmsCaliberData": {
     "title": "Do you have any specific CMS in mind? <br/> If not, we can help you pick and implement the most <br/> suitable one.",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
+  "biCaliberData": {
+    "title": "Are you looking for someone with such caliber? <br/> Use our custom BI solutions for the best results!",
     "buttonText": "Let’s Talk >",
     "buttonLink": "/contact",
     "images": [
@@ -1466,7 +1856,6 @@
       "description": "We perform end-to-end testing and delivery of the mobile apps. We carry out manual and automated testing, as well as compatibility testing. We test the server performance and on-device performance along with security testing and cross-functional testing to make sure we deliver the perfect mobile app."
     }
   ],
-
   "WhyUsData": {
     "content": [
       {
@@ -1527,7 +1916,6 @@
     "src": "/images/bolding-work.jpg",
     "alt": ""
   },
-
   "eCommerceWebsiteData": {
     "title": "Full-Service Develpment from Specialized Developers",
     "items": [
@@ -1613,6 +2001,27 @@
       }
     ]
   },
+  "odooThemeData": {
+    "heading": "The Most Powerful Odoo Theme",
+    "content": [
+      {
+        "title": "Theme Alan",
+        "image": "/images/neon-preview-theme.jpg"
+      },
+      {
+        "title": "Theme Neon",
+        "image": "/images/alan-preview-theme.jpg"
+      },
+      {
+        "title": "Theme Alan",
+        "image": "/images/neon-preview-theme.jpg"
+      },
+      {
+        "title": "Theme Neon",
+        "image": "/images/alan-preview-theme.jpg"
+      }
+    ]
+  },
   "cloudServiceData": {
     "heading": "Cloud Computing Solutions",
     "content": [
@@ -1674,7 +2083,6 @@
   },
   "technologiesCloudData": {
     "title": "Establish Efficiency With Cloud Computing Solutions",
-
     "techSideImage": "/images/cloud-solution-cover-image.jpg",
     "paragraphs": [
       "There are many benefits to profit from when it comes to this solution. It helps you in establishing a virtual office to make your organization much more flexible. You can access your organization anytime and anywhere. As modern technology is progressing, an increase in the number of web-enabled devices can help you access your data conveniently."
@@ -1683,7 +2091,6 @@
   },
   "technologiesSeoData": {
     "title": "Develop better relationships with your clients and become more popular",
-
     "techSideImage": "/images/better-relationship.jpg",
     "paragraphs": [
       "Every digital marketing company’s success relies on their relationship with their clients and for how long they are credible to them. Reliability and fidelity are two of the most important elements while building a healthy relationship with your client. By doing this, your company will ascend to newer levels of recognition and popularity."
@@ -1692,18 +2099,23 @@
   },
   "technologiesCMSData": {
     "title": "Content Management System catering to your business needs",
-
     "techSideImage": "/images/cms-streamline.jpg",
     "paragraphs": [
       "Benefit from our robust and cutting-edge Enterprise CMS development system and Open-Source Content Management Solution. We customize your content system and implement it as per the client’s existing workflows. Our scalable and easy-to-integrate solutions promise flexibility. ",
       "Our team optimizes workflow by implementing customizable features, plugins, modules, and extensions within existing CMS platforms like Drupal, WordPress, Joomla, and Sitecore. Aranv is recognized as the foremost CMS Development Company worldwide."
     ],
-
+    "reverseLayout": true
+  },
+  "technologiesOdooData": {
+    "title": "Single solution for all your business application needs",
+    "techSideImage": "/images/entire-business.jpg",
+    "paragraphs": [
+      "Aranv, a pioneer odoo development company, can handle all your business needs and agendas as it can be utilized to manage all your business applications. Hence, there is no need to go for a variety of options while you are managing your business, just one – Aranv."
+    ],
     "reverseLayout": true
   },
   "technologiesSeoMarketingData": {
     "title": "A successful digital marketing company plans out its every move",
-
     "techSideImage": "/images/research-strategy.jpg",
     "paragraphs": [
       "Research and strategy will take your company to new realms of success. However, you should ensure that your strategy is plotted out evidently and carefully. Any precarious tactics or bland research can lead to your company’s eventual demise."
@@ -1712,7 +2124,6 @@
   },
   "technologiesCmsData": {
     "title": "CMS for E-commerce",
-
     "techSideImage": "images/cms-ecommerce.jpg",
     "paragraphs": [
       "Benefit from the robust growth of eCommerce. We have expertise in both SaaS Content Management System and open-source CMS. Utilize from hosted CMS including BigCommerce, Shopify, Squarespace, and others. Our experts work on self-hosted, open-source software including WooCommerce and Magento.",
@@ -1727,17 +2138,14 @@
   },
   "technologiesBIData": {
     "title": "Get better insights for improved CX",
-
     "techSideImage": "/images/business-decision-cx.jpg",
     "paragraphs": [
       "Every business needs good CX. Thus, Aranv uses models to analyze client data. Our team has superior Business Intelligence Solutions. So, you get better results through data analysis. We build tools for customer-driven companies. You can trust us for better business decisions. We analyze your business information to provide results. Aranv understands how to plan business information projects. This helps our clients in making the right business decisions!"
     ],
-
     "reverseLayout": true
   },
   "technologiesAranvCmsData": {
     "title": "Custom CMS Development",
-
     "techSideImage": "/images/custom-cms-development.jpg",
     "paragraphs": [
       "Aranv is the topmost CMS development company that offers a customizable and flexible Content Management System with integrated modules, features, themes, extensions, and plugins. Our content solution enables you to manage and access your content, information, and assets. Our rapid development process and ingenious features like SEO friendliness and spontaneous user interface make the CMS web development process much more reliable. Our services enhance the existing solutions and also create custom-tailored solutions. We promise effective workflow and content management."
@@ -1756,7 +2164,26 @@
       "Custom Scalability",
       "Integrations"
     ],
-
+    "reverseLayout": false
+  },
+  "technologiesOdooErpData": {
+    "title": "Perform Smart Solutions with Intelligent ERP",
+    "techSideImage": "/images/odoo-intelligent-erp.jpg",
+    "paragraphs": [
+      "We offer some of the best Odoo development services in the world. Our free Enterprise Resource Planning System can support a lot in developing feature-rich modules for many enterprises. It can be quite a big boost for many companies looking to expand exponentially. Recruit some of our best ERP developers that can take your company’s profits to new levels."
+    ],
+    "button": {
+      "text": "Get Started",
+      "href": "/"
+    },
+    "subtitle": "Automate your Business",
+    "services": [
+      "Automated Built-in Analytics and Reporting",
+      "Third-Party Vendor Management",
+      "With Odoo Trim Tables Synchronize Data",
+      "Effective Tax Management System"
+    ],
+    "bgColor": "",
     "reverseLayout": false
   },
   "cloudSection": {
@@ -1846,5 +2273,385 @@
         "description": "With the best-in-class JavaScript library, we create react native apps combining the best parts of native development with React."
       }
     ]
+  },
+  "multipurposeOdooThemedata": {
+    "backgroundImage": "/images/odoo-online-business-bg.jpg",
+    "heading": "Expand your business’s forefront online utilizing the multi-purpose Odoo themes",
+    "description": "We also provide many different Odoo themes that can be utilized for more than one cause. It is to increase the versatility of a company and its business.",
+    "features": [
+      "Simple and Fully-Functional",
+      "SEO Friendly and Optimized through Mobile",
+      "Drag and Drop Snippet"
+    ],
+    "button": {
+      "text": "Get Started",
+      "link": "/contact"
+    }
+  },
+  "contactPagedata": {
+    "phone": "(347) 460-9278",
+    "email": "sales@aranv.com",
+    "skype": "sales.aranv",
+    "services": [
+      "Mobile App Development",
+      "Cloud",
+      "Odoo",
+      "Seo And Digital Marketing",
+      "Others"
+    ]
+  },
+  "supportdata": {
+    "support": [
+      {
+        "image": "/images/watch.png",
+        "title": "We’d reach you within 24 hours",
+        "description": "We promise to contact you in 24 hours to let you know how we can help you better! Meanwhile, why don’t you browse our case studies and portfolio?"
+      },
+      {
+        "image": "/images/bulb.png",
+        "title": "Friendly Approach",
+        "description": "Not every company would be this friendly! Our right approach aids to our ethical value that makes great organizations. So, relax! You are in safe hands!"
+      }
+    ]
+  },
+  "world-if-artificial-intelligence-not-exist": {
+    "blogContent": {
+      "aiBlogContent1": {
+        "content": [
+          "In manufacturing, the continuous maintenance of production lines, equipment and machinery serves as a significant expense. As a result, manufacturers have a considerable impact on the bottom line of any production operation if the machinery is facing errors.",
+
+          " For this reason, predicting maintenance has become a must-have solution for manufacturers who have more to achieve from being able to predict the subsequent failure of a part, system, or machine and solve them before the issue happens in real-time.",
+          "  AI can help conquer many inner struggles to improve the manufacturing industry. AI can be helpful for integration, automation, and sending the information efficiently and effortlessly.",
+
+          " AI can also be beneficial in performing manufacturing operations and proceedings.",
+
+          " Predictive support uses advanced AI algorithms in machine learning and artificial sensory networks to display predictions about asset breakdown.",
+
+          "Let’s check out how AI is transforming the following industries:"
+        ]
+      },
+      "aiBlogContent2": {
+        "title": "eCommerce and Customer Service",
+
+        "content": [
+          "The retail industry is growing fast globally, and the eCommerce retail business is even quicker. However, competition is rising day by day, so you might need to execute the changes that will make your position apart from your competitors.",
+          "You might have already experienced AI in eCommerce, but you may not have noticed it. For example, each time Amazon recommends a product to you based on the product you checked recently, it is the power of AI technology.",
+          "AI is a set of complex algorithms used to determine what you are likely to purchase based on your purchasing history, profile demographics, and the products you have recently viewed.",
+          "With every incomplete sale due to cart abandonment, e-commerce businesses lose 70% in revenue resulting in millions of dollars. AI-based tools can help companies benefit by automating data, stock, and inventory analysis to better estimate sales.",
+          "AI-based chatbots can help you suggest to customers special discounts and offers and encourage them to complete the product purchase they left in their cart. As a result, it can help you grow conversion and less cart abandonment."
+        ]
+      },
+      "aiBlogContent3": {
+        "title": "Healthcare",
+
+        "content": [
+          "Healthcare is one of the industries likely to see the most robust growth in AI use in the upcoming years.",
+          "The healthcare industry has a tremendous amount of data.",
+          "Governments and healthcare organizations have lots of past data records.",
+          "AI is being used to mine and analyze this data to spot complex patterns in diagnosing and treating various critical medical situations.",
+          "The research of severe medical conditions or diseases is not easy.",
+          "A diagnosis can be conducted regularly by combining several predictions and outcomes until a balance of abilities supports a diagnosis.",
+          "Healthcare experts have years of practice and pre-made algorithms to recognize symptoms of the disease and perform an examination.",
+          "Healthcare experts expect a lot from the mixture of AI and IoMT (Internet of Medical Things).",
+          "AI technology can be helpful for the early detection of disease, diagnosis, and research.",
+          "AI-powered healthcare apps are helping their patients to ensure a fit and healthy lifestyle.",
+          "With the help of AI development, smartwatches are helping humans to track their heart rates, oxygen levels, and routine behaviors.",
+          "Smartwatches provide tips for improving health.",
+          "It is the best example of the latest AI technology."
+        ]
+      },
+      "aiBlogContent4": {
+        "title": "Education",
+
+        "content": [
+          "The education sector can be helpful from the advantage of AI.",
+          "The technology can help in specific programs, learning, creating software and games.",
+          "AI can be beneficial to remodel the entire education system and its process.",
+          "Institutions and students can both take advantage of AI-based apps.",
+          "It can help them in developing the teaching and learning processes.",
+          "It can also be helpful to brainstorm learning activities and make students better learners.",
+          "Many institutions have already started implementing AI technology to educate their students more efficiently.",
+          "Higher level students are also getting help from AI to try different experiments and make the world a better place."
+        ]
+      },
+      "aiBlogContent5": {
+        "title": "Manufacturing",
+
+        "content": [
+          "In manufacturing, the continuous maintenance of production lines, equipment, and machinery serves as a significant expense.",
+          "Manufacturers have a considerable impact on the bottom line of any production operation if the machinery is facing errors.",
+          "Predicting maintenance has become a must-have solution for manufacturers.",
+          "Manufacturers can achieve more by predicting the subsequent failure of a part, system, or machine and solving them before the issue happens in real-time.",
+          "AI can help conquer many inner struggles to improve the manufacturing industry.",
+          "AI can be helpful for integration, automation, and sending the information efficiently and effortlessly.",
+          "AI can also be beneficial in performing manufacturing operations and proceedings.",
+          "Predictive support uses advanced AI algorithms in machine learning and artificial sensory networks to display predictions about asset breakdown."
+        ]
+      },
+      "aiBlogContent6": {
+        "title": "Manufacturing",
+        "content": [
+          "In manufacturing, the continuous maintenance of production lines, equipment, and machinery serves as a significant expense.",
+          { "image": "/images/Manufacturing.png" },
+          "Manufacturers have a considerable impact on the bottom line of any production operation if the machinery is facing errors.",
+          "Predicting maintenance has become a must-have solution for manufacturers.",
+          "Manufacturers can achieve more by predicting the subsequent failure of a part, system, or machine and solving them before the issue happens in real-time.",
+          "AI can help conquer many inner struggles to improve the manufacturing industry.",
+          "AI can be helpful for integration, automation, and sending the information efficiently and effortlessly.",
+          "AI can also be beneficial in performing manufacturing operations and proceedings.",
+          "Predictive support uses advanced AI algorithms in machine learning and artificial sensory networks to display predictions about asset breakdown."
+        ]
+      },
+      "aiBlogContent7": {
+        "title": "Cybersecurity",
+
+        "content": [
+          "AI programs can be helpful to learn how to remove noise or unwanted data. In addition, it allows security experts to understand the cyber ecosystem and detect suspicious activities.",
+          "AI is also helpful to cybersecurity with automated systems to reduce cyber threats that are detected.",
+          "Artificial intelligence is essential to analyze large amounts of data which allows the development of the current system and software in a proper way to reduce cyber-attacks.",
+          "Using AI in the cybersecurity sector will help to secure companies from cyber threats and keep the data secure.",
+          "In addition, AI-based cybersecurity procedures can provide adequate security measures and help improve blocking and recovery procedures."
+        ]
+      },
+      "aiBlogContent8": {
+        "title": "Logistics Sector",
+
+        "content": [
+          "AI plays a vital role in the logistic sector by reducing costs, saving time, increasing productivity, and using powerful automation. For example, machine learning helps to reduce freight costs, improve supplier delivery completion, and reduce supplier risk.",
+          "AI is also helpful in logistics route optimization, which helps decrease shipping costs, which influences generating more profits. In addition, machines using AI can gather and analyze the information to make informed judgments within seconds and save time for humans.",
+          "AI is also improving the warehouse process in the form of collecting and analyzing data processing. In addition, companies are using robots inside their warehouses to manage situations such as moving, tracking, and locating product inventories."
+        ]
+      },
+      "aiBlogContent9": {
+        "title": "Corporate Finance",
+
+        "content": [
+          "AI is helpful in corporate finance as it can predict and determine loan risks for companies looking to increase their market. In addition, AI development can be beneficial to improve loan underwriting and reduce financial risks.",
+          "With so much of life’s needs hinging on credit history, the approval process for loans and cards is more potent than ever. AI solutions serve banks and credit lenders to make more sensible decisions by using various factors more carefully.",
+          "AI can also lower financial crime by advanced fraud detection and spot irregular action while the company’s accountants, analysts, bankers, and investors work toward long-term growth.",
+          "In addition, AI methods have a much more robust understanding of data patterns than humans. As a result, it can be helpful to companies to understand their target audience and earn more insight that will turn into massive profit."
+        ]
+      },
+      "aiBlogContent10": {
+        "title": "Conclusion  ",
+        "content": [
+          "As you saw how industries are getting benefits from using AI, we are pretty sure that we will see more changes in each sector with AI development in future.",
+          "If you are willing to know how AI can be helpful in your business and want to learn more about how we can help you with AI development for your business, you can contact us for more information."
+        ]
+      }
+    },
+    "relatedArticles": {
+      "heading": "Related Articles",
+      "Research": [
+        {
+          "image": "better-relationship",
+          "researchheading": " Business Development",
+          "researchdescription": "Get found easily by your customers and build better relationships",
+          "readmore": {
+            "text": "Read More",
+            "link": "blog/essential-checklist-for-improving-b2c-web-design"
+          }
+        }
+      ]
+    },
+    "blogPostInfo": {
+      "imageSrc": "/images/What-Would-the-World-Be-Like-If-Artificial-Intelligence-Did-Not-Exist.jpg",
+      "date": "August 20, 2021",
+      "author": "Dharmdip"
+    },
+    "bannerdata": {
+      "title": "What Would the World Be Like If Artificial Intelligence Did Not Exist?",
+      "image": {
+        "src": "/images/mobile-development-banner-right-img.png",
+        "title": "Run Business uninterruptedly with High-tech Solutions",
+        "alt": "Run Business uninterruptedly with High-tech Solutions"
+      }
+    }
+  },
+  "essential-checklist-for-improving-b2c-web-design": {
+    "blogContent": {
+      "aiBlogContent1": {
+        "content": [
+          "One of the essential industries our web designers focus on is custom web design services for B2C businesses. Our web design company has worked with business-to-customer companies of different sizes and shapes across many industries with years of experience in hand-crafting unique B2C web designs.",
+          "Web design company specializes in eCommerce website design for B2C companies. We use our knowledge and understanding while having confidence in the following B2C web design best practices."
+        ]
+      },
+      "aiBlogContent2": {
+        "title": "Let’s Learn More About How You Can Improve Your B2C Web Design:",
+
+        "content": [
+          "Try To Keep Your Web Design Simple",
+          "If you want your website visitors to understand your website content:",
+          "1. Make it easy for them to consume it.",
+          "2. Try to keep your design simple without distractions.",
+          "3. Making it simple will quickly help users to take desired actions and get you conversions.",
+          "Avoid adding unnecessary design features. If it does not serve a specific purpose, do not use it. Here are the few steps that will simplify your B2C web design:",
+          {
+            "type": "html",
+            "content": "<ul class='blog-detail-simple-title-list'><li><strong>Graphics</strong><p></p><p>Add graphics only if they serve a purpose, perform a specific function, or help website visitors complete a task. Using unnecessary graphics adds confusion to your site and slows down page load time, decreasing your website rankings on SERP.</p></li><li><strong>Fonts</strong><p></p><p>When choosing the right font, focus on readability. Use simple fonts and colors that contrast with the background.</p></li><li><strong>Color</strong><p></p><p>Choose five different colors or less than five. Using too many colors can overwhelm visitors and turn your website into ugliness.</p></li></ul>"
+          }
+        ]
+      },
+      "aiBlogContent3": {
+        "title": "Optimizing Performance And Navigation",
+
+        "content": [
+          "When customers come to your website and get upset because of the slow loading speed, you lose your potential customers. Also, if your website is loading fast but does not have a proper navigation setup, your website will lead to high bounce rates and inadequate revenue.",
+          "The same problem will be more critical in mobile phones. Most customers browse their desired things while multitasking, which means they want to take action quickly.",
+          "It is essential to make your website load fast and provide the best online shopping experience. In addition, it will help users to remember your website and keep purchasing your products regularly.",
+          "Using caching tools, you can deliver fast-loading media and images that will encourage your visitors to take the desired action and spend more time on your website scrolling through other products.",
+          "Here are the few most common mistakes that make your website loads slowly and how to improve them:",
+          {
+            "type": "html",
+            "content": "<ul class='blog-detail-simple-title-list'><li><strong>Codes</strong><p></p><p>To make your website load faster, you will need to minify JavaScript and CSS codes. You can hire a web designer to do it or purchase the premium tools to do that for you when needed.</p></li><li><strong>Fonts</strong><p></p><p>Try to use simple fonts that make your website looks clean and readable. Highlight the title and necessary words with bold fonts. Try to use system fonts so it will not take much time to load like the third-party fonts.</p></li><li><strong>Images</strong><p></p><p>In B2C websites, pictures and videos play an essential role to convert your site visitors into purchasing customers. So to provide them with the best shopping experience, you will need to compress the high-quality images and upload them on your web page so they will load fast when users are willing to view product images. You can visit the Tiny.png website to compress a picture online.</p></li></ul>"
+          }
+        ]
+      },
+      "aiBlogContent4": {
+        "title": "Provide Easy Sharing With Social Media Links",
+
+        "content": [
+          "Suppose your website offers a product preview, images, size charts, and a description of the product or service you are selling. In that case, you need to encourage your customers to share their favorite products with their friends and families using the social media sharing button. It will help grow your conversions.",
+          "Adding different social sharing buttons will help your customers share their favorite platform and get more traffic to your website organically."
+        ]
+      },
+      "aiBlogContent5": {
+        "title": "Provide Quick And Reliable Customer Service",
+
+        "content": [
+          "If the customer wants to buy anything online or faces any issue while purchasing, the customer service feature can help users complete the process without hesitation.",
+          {
+            "image": "/images/Provide-Quick-And-Reliable-Customer-Service.png"
+          },
+          "You can use a chatbot to talk directly to users, solve their issues, or provide specific buttons such as WhatsApp, Skype, etc.",
+          "You can provide a customer service number too so customers can directly call and get their problem solved. In addition, it can help you build customer trust."
+        ]
+      },
+      "aiBlogContent6": {
+        "title": "Offer A Guest Checkout Option To Decrease Cart Abandonment",
+
+        "content": [
+          "Some customers appreciate personalization options like logging in to a user’s account. This account makes it easy for customers to see their order history, add their favorite products to their Wishlist, get order receipts, etc.",
+          "Most of the customers are in a hurry when they are making a purchase, so to provide a unique experience, you can place an option where they can easily purchase with minimum information and an easy checkout process.",
+          "Make sure your website does not have a long and complicated checkout process. Many customers will leave your website without making a purchase, so to stop that, you can provide the guest checkout option, which will help customers not to create their account on your website. In addition, the easy payment process will allow customers to get a fast shopping experience."
+        ]
+      },
+      "aiBlogContent7": {
+        "title": "Add Newsletter Signup Form To Generate Customer’s List",
+        "content": [
+          "Adding a newsletter form on your website helps you generate a list of the customers that are already interested in your products or services. It can help you scale up your sales by offering a special discount coupon on specific products. It will get you more deals, and you can also promote upcoming products by email and create awareness about it."
+        ]
+      },
+      "aiBlogContent8": {
+        "title": "Clear Call-To-Action Button",
+
+        "content": [
+          "The call-to-action design should inspire action and provide a clear indication of what will happen next. Providing the right move at the right time can help scale up the conversion.",
+          "A call-to-action button should be visible and should grab the customer’s attention.",
+          "There are various features one can use as their business needs. Some of them apply to each business. To learn more about how you can create your business website, contact us and ask your needs. Our dedicated team is always ready to serve the best.",
+          "<span className=\"italic\">All product and company names are trademarks™, registered® or copyright© trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</span>"
+        ]
+      }
+    },
+    "relatedArticles": {
+      "heading": "Related Articles",
+      "Research": [
+        {
+          "image": "/images/business-inte.jpg",
+          "researchheading": " Business Development",
+          "researchdescription": " What Would the World Be Like If Artificial Intelligence Did Not Exist?",
+          "readmore": {
+            "text": "Read More",
+            "link": "blog/guide-and-ways-boost-digital-presence"
+          }
+        }
+      ]
+    },
+    "blogPostInfo": {
+      "imageSrc": "/images/Essential-Checklist-For-Improving-B2C-Web-Design.png",
+      "date": "August 20, 2021",
+      "author": "Dharmdip"
+    },
+    "bannerdata": {
+      "title": "Essential Checklist For Improving B2C Web Design",
+      "image": {
+        "src": "/images/mobile-development-banner-right-img.png",
+        "title": "Run Business uninterruptedly with High-tech Solutions",
+        "alt": "Run Business uninterruptedly with High-tech Solutions"
+      }
+    }
+  },
+  "guide-and-ways-boost-digital-presence": {
+    "blogContent": {
+      "aiBlogContent1": {
+        "content": [
+          "Did you purchase something recently without browsing about the product’s price, reviews, etc. your answer would be NO! People nowadays prefer to search for the product they want to buy on the internet.",
+          "Most of the customer’s purchasing decisions depend on the information you provide about your business online. In addition, the world has started relying on technology today. So, if your business is not digital yet, you are missing out on a large customer base.",
+          "Making your business digital is a scalable step. All the businesses that are available online are getting benefits from their online presence. However, it is a common belief that B2B companies do not need to be on a digital platform which is a huge misconception.",
+          "Let’s have a complete understanding of how digital presence is essential to your business:"
+        ]
+      },
+      "aiBlogContent2": {
+        "title": "What Is Digital Presence?",
+
+        "content": [
+          "A digital presence refers to how your business appears online. It is what people find when they search for a business or company on the internet. Your web presence is made up of various components and can be complete by the impression your brands make online through content, website, search engines, and other digital platforms.",
+          "Some users might search for the related service or product and end up visiting your website and reading your blog. At the same time, others may be browsing Facebook and come across your social media profile or a paid ad."
+        ]
+      },
+      "aiBlogContent3": {
+        "title": "Why Do You Need A Strong Digital Presence?",
+        "content": [
+          "The more various ways you can place your business in front of your desired audience with quality skills, the more possibilities you have to build brand awareness and improve your business status. There are other ways a solid digital presence benefits your business.",
+          {
+            "type": "html",
+            "content": "<ul class='blog-detail-simple-title-list'><li><strong>Get Discovered</strong><p>A robust digital presence can make it easy for ideal customers who do not know you exist to find your business.</p></li><li><strong>Get Identified as an Appropriate Business</strong><p>Customers rely on multiple sources of information before making a purchase. If you do not provide information about your company or product across all the sources, you will be dismissed by the customers and search engine.</p></li><li><strong>Develop Your Buyer’s Journey</strong><p>Did you know? 60% of the shopping journey starts with an online search. If you have a solid digital presence, you can be available to customers at different stages in their purchasing journey.</p></li><li><strong>Market Your Business 24/7</strong><p>If you already have a solid digital presence set up, people can discover, learn about, engage with, and reach out to you whenever they need.</p></li><li><strong>Save Money</strong><p>Digital marketing platforms come with data analytics that highlights to you what’s working and what’s not. It helps you to spend your budget accordingly.</p></li><li><strong>Earn Google’s Trust</strong><p>When it comes to Google ranking, it surely counts several aspects other than just your website. It looks at your property across the web and checks how consistent they are.</p></li></ul>"
+          }
+        ]
+      },
+      "aiBlogContent4": {
+        "title": "Ways To Boost Your Digital Presence In 2021",
+        "content": [
+          "There are various ways you can boost your digital presence, which will lead to your website. Your website is your storefront, and all the other platforms should guide your customers to visit your website.",
+          {
+            "image": "/images/Ways-To-Boost-Your-Digital-Presence-In-2021.png"
+          },
+          "Adding different social sharing buttons will help your customers share their favorite platform and get more traffic to your website organically.",
+          {
+            "type": "html",
+            "content": "<ul class='blog-detail-inside-title-list'><li><h4>1. Website</h4><p>Make sure your website has a mobile-friendly design. Many users spend their time searching on mobile phones, making your site clear and easy to read no matter which device a user is using to find it.</p><p>Website templates and technology have come a long way from the early years. So check that your website is user-friendly. Also, make sure to create SEO-friendly content that will help you rank higher in search engine results.</p></li><li><h4>2. Social Media</h4><p>Have a presence on all the digital platforms. There are no reasons you can ignore it. Facebook, Twitter, Instagram, Pinterest, Snapchat, Tumblr, Reddit, Quora, etc., are the top platforms where you can <a href='https://www.aranv.com/latest-digital-marketing-trends/'>start creating your digital presence</a> with it.</p><p>Each platform has its powerful tools to help you analyze your content and learn more about your engaging users. In addition, it can help you to create specific content for your target audience.</p></li><li><h4>3. Build an Email List</h4><p>One of the best ways to build your online presence is to create and grow your email list. An email list allows you to engage with current and potential customers on a daily, weekly, or monthly basis.</p><p>To grow your email list, you can provide free content that users have to sign up to receive. Additionally, you can use a CTA (Call-To-Action) on your website and social media pages to promote your free giveaway content and start growing your list.</p></li><li><h4>4. Create Value-based Content</h4><p>Your business goal is to make more money, but before you can do that, you need to create content that provides value to customers. Then pitching them a product for their pain points will be easier.</p><p>Create educational videos or free resources to help your customers while also improving your online presence. Start by listing customer pain points and providing free value related to them. Doing this will help grow your email list and turn visitors into customers.</p></li><li><h4>5. Stay Active Online</h4><p>To build an online presence, you need to stay active. Regularly post on your website and social media profiles.</p><p>Engage with your audience by responding to comments and joining conversations.</p></li><li><h4>6. Analyze Your Results</h4><p>Once you implement strategies to build your digital presence, analyze the results. Test different strategies to determine what works and what doesn’t.</p><p>For example, if you are building an email list, track subscriber numbers and click-through rates. If focusing on SEO, monitor your search engine ranking.</p></li><li><h4>7. Choose New Forums</h4><p>Stay ahead by adopting new platforms early. There are benefits to being an early adopter:</p><p>• Less competition</p><p>• High engagement rates on new platforms</p><p>Stay informed about industry trends and upcoming platforms to maximize opportunities.</p></li><li><h4>8. Stay Competitive</h4><p>Monitor your competitors. See what strategies they use and identify gaps they aren’t filling.</p><p>Understanding your competitors helps you create better content and strategies.</p></li><li><h4>9. Expand Relationships</h4><p>Building relationships with industry experts can boost your online presence.</p><p>Networking with podcasters or bloggers may lead to guest posting opportunities or podcast invitations, increasing your visibility.</p></li><li><h4>10. Track Your Target Audience</h4><p>Understand where your audience is. If your audience is on Instagram but not Pinterest, focus on Instagram.</p><p>Being present where your audience is ensures a stronger digital presence.</p></li></ul>"
+          },
+          "These marketing strategies can help you build your digital presence, create brand awareness, and develop a strong reputation. Digital marketing services will help you grow your online presence and lead to increased sales over time.",
+          "All product and company names are trademarks™, registered® or copyright© trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them."
+        ]
+      }
+    },
+    "relatedArticles": {
+      "heading": "Related Articles",
+      "Research": [
+        {
+          "image": "/images/business-inte.jpg",
+          "researchheading": " Business Development",
+          "researchdescription": " What Would the World Be Like If Artificial Intelligence Did Not Exist?",
+          "readmore": {
+            "text": "Read More",
+            "link": "blog/world-if-artificial-intelligence-not-exist"
+          }
+        }
+      ]
+    },
+    "blogPostInfo": {
+      "imageSrc": "/images/Boost-Your-Digital-Presence.png",
+      "date": "August 20, 2021",
+      "author": "Dharmdip"
+    },
+    "bannerdata": {
+      "title": "Guide and Ways to Boost Your Digital Presence",
+      "image": {
+        "src": "/images/mobile-development-banner-right-img.png",
+        "title": "Run Business uninterruptedly with High-tech Solutions",
+        "alt": "Run Business uninterruptedly with High-tech Solutions"
+      }
+    }
   }
 }

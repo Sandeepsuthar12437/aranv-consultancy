@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 
 const Header = ({ data }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState("");
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -15,8 +18,31 @@ const Header = ({ data }) => {
     }
   }, [isNavOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScrollTop) {
+        setScrollDirection(
+          "translate-y-[-138px] transition-all duration-500 ease-in-out"
+        );
+      } else {
+        setScrollDirection("transition-all duration-500 ease-in-out");
+      }
+      setLastScrollTop(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
-    <header id="header" className="w-full bg-white z-[9] py-6 lg:py-10 m-0">
+    <header
+      id="header"
+      className={`w-full fixed bg-white z-[9] py-6 lg:py-10 m-0 ${scrollDirection}`}
+    >
       <div className="container flex flex-row items-center">
         <div
           className="headerbtn w-[31px] border-t-[5px] border-black float-left mr-[26px] cursor-pointer my-auto"

@@ -1,3 +1,4 @@
+"use client";
 const HowWeDo = ({ data }) => {
   return (
     <section className="my-11 md:my-0">
@@ -16,13 +17,24 @@ const HowWeDo = ({ data }) => {
                   index === 1 ? "md:mt-[132px]" : ""
                 } ${index === 2 ? "md:-mt-[173px]" : ""} bg-white`}
               >
-                <i>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="mb-4 md:mb-[30px]"
-                  />
-                </i>
+                <div className="relative">
+                  <i>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="mb-4 md:mb-[30px]"
+                    />
+                  </i>
+                  <span
+                    className={`absolute text-white text-lg ${
+                      index % 2 === 0
+                        ? "top-[15px] left-[22px]"
+                        : "top-[40px] left-[33px]"
+                    }`}
+                  >
+                    0{index + 1}
+                  </span>
+                </div>
                 <h2 className="text-xl md:text-[30px] text-red-500 mb-4">
                   {item.title}
                 </h2>

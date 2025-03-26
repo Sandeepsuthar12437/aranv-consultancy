@@ -21,9 +21,11 @@ const HireExperts = ({ data }) => {
             </div>
           ))}
         </div>
-        <h2 className="text-[42px] leading-[48px] max-w-[790px] mx-auto my-5 font-semibold text-center">
-          {data.heading}
-        </h2>
+        <h2
+          className="text-[42px] leading-[48px] mx-auto my-5 font-semibold text-center"
+          dangerouslySetInnerHTML={{ __html: data.heading }}
+        />
+
         <p className="text-[20px] text-center text-[#424242]">
           {data.description}
         </p>
