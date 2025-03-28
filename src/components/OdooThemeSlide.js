@@ -7,7 +7,7 @@ import SplideWrapper from "./SplideWrapper";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function OdooThemeSlide({ data }) {
+const OdooThemeSlide = ({ data }) => {
   const splideRef = useRef(null);
 
   const handleNext = () => {
@@ -88,4 +88,5 @@ export default function OdooThemeSlide({ data }) {
       </div>
     </section>
   );
-}
+};
+export default OdooThemeSlide;

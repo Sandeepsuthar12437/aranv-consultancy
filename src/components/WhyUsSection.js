@@ -1,4 +1,4 @@
-export const WhyUsSection = ({ data }) => {
+const WhyUsSection = ({ data }) => {
   return (
     <section>
       <div className="w-full relative bg-black">
@@ -32,3 +32,5 @@ export const WhyUsSection = ({ data }) => {
     </section>
   );
 };
+
+export default WhyUsSection;

@@ -1,5 +1,5 @@
 {
-  "Header": {
+  "header": {
     "logoImage": "/images/logo.png",
     "logoLink": "/",
     "toggleNavImage": "/images/toggle-navmenu-img.png",
@@ -78,7 +78,7 @@
     "bannerImageTitle": "Run Business uninterruptedly with High-tech Solutions",
     "bannerImageAlt": "Run Business uninterruptedly with High-tech Solutions"
   },
-  "StatsSection": {
+  "statsSection": {
     "heading": "Committed to serving our customers the best way for 7 years of our existence",
     "description": "As a web development company, we have served 100+ clients, managed 30+ projects with an expert team of 50+ members. We believe our ethical and professional approach is our forte.",
     "link": {
@@ -183,7 +183,7 @@
       "text": "Aranv Consultancy & Digital Services © 2021, All rights reserved by the company."
     }
   },
-  "contactdata": {
+  "contactData": {
     "address": "5820 N Canton Center Rd, Suite 170, Canton MI 48187",
     "phone": "(347) 460-9278‬",
     "skype": "sales.aranv",
@@ -332,7 +332,7 @@
       }
     ]
   },
-  "ExpertiseSection": {
+  "expertiseSection": {
     "cartImage": "/images/cart.png",
     "heading": "Cutting edge Technology <br/> Solutions",
     "technologies": [
@@ -398,12 +398,12 @@
       }
     ]
   },
-  "ExpertiseSectionAbout": {
+  "expertiseSectionAbout": {
     "cartImage": "/images/cart.png",
     "heading": "A unique squad of technocrats to serve the most profitable and sustainable business solutions.",
     "image": "/images/creative-approach-img.jpg"
   },
-  "ResearchData": {
+  "researchData": {
     "heading": " Our Research and Daily Market Analysis",
     "Button": {
       "text": "View All",
@@ -531,7 +531,7 @@
       }
     ]
   },
-  "sectiondataServices": {
+  "sectionDataServices": {
     "title": "Churn out business proficiency offering an improved user experience",
     "description": "Our web and mobile solutions are packed with oodles of ways to recoup your operational cost. You can get the best and most advanced enterprise solutions for the improved and seamless functioning of your business. It also provides your customers an enhanced user experience thus driving more revenue.",
     "images": [
@@ -551,7 +551,7 @@
     "mainImage": "/images/user-experience.jpg",
     "reverse": false
   },
-  "sectiondataEcommerse": {
+  "sectionDataEcommerse": {
     "title": "Build your full-featured and optimized e-Commerce System",
     "description": "Pull out every piece of effort that can build a future-ready e-commerce solution. It ensures amazing growth addressing the defined target. Whatever online industry you represent makes your presence felt in all directions. Use the right platform, solution, and people to work for your business for the best results.",
     "images": [
@@ -575,7 +575,7 @@
     "mainImage": "/images/e-commerce-solutions.jpg",
     "reverse": false
   },
-  "sectiondataCms": {
+  "sectionDataCms": {
     "title": "Tailor-made CMS Solutions addressing all your business needs and objectives",
     "description": "Relying on the right CMS is the key to the right online business management. It offers the right control and all the required updates easily and instantly. Keep yourself updated and in full control of your business without having any major technical know-how. This helps you grow and compete faster and better in this competitive eco-system of global entrepreneurship.",
     "images": [
@@ -595,7 +595,7 @@
     "mainImage": "/images/cms-solutions.jpg",
     "reverse": false
   },
-  "sectiondataCloud": {
+  "sectionDataCloud": {
     "title": "Use Cloud for reduced cost and improved performance of the business",
     "description": "It’s time to change your storage style and way of performing your business online. Put your business on the cloud making it safer, easier to access, and better to leverage and store.",
     "images": [
@@ -639,14 +639,14 @@
     "mainImage": "/images/business-decisions.jpg",
     "reverse": false
   },
-  "sectiondataAbout": {
+  "sectionDataAbout": {
     "heading": "What We Do",
     "title": "We deliver 360-degree Web Solutions to Business",
     "description": "We have been in the business for 7 years now and know the ins and outs of tech-industry and web requirements of any business. We offer the most suitable and innovative business solutions to help you grow fast and sustain in this competitive ecosystem.",
     "mainImage": "/images/advanced-technologies-img.png",
     "reverse": true
   },
-  "sectiondataOdoo": {
+  "sectionDataOdoo": {
     "title": "Get the right set of an enterprise application to function your business the best way",
     "description": "Be it eCommerce, enterprise, or business tools, having a suite of business apps and tools will help you grow a large and sustainable business ecosystem. Get the most befitting ERP solutions.",
     "images": [
@@ -658,7 +658,7 @@
     "mainImage": "/images/manage-entire-business.jpg",
     "reverse": false
   },
-  "sectiondataUser": {
+  "sectionDataUser": {
     "title": "Be visible and get found online quickly by your users and customers",
     "description": "Let your customers find you easily online anytime anywhere. Making the best SEO and digital strategies is the best way to make your presence felt for a long time.",
     "images": [
@@ -774,7 +774,7 @@
       }
     ]
   },
-  "odooData": {
+  "odooServicesData": {
     "heading": "Some of our Odoo Development Services",
     "card": [
       {
@@ -797,7 +797,7 @@
       }
     ]
   },
-  "ecommersedata": {
+  "ecommerseData": {
     "card": [
       {
         "image": "/images/custom-online-store.jpg",
@@ -823,7 +823,7 @@
       "link": "/ecommerce-development"
     }
   },
-  "cmsdata": {
+  "cmsData": {
     "card": [
       {
         "image": "/images/document-management-system (1).jpg",
@@ -849,7 +849,7 @@
       "link": "/ecommerce-development"
     }
   },
-  "clouddata": {
+  "cloudData": {
     "card": [
       {
         "image": "/images/cloud-strategy.jpg",
@@ -875,7 +875,7 @@
       "link": "/ecommerce-development"
     }
   },
-  "bigdata": {
+  "bigData": {
     "card": [
       {
         "image": "/images/document-management-system.jpg",
@@ -901,7 +901,7 @@
       "link": "/ecommerce-development"
     }
   },
-  "odddata": {
+  "odooData": {
     "card": [
       {
         "image": "/images/odoo-erp-solutions.jpg",
@@ -927,7 +927,7 @@
       "link": "/ecommerce-development"
     }
   },
-  "userServicedata": {
+  "userServiceData": {
     "card": [
       {
         "image": "/images/website-seo-audit.jpg",
@@ -1070,7 +1070,7 @@
         "alt": "Proven Experience"
       }
     ],
-    "heading": "Brief Odoo applications you want to build and <br/> our team will deliver a better product than that.",
+    "heading": "BRecruit some experienced hands or a <br/> team of them",
     "description": "We have a dedicated team of expert developers with years of cumulative experience in their respective subject matter! It makes it easy to hire the finest developer churning the best enterprise solutions. Hire our developers to get the best.",
     "button": {
       "text": "Hire Dedicated Experts",
@@ -1295,7 +1295,7 @@
       "description": "Be it technology, tools, systems, integration, reporting, or follow-up – we have the most updated tools and mechanisms to bring you the best technology solution."
     }
   ],
-  "OurCulture:": {
+  "ourCulture:": {
     "heading": "  Our Culture",
     "images": [
       {
@@ -1338,7 +1338,7 @@
       "alt": "Run Business uninterruptedly with High-tech Solutions"
     }
   },
-  "BusinessIntelligenceBanner": {
+  "businessIntelligenceBanner": {
     "title": "Business <br/> Intelligence <br/> Solutions",
     "subtitle": "Business Intelligence Solutions Now enjoy Aranv’s Business Intelligence services. We help you to gain insights <br/> from huge data. Our tools help clients in generating better BI (business inputs). <br/> Aranv’s analytics and database software covers all grounds.",
     "breadcrumbs": [
@@ -1360,7 +1360,7 @@
       "alt": "Run Business uninterruptedly with High-tech Solutions"
     }
   },
-  "CloudBanner": {
+  "cloudBanner": {
     "title": "Cloud Computing <br/> Services",
     "subtitle": "We provide some of the best cloud computing services available out there. There <br/> is a team of developers that goes through the  development and execution on the <br/> server so that it is in safe hands. Our team is expert in what they do.",
     "breadcrumbs": [
@@ -1391,7 +1391,7 @@
       "alt": "Run Business uninterruptedly with High-tech Solutions"
     }
   },
-  "ContentManagementBanner": {
+  "contentManagementBanner": {
     "title": "Transform your <br/> Content Management <br/> System",
     "subtitle": "Aranv’s cost-effective and customized content management solutions are <br/> scalable, business-oriented, and SEO-friendly. The solutions are crafted to <br/> elevate and enhance your app, website, and social media network and to <br/> integrate with your business’s existing CMS solutions",
     "breadcrumbs": [
@@ -1522,7 +1522,7 @@
       "alt": "Run Business uninterruptedly with High-tech Solutions"
     }
   },
-  "mobileappbanner": {
+  "mobileAppTechbanner": {
     "title": "Increase your efficiency to deliver the best products",
     "techSideImage": "/images/react-native-tech-img.jpg",
     "paragraphs": [
@@ -1808,6 +1808,17 @@
       "/images/square-plus-icon-shape.png"
     ]
   },
+  "odooCaliberData": {
+    "title": "Brief Odoo applications you want to build and <br/> our team will deliver a better product than that.",
+    "buttonText": "Let’s Talk >",
+    "buttonLink": "/contact",
+    "images": [
+      "/images/square-plus-icon-shape.png",
+      "/images/small-square-plus-shape.png",
+      "/images/horizontal-plus-shape.png",
+      "/images/square-plus-icon-shape.png"
+    ]
+  },
   "cmsCaliberData": {
     "title": "Do you have any specific CMS in mind? <br/> If not, we can help you pick and implement the most <br/> suitable one.",
     "buttonText": "Let’s Talk >",
@@ -1886,7 +1897,7 @@
     "src": "/images/bolding-work.jpg",
     "alt": ""
   },
-  "WhyUsSeoData": {
+  "whyUsSeoData": {
     "content": [
       {
         "title": "Thoughtful Strategy",
@@ -1911,6 +1922,36 @@
       {
         "title": "Support and Maintenance",
         "description": "We offer software augmentation and maintenance services by fixing glitches, streamlining and refinement services. Get superior support from the team."
+      }
+    ],
+    "src": "/images/bolding-work.jpg",
+    "alt": ""
+  },
+  "whyOdooData": {
+    "content": [
+      {
+        "title": "We provide the best experience",
+        "description": "We spend enough time trying to identify our clients’ business and their needs to provide the best solutions."
+      },
+      {
+        "title": "Expert Developers",
+        "description": "Our team consists of some of the best odoo developers you can find on the internet that is cost-effective."
+      },
+      {
+        "title": "Competitive pricing",
+        "description": "You get the most affordable and expert nerds dedicated to your projects making them fully customized."
+      },
+      {
+        "title": "Clean Code",
+        "description": "Considering the future maintenance, we develop and use clean and in-house, code to deliver the best."
+      },
+      {
+        "title": "Custom Flexible Development",
+        "description": "Our team of experts can deliver the best of their solutions under the deadline by working flexible hours."
+      },
+      {
+        "title": "Support and Maintenance",
+        "description": "Our team of developers is on deck with you 24/7, hence, whenever you have a query just holler at our developers."
       }
     ],
     "src": "/images/bolding-work.jpg",
@@ -2244,7 +2285,7 @@
       }
     ]
   },
-  "cloudtechdata": {
+  "cloudTechdata": {
     "title": "Expanding Businesses with some of the Best Service Providers On Our Side",
     "items": [
       {
@@ -2288,7 +2329,7 @@
       "link": "/contact"
     }
   },
-  "contactPagedata": {
+  "contactPageData": {
     "phone": "(347) 460-9278",
     "email": "sales@aranv.com",
     "skype": "sales.aranv",
@@ -2300,7 +2341,7 @@
       "Others"
     ]
   },
-  "supportdata": {
+  "supportData": {
     "support": [
       {
         "image": "/images/watch.png",

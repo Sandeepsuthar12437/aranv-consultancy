@@ -1,9 +1,9 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { ContactSection } from "@/components/ContactSection";
-import data from "@data/data.json";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import data from "../data/data.json";
+import ContactSection from "../components/ContactSection";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -24,9 +24,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${dmSans.variable} antialiased`}>
-        <Header data={data.Header} />
+        <Header data={data.header} />
+
         {children}
-        <ContactSection data={data.contactdata} />
+        <ContactSection data={data.contactData} />
         <Footer data={data.footer} />
       </body>
     </html>

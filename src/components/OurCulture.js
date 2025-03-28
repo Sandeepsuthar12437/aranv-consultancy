@@ -1,4 +1,4 @@
-export const OurCulture = ({ data }) => {
+const OurCulture = ({ data }) => {
   if (!data || !data.images) return null; // Prevents errors if data is missing
 
   return (
@@ -18,3 +18,5 @@ export const OurCulture = ({ data }) => {
     </section>
   );
 };
+
+export default OurCulture;

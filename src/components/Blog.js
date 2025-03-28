@@ -1,16 +1,14 @@
-import BlogPost from "./BlogPost";
-import data from "@data/data.json";
-import PostComponent from "./PostComponent";
-import Searchbar from "./Searchbar";
-import SubscribeSection from "./SubscribeSection";
-import BlogContent from "./BlogContent";
-import SocialShare from "./SocialShare";
-import { ResearchSection } from "./ResearchSection";
 import OthreBanner from "./OtherBanner";
+import PostComponent from "../components/PostComponent";
+import BlogContent from "../components/BlogContent";
+import Searchbar from "../components/Searchbar";
+import BlogPost from "../components/BlogPost";
+import SubscribeSection from "../components/SubscribeSection";
+import SocialShare from "../components/SocialShare";
+import ResearchSection from "../components/ResearchSection";
+import data from "../data/data.json";
 
 const Blog = ({ blogSlug }) => {
-  console.log("blogSlug", blogSlug);
-
   const blog = data[blogSlug];
 
   return (

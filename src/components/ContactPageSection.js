@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ContactForm from "./ContactForm";
 
-export const ContactPageSection = ({ data }) => {
+const ContactPageSection = ({ data }) => {
   return (
     <section className="pt-6 md:pt-[69px] pb-8 md:pb-[89px]">
       <div className="max-w-[1200px] px-[15px] mx-auto grid grid-cols-1 lg:grid-cols-2">
@@ -43,3 +43,4 @@ export const ContactPageSection = ({ data }) => {
     </section>
   );
 };
+export default ContactPageSection;

@@ -33,13 +33,17 @@ const WhyUs = ({ data }) => {
                     {item.title}
                   </h3>
                   <div
-                    className={`grid transition-all duration-500 ease-in-out overflow-hidden ${
+                    className={`grid transition-all duration-300 ease-in-out overflow-hidden ${
                       activeIndex === index
                         ? "grid-rows-[1fr] opacity-100 "
                         : "grid-rows-[0fr] opacity-0"
                     }`}
                   >
-                    <p className="overflow-hidden text-white mb-[23px]">
+                    <p
+                      className={`overflow-hidden text-white ${
+                        activeIndex === index && "mb-[23px]"
+                      }`}
+                    >
                       {item.description}
                     </p>
                   </div>

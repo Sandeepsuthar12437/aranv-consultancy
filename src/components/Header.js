@@ -69,6 +69,7 @@ const Header = ({ data }) => {
                   <li key={index} className="mb-[26px] overflow-hidden">
                     <Link
                       href={link.url}
+                      onClick={toggleNav}
                       className="text-2xl lg:text-[40px] lg:leading-[48px] text-white font-normal"
                     >
                       {link.label}
@@ -84,6 +85,7 @@ const Header = ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mega-social-link"
+                    onClick={toggleNav}
                   >
                     <i className={social.class} aria-hidden={true}></i>
                   </Link>
@@ -98,7 +100,11 @@ const Header = ({ data }) => {
                     key={index}
                     className="relative border-b border-[#323232]"
                   >
-                    <Link href={service.url} className="service-menu-link">
+                    <Link
+                      href={service.url}
+                      className="service-menu-link"
+                      onClick={toggleNav}
+                    >
                       {service.label}
                     </Link>
                   </li>

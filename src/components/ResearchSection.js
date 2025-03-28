@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const ResearchSection = ({ data }) => {
+const ResearchSection = ({ data }) => {
   return (
     <section className="pt-10 xl:pt-[98px] pb-14 xl:pb-[122px]">
       <div className="max-w-[1200px] mx-auto px-[15px]">
@@ -51,3 +51,5 @@ export const ResearchSection = ({ data }) => {
     </section>
   );
 };
+
+export default ResearchSection;

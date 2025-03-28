@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const ContactSection = ({ data }) => {
+const ContactSection = ({ data }) => {
   return (
     <section>
       {data.handleLayout ? (
@@ -57,3 +57,5 @@ export const ContactSection = ({ data }) => {
     </section>
   );
 };
+
+export default ContactSection;

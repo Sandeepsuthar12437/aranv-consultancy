@@ -1,100 +1,50 @@
-// import BusinessSections from "@/components/BusinessSection";
-// import ExpertiseSection from "@/components/ExpertiseSection";
+import Banner from "../../components/Banner";
+import BusinessSections from "../../components/BusinessSection";
+import CaliberSection from "../../components/CaliberSection";
+import ContactPageSection from "../../components/ContactPageSection";
+import ExpertiseSection from "../../components/ExpertiseSection";
+import GridSection from "../../components/GridSection";
+import HireExperts from "../../components/HireExperts";
+import HomeBanner from "../../components/HomeBanner";
+import HowWeDo from "../../components/HowWeDo";
+import MultiPurposeOdooTheme from "../../components/MultiPurposeOdooTheme";
+import OdooThemeSlide from "../../components/OdooThemeSlide";
+import OdooThemesSection from "../../components/OdooThemesSection";
+import OthreBanner from "../../components/OtherBanner";
+import OurCulture from "../../components/OurCulture";
+import ProcessSection from "../../components/ProcessSection";
+import QuoteBanner from "../../components/QuoteBanner";
 
-// import HomeBanner from "@/components/HomeBanner";
-// import QuoteBanner from "@/components/QuoteBanner";
-// import { ResearchSection } from "@/components/ResearchSection";
-// import StatsSection from "@/components/StatsSection";
-// import { WhyUsSection } from "@/components/WhyUsSection";
-// import data from "@data/data.json";
+import SectionComponent from "../../components/SectionComponent";
+import ServiceCard from "../../components/ServiceCard";
+import Services from "../../components/Services";
+import ServiceSlide from "../../components/ServiceSlide";
+import SocialMediaLinks from "../../components/SocialMediaLinks";
+import StatsSection from "../../components/StatsSection";
+import SupportSection from "../../components/SupportSection";
+import Technologies from "../../components/Technologies";
+import TechnologiesSection from "../../components/TechnologiesSection";
+import WhyUs from "../../components/WhyUs";
+import WhyUsSection from "../../components/WhyUsSection";
 
-// export default function Home({ params }) {
-//   const { slug } = params;
-//   console.log("slug", slug);
-
-//   return (
-//     <main>
-//       <HomeBanner data={data.homeBanner} />
-//       <StatsSection data={data.StatsSection} />
-//       <QuoteBanner data={data.indexBanner} />
-//       <BusinessSections data={data.businessSection} />
-//       <ExpertiseSection data={data.ExpertiseSection} />
-//       <ResearchSection data={data.ResearchData} />
-//       <WhyUsSection data={data.whyUsData} />
-//     </main>
-//   );
-// }
-
-// export async function generateStaticParams() {
-//   return Object.keys(data).map((slug) => ({ slug }));
-// }
-
-// app/[slug]/page.tsx
-
-import data from "@data/data.json";
-
-// Home page components
-import BusinessSections from "@/components/BusinessSection";
-import ExpertiseSection from "@/components/ExpertiseSection";
-import HomeBanner from "@/components/HomeBanner";
-import QuoteBanner from "@/components/QuoteBanner";
-import { ResearchSection } from "@/components/ResearchSection";
-import StatsSection from "@/components/StatsSection";
-import { WhyUsSection } from "@/components/WhyUsSection";
-
-// About page components
-import Banner from "@/components/Banner";
-import { ContactSection } from "@/components/ContactSection";
-import HowWeDo from "@/components/HowWeDo";
-import { OurCulture } from "@/components/OurCulture";
-import SectionComponent from "@/components/SectionComponent";
-
-// Business Intelligence page components
-import CaliberSection from "@/components/CaliberSection";
-import GridSection from "@/components/GridSection";
-import OthreBanner from "@/components/OtherBanner";
-import ServiceCard from "@/components/ServiceCard";
-import SocialMediaLinks from "@/components/SocialMediaLinks";
-import TechnologiesSection from "@/components/TechnologiesSection";
-
-import ServiceSlide from "@/components/ServiceSlide";
-import { ContactPageSection } from "@/components/ContactPageSection";
-import SupportSection from "@/components/SupportSection";
-import WhyUs from "@/components/WhyUs";
-import HireExperts from "@/components/HireExperts";
-import ProcessSection from "@/components/ProcessSection";
-import MultiPurposeOdooTheme from "@/components/MultiPurposeOdooTheme";
-import OdooThemeSlide from "@/components/OdooThemeSlide";
-import Technologies from "@/components/Technologies";
-import Services from "@/components/Services";
-import OdooThemesSection from "@/components/OdooThemesSection";
+import data from "../../data/data.json";
+import { notFound } from "next/navigation";
 
 // Page configurations
 const pageConfigurations = {
-  index: {
-    components: [
-      { Component: HomeBanner, dataKey: "homeBanner" },
-      { Component: StatsSection, dataKey: "StatsSection" },
-      { Component: QuoteBanner, dataKey: "indexBanner" },
-      { Component: BusinessSections, dataKey: "businessSection" },
-      { Component: ExpertiseSection, dataKey: "ExpertiseSection" },
-      { Component: ResearchSection, dataKey: "ResearchData" },
-      { Component: WhyUsSection, dataKey: "whyUsData" },
-    ],
-  },
   about: {
     components: [
       { Component: Banner, dataKey: "aboutBanner" },
-      { Component: SectionComponent, dataKey: "sectiondataAbout" },
+      { Component: SectionComponent, dataKey: "sectionDataAbout" },
       { Component: HowWeDo, dataKey: "howWeDoData" },
-      { Component: ExpertiseSection, dataKey: "ExpertiseSectionAbout" },
+      { Component: ExpertiseSection, dataKey: "expertiseSectionAbout" },
       { Component: WhyUsSection, dataKey: "whyUsDataAbout" },
-      { Component: OurCulture, dataKey: "OurCulture" },
+      { Component: OurCulture, dataKey: "ourCulture" },
     ],
   },
-  "business-intengence": {
+  "Business-Intelligence": {
     components: [
-      { Component: OthreBanner, dataKey: "BusinessIntelligenceBanner" },
+      { Component: OthreBanner, dataKey: "businessIntelligenceBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCMSData" },
       { Component: ServiceCard, dataKey: "biData" },
       { Component: QuoteBanner, dataKey: "quoteBannerBiData" },
@@ -108,26 +58,26 @@ const pageConfigurations = {
   },
   "cloud-computing-service": {
     components: [
-      { Component: OthreBanner, dataKey: "CloudBanner" },
+      { Component: OthreBanner, dataKey: "cloudBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCloudData" },
       { Component: BusinessSections, dataKey: "cloudSection" },
       { Component: ServiceSlide, dataKey: "cloudServiceData" },
-      { Component: WhyUsSection, dataKey: "whyUsCloudData" },
-      { Component: GridSection, dataKey: "cloudtechdata" },
+      { Component: GridSection, dataKey: "cloudTechdata" },
       { Component: QuoteBanner, dataKey: "quoteBannerData" },
+      { Component: WhyUsSection, dataKey: "whyUsCloudData" },
       { Component: CaliberSection, dataKey: "mobileCaliberData" },
     ],
   },
   contact: {
     components: [
       { Component: Banner, dataKey: "contactBanner" },
-      { Component: ContactPageSection, dataKey: "contactPagedata" },
-      { Component: SupportSection, dataKey: "supportdata" },
+      { Component: ContactPageSection, dataKey: "contactPageData" },
+      { Component: SupportSection, dataKey: "supportData" },
     ],
   },
   "content-management-system": {
     components: [
-      { Component: OthreBanner, dataKey: "ContentManagementBanner" },
+      { Component: OthreBanner, dataKey: "contentManagementBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCMSData" },
       { Component: ServiceCard, dataKey: "cmsDomainData" },
       { Component: TechnologiesSection, dataKey: "technologiesAranvCmsData" },
@@ -157,19 +107,16 @@ const pageConfigurations = {
         Component: TechnologiesSection,
         dataKey: "technologiesSeoMarketingData",
       },
-
       { Component: TechnologiesSection, dataKey: "seoIosData" },
-
       { Component: SocialMediaLinks, dataKey: "socialMediaData" },
-
-      { Component: WhyUs, dataKey: "WhyUsSeoData" },
+      { Component: WhyUs, dataKey: "whyUsSeoData" },
       { Component: CaliberSection, dataKey: "seoCaliberData" },
     ],
   },
   "mobile-app-development": {
     components: [
       { Component: OthreBanner, dataKey: "mobileAppBanner" },
-      { Component: TechnologiesSection, dataKey: "mobileappbanner" },
+      { Component: TechnologiesSection, dataKey: "mobileAppTechbanner" },
       { Component: ServiceCard, dataKey: "businessData" },
       { Component: TechnologiesSection, dataKey: "iosData" },
       { Component: TechnologiesSection, dataKey: "appData" },
@@ -181,12 +128,11 @@ const pageConfigurations = {
       { Component: CaliberSection, dataKey: "mobileCaliberData" },
     ],
   },
-
   "odoo-development": {
     components: [
       { Component: OthreBanner, dataKey: "odooBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesOdooData" },
-      { Component: ServiceCard, dataKey: "odooData" },
+      { Component: ServiceCard, dataKey: "odooServicesData" },
       { Component: TechnologiesSection, dataKey: "technologiesOdooErpData" },
       { Component: GridSection, dataKey: "odooDevelopmentGridData" },
       {
@@ -196,26 +142,28 @@ const pageConfigurations = {
       { Component: OdooThemeSlide, dataKey: "odooThemeData" },
       { Component: SocialMediaLinks, dataKey: "socialMediaData" },
       { Component: HireExperts, dataKey: "hireOdooExpert" },
+      { Component: WhyUs, dataKey: "whyOdooData" },
+      { Component: CaliberSection, dataKey: "seoCaliberData" },
     ],
   },
   services: {
     components: [
       { Component: Banner, dataKey: "serviceBanner" },
-      { Component: SectionComponent, dataKey: "sectiondataServices" },
+      { Component: SectionComponent, dataKey: "sectionDataServices" },
       { Component: ServiceCard, dataKey: "businessData" },
-      { Component: SectionComponent, dataKey: "sectiondataEcommerse" },
-      { Component: ServiceCard, dataKey: "ecommersedata" },
-      { Component: SectionComponent, dataKey: "sectiondataCms" },
-      { Component: ServiceCard, dataKey: "cmsdata" },
+      { Component: SectionComponent, dataKey: "sectionDataEcommerse" },
+      { Component: ServiceCard, dataKey: "ecommerseData" },
+      { Component: SectionComponent, dataKey: "sectionDataCms" },
+      { Component: ServiceCard, dataKey: "cmsData" },
       { Component: SectionComponent, dataKey: "sectionBigData" },
-      { Component: ServiceCard, dataKey: "bigdata" },
-      { Component: SectionComponent, dataKey: "sectiondataCloud" },
-      { Component: ServiceCard, dataKey: "clouddata" },
-      { Component: SectionComponent, dataKey: "sectiondataOdoo" },
-      { Component: ServiceCard, dataKey: "odddata" },
-      { Component: SectionComponent, dataKey: "sectiondataUser" },
-      { Component: ServiceCard, dataKey: "userServicedata" },
-      { Component: ExpertiseSection, dataKey: "ExpertiseSection" },
+      { Component: ServiceCard, dataKey: "bigData" },
+      { Component: SectionComponent, dataKey: "sectionDataCloud" },
+      { Component: ServiceCard, dataKey: "cloudData" },
+      { Component: SectionComponent, dataKey: "sectionDataOdoo" },
+      { Component: ServiceCard, dataKey: "odooData" },
+      { Component: SectionComponent, dataKey: "sectionDataUser" },
+      { Component: ServiceCard, dataKey: "userServiceData" },
+      { Component: ExpertiseSection, dataKey: "expertiseSection" },
       { Component: SocialMediaLinks, dataKey: "socialMediaData" },
       { Component: HireExperts, dataKey: "hireExpert" },
     ],
@@ -238,11 +186,13 @@ const pageConfigurations = {
   },
 };
 
-export default function DynamicPage({ params }) {
-  const { slug } = params;
-  const pageConfig = pageConfigurations[slug] || pageConfigurations[""];
+export default async function DynamicPage({ params }) {
+  const { slug } = await params;
+  const pageConfig = pageConfigurations[slug];
 
-  console.log("slug", slug);
+  if (!pageConfig) {
+    return notFound();
+  }
 
   return (
     <main>

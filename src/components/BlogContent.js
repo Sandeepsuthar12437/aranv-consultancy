@@ -1,4 +1,4 @@
-export default function BlogContent({ data }) {
+const BlogContent = ({ data }) => {
   return (
     <div>
       {data.title && (
@@ -34,4 +34,5 @@ export default function BlogContent({ data }) {
       })}
     </div>
   );
-}
+};
+export default BlogContent;
