@@ -1,5 +1,3 @@
-import React from "react";
-
 const SupportSection = ({ data }) => {
   return (
     <section className="mt-18 pt-3 md:pt-0 md:pb-20 bg-[#f5f5f5] relative innovative-approach md:before:content-[''] md:before:absolute md:before:left-0 md:before:top-0 md:before:w-full md:before:h-[146px] md:before:bg-white">

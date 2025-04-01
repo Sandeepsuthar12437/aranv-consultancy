@@ -114,68 +114,70 @@
       "title": "aranv",
       "href": "/"
     },
+    "socialLinks": [
+      {
+        "class": "fa fa-facebook fb-clr",
+        "url": "https://www.facebook.com/aranvconsultancy"
+      },
+      {
+        "class": "fa fa-linkedin lnkd-clr",
+        "url": "https://www.linkedin.com/company/aranv-consultancy-digital-services-inc/"
+      }
+    ],
     "services": {
       "title": "Services",
       "columns": [
         {
-          "items": [
-            {
-              "text": "Mobile App Development",
-              "href": "mobile-app-development"
-            },
-            {
-              "text": "E-Commerce",
-              "href": "/ecommerce-development"
-            },
-            {
-              "text": "React JS",
-              "href": "/technologies"
-            },
-            {
-              "text": "Angular",
-              "href": "/technologies"
-            },
-            {
-              "text": "Node JS",
-              "href": "/technologies"
-            }
-          ]
+          "text": "Mobile App Development",
+          "href": "mobile-app-development"
         },
         {
-          "items": [
-            {
-              "text": "Cloud",
-              "href": "/cloud-computing-service"
-            },
-            {
-              "text": "SEO and Digital Marketing",
-              "href": "/marketing-strategy-consultants"
-            },
-            {
-              "text": "Content Management",
-              "href": "/content-management-system"
-            },
-            {
-              "text": "Business Intelligence",
-              "href": "/Business-Intelligence"
-            }
-          ]
+          "text": "Cloud",
+          "href": "/cloud-computing-service"
         },
         {
-          "items": [
-            {
-              "text": "React Native",
-              "href": "/technologies"
-            },
-            {
-              "text": "Odoo",
-              "href": "/odoo-development"
-            },
-            {
-              "text": "ERC",
-              "href": "/employee-retention-credit-free-assessment-and-consultation"
-            }
-          ]
+          "text": "React Native",
+          "href": "/technologies"
+        },
+        {
+          "text": "E-Commerce",
+          "href": "/ecommerce-development"
+        },
+        {
+          "text": "SEO and Digital Marketing",
+          "href": "/marketing-strategy-consultants"
+        },
+        {
+          "text": "Odoo",
+          "href": "/odoo-development"
+        },
+        {
+          "text": "React JS",
+          "href": "/technologies"
+        },
+        {
+          "text": "Content Management",
+          "href": "/content-management-system"
+        },
+        {
+          "text": "ERC",
+          "href": "/employee-retention-credit-free-assessment-and-consultation"
+        },
+        {
+          "text": "Angular",
+          "href": "/technologies"
+        },
+        {
+          "text": "Business Intelligence",
+          "href": "/Business-Intelligence"
+        },
+        {
+          "text": "",
+          "href": ""
+        },
+        {
+          "text": "Node JS",
+          "href": "/technologies"
         }
       ]
     },

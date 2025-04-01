@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProcessSection = ({ data }) => {
   return (
     <section>
@@ -15,10 +13,10 @@ const ProcessSection = ({ data }) => {
                 index === 0
                   ? "lg:-mt-[44px]"
                   : index === 1
-                  ? "lg:mt-[132px]"
-                  : index === 2
-                  ? "lg:-mt-[173px]"
-                  : ""
+                    ? "lg:mt-[132px]"
+                    : index === 2
+                      ? "lg:-mt-[173px]"
+                      : ""
               }`}
             >
               <div className="relative">
@@ -30,12 +28,12 @@ const ProcessSection = ({ data }) => {
                     index === 0
                       ? "top-[42px] left-[37px]"
                       : index === 1
-                      ? "top-[16px] left-[22px]"
-                      : index === 2
-                      ? "top-[21px] left-[28px]"
-                      : index === 3
-                      ? "top-[39px] left-[17px]"
-                      : "" // Default empty case to avoid errors
+                        ? "top-[16px] left-[22px]"
+                        : index === 2
+                          ? "top-[21px] left-[28px]"
+                          : index === 3
+                            ? "top-[39px] left-[17px]"
+                            : "" // Default empty case to avoid errors
                   }`}
                 >
                   0{index + 1}

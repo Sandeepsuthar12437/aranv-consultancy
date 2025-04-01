@@ -2,9 +2,12 @@ import Link from "next/link";
 import React from "react";
 
 const HomeBanner = ({ data }) => {
+  console.log("data", data);
+  console.log("++++", data.backgroundImage);
+
   return (
     <div
-      className="home bg-center bg-cover bg-no-repeat min-h-[250px] relative w-full overflow-hidden flex items-center py-[30px] md:pb-0 lg:pt-6 xl:pt-10 md:min-h-[370px] lg:min-h-[400px] xl:min-h-[470px] 2xl:min-h-[730px]"
+      className="home bg-center bg-cover bg-no-repeat min-h-[250px] relative w-full overflow-hidden flex items-center py-[30px] lg:py-0 xl:pt-10 md:min-h-[370px] lg:min-h-[400px] xl:min-h-[470px] 2xl:min-h-[730px]"
       style={{ backgroundImage: `url(${data?.backgroundImage || ""})` }}
     >
       <div className="container">
@@ -12,7 +15,7 @@ const HomeBanner = ({ data }) => {
           <h1 className="text-[32px] leading-[normal] mb-2.5 font-bold text-black tracking-[-2.4px] md:text-[40px] md:leading-[46px] md:mb-2 lg:mb-[15px] lg:text-[48px] lg:leading-[58px] xl:text-[55px] xl:leading-[63px] 2xl:text-[72px] 2xl:leading-[82px] 2xl:mb-[17px]">
             {data.heading}
           </h1>
-          <div className="text-xl text-black max-w-[442px] w-full mb-5 tracking-normal md:mb-[25px] md:text-[26px] md:leading-[normal] lg:mb-5 2xl:mb-[50px]">
+          <div className="text-xl text-black max-w-[442px] w-full mb-5 tracking-normal md:mb-[25px] md:text-[26px] md:leading-[normal] lg:mb-5 xl:mb-[30px] 2xl:mb-[50px]">
             {data.subHeading}
           </div>
           <div className="button-banner">

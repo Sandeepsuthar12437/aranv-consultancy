@@ -1,5 +1,3 @@
-import React from "react";
-
 const CaliberSection = ({ data }) => {
   return (
     <section className="py-8 sm:py-16 md:py-[137px]">

@@ -1,34 +1,36 @@
 import Link from "next/link";
-import React from "react";
 
 const ResearchSection = ({ data }) => {
   return (
-    <section className="pt-10 xl:pt-[98px] pb-14 xl:pb-[122px]">
-      <div className="max-w-[1200px] mx-auto px-[15px]">
-        <h2 className="text-2xl md:text-[40px] font-bold pr-[15px] md:max-w-[60%] xl:max-w-[40%] mb-8 xl:mb-[55px] md:leading-[48px]">
+    <section className="pt-[30px] pb-10 md:pt-[50px] md:pb-[60px] lg:pt-[68px] lg:pb-20 xl:pt-[88px] xl:pb-[110px] 2xl:pt-[98px] 2xl:pb-[122px]">
+      <div className="container">
+        <h2 className="text-[24px] leading-[normal] font-bold mb-[25px] md:text-[40px] md:leading-[48px] md:mb-[35px] lg:max-w-[60%] xl:max-w-[40%] xl:mb-[45px] xl:mb-[55px]">
           {data.heading}
         </h2>
-        <div className="flex flex-col sm:flex-row flex-wrap mb-10 gap-3 md:gap-0 justify-center md:justify-between">
+        <div className="flex gap-[30px] flex-wrap justify-center mb-8 md:justify-between md:gap-[26px] md:flex-nowrap md:mb-[25px] lg:mb-[30px] lg:gap-[30px] xl:mb-[74px] xl:gap-8">
           {data.Research.map((item, i) => (
             <div
               key={i}
-              className="w-full sm:w-[250px] lg:w-[308px] xl:w-[355px] my-3 md:my-0 md:mx-2 md:mb-8 shadow-[5px_0_68px_rgba(0,0,0,0.16)]"
+              className="w-full flex flex-col md:w-1/3 shadow-[5px_0_68px_rgba(0,0,0,0.16)]"
             >
-              <Link href={`/${item.readmore.link}`}>
+              <Link href="../dist/world-if-artificial-intelligence-not-exist.html">
                 <img
                   src={item.image}
                   alt=""
-                  className="w-full min-h-[218px] object-cover"
+                  className="w-full max-h-[218px] min-h-[218px] object-cover"
                 />
               </Link>
-              <div className="px-5 lg:px-11 pt-[14px] lg:pt-[28px] pb-[39px]">
-                <span className="text-lg font-bold text-gray-500">
+              <div className="flex-1 flex flex-col py-5 px-[15px] lg:py-[30px] lg:px-[25px] xl:py-[38px] xl:px-11">
+                <span className="text-[18px] leading-[normal] tracking-normal font-medium text-[#818181] inline-block mb-[5px] lg:text-[20px] lg:mb-2 xl:mb-3">
                   {item.researchheading}
                 </span>
-                <h4 className="text-[20px] font-bold my-2">
+                <h4 className="flex-1 text-[18px] leading-[normal] text-black font-bold mb-4 md:mb-4 lg:text-[20px] lg:mb-6">
                   {item.researchdescription}
                 </h4>
-                <Link href={`/${item.readmore.link}`}>
+                <Link
+                  href={item.readmore.text}
+                  className="text-[18px] leading-[normal] red-link"
+                >
                   {item.readmore.text} &gt;
                 </Link>
               </div>
@@ -36,16 +38,9 @@ const ResearchSection = ({ data }) => {
           ))}
         </div>
         <div className="flex mx-auto justify-center">
-          {data.Button && (
-            <Link
-              href={data.Button.link}
-              className="relative mx-auto min-w-[140px] lg:min-w-[224px] text-red-500 lg:h-[60] px-[10px] py-[5px] leading-[46px] border-[1px] border-black rounded-[30px] block overflow-hidden bg-[linear-gradient(to_right,_black_50%,_white_50%)] transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
-            >
-              <span className="block text-center text-[22px] font-normal transition-all duration-600 ease-out">
-                {data.Button.text} &gt;
-              </span>
-            </Link>
-          )}
+          <Link href={data.Button.link} className="view-all-btn">
+            {data.Button.text} &gt;
+          </Link>
         </div>
       </div>
     </section>

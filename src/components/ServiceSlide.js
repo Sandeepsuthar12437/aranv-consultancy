@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import SplideWrapper from "./SplideWrapper";
 import { usePathname } from "next/navigation";

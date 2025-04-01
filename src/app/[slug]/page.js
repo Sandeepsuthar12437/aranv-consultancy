@@ -5,7 +5,6 @@ import ContactPageSection from "../../components/ContactPageSection";
 import ExpertiseSection from "../../components/ExpertiseSection";
 import GridSection from "../../components/GridSection";
 import HireExperts from "../../components/HireExperts";
-import HomeBanner from "../../components/HomeBanner";
 import HowWeDo from "../../components/HowWeDo";
 import MultiPurposeOdooTheme from "../../components/MultiPurposeOdooTheme";
 import OdooThemeSlide from "../../components/OdooThemeSlide";
@@ -14,25 +13,27 @@ import OthreBanner from "../../components/OtherBanner";
 import OurCulture from "../../components/OurCulture";
 import ProcessSection from "../../components/ProcessSection";
 import QuoteBanner from "../../components/QuoteBanner";
-
 import SectionComponent from "../../components/SectionComponent";
 import ServiceCard from "../../components/ServiceCard";
 import Services from "../../components/Services";
 import ServiceSlide from "../../components/ServiceSlide";
 import SocialMediaLinks from "../../components/SocialMediaLinks";
-import StatsSection from "../../components/StatsSection";
 import SupportSection from "../../components/SupportSection";
 import Technologies from "../../components/Technologies";
 import TechnologiesSection from "../../components/TechnologiesSection";
 import WhyUs from "../../components/WhyUs";
 import WhyUsSection from "../../components/WhyUsSection";
-
 import data from "../../data/data.json";
 import { notFound } from "next/navigation";
 
 // Page configurations
 const pageConfigurations = {
   about: {
+    metadata: {
+      title: "About - Aranv",
+      description:
+        "Overview of Aranv Consultancy, including how they operate, their expertise, unique selling points, and company culture.",
+    },
     components: [
       { Component: Banner, dataKey: "aboutBanner" },
       { Component: SectionComponent, dataKey: "sectionDataAbout" },
@@ -43,6 +44,11 @@ const pageConfigurations = {
     ],
   },
   "Business-Intelligence": {
+    metadata: {
+      title: "Business Intelligence - Aranv",
+      description:
+        "Data-driven solutions with BI tools like Power BI and Tableau.",
+    },
     components: [
       { Component: OthreBanner, dataKey: "businessIntelligenceBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCMSData" },
@@ -57,6 +63,10 @@ const pageConfigurations = {
     ],
   },
   "cloud-computing-service": {
+    metadata: {
+      title: "Cloud Solutions - Aranv",
+      description: "cloud-computing-service",
+    },
     components: [
       { Component: OthreBanner, dataKey: "cloudBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCloudData" },
@@ -69,6 +79,10 @@ const pageConfigurations = {
     ],
   },
   contact: {
+    metadata: {
+      title: "Contact - Aranv",
+      description: "contact",
+    },
     components: [
       { Component: Banner, dataKey: "contactBanner" },
       { Component: ContactPageSection, dataKey: "contactPageData" },
@@ -76,6 +90,10 @@ const pageConfigurations = {
     ],
   },
   "content-management-system": {
+    metadata: {
+      title: "CMS Development - Aranv",
+      description: "content-management-system",
+    },
     components: [
       { Component: OthreBanner, dataKey: "contentManagementBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesCMSData" },
@@ -87,6 +105,10 @@ const pageConfigurations = {
     ],
   },
   "ecommerce-development": {
+    metadata: {
+      title: "E-commerce - Aranv",
+      description: "ecommerce-development.",
+    },
     components: [
       { Component: OthreBanner, dataKey: "ecommerseBanner" },
       { Component: TechnologiesSection, dataKey: "technologieEcommerse" },
@@ -97,6 +119,10 @@ const pageConfigurations = {
     ],
   },
   "marketing-strategy-consultants": {
+    metadata: {
+      title: "Seo And Digital Marketing - Aranv",
+      description: "marketing-strategy-consultants.",
+    },
     components: [
       { Component: OthreBanner, dataKey: "seoBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesSeoData" },
@@ -114,6 +140,10 @@ const pageConfigurations = {
     ],
   },
   "mobile-app-development": {
+    metadata: {
+      title: "Mobile app Development - Aranv",
+      description: "mobile-app-development.",
+    },
     components: [
       { Component: OthreBanner, dataKey: "mobileAppBanner" },
       { Component: TechnologiesSection, dataKey: "mobileAppTechbanner" },
@@ -129,6 +159,10 @@ const pageConfigurations = {
     ],
   },
   "odoo-development": {
+    metadata: {
+      title: "Odoo - Aranv",
+      description: "odoo-development.",
+    },
     components: [
       { Component: OthreBanner, dataKey: "odooBanner" },
       { Component: TechnologiesSection, dataKey: "technologiesOdooData" },
@@ -147,6 +181,10 @@ const pageConfigurations = {
     ],
   },
   services: {
+    metadata: {
+      title: "Services - Aranv",
+      description: "odoo-development",
+    },
     components: [
       { Component: Banner, dataKey: "serviceBanner" },
       { Component: SectionComponent, dataKey: "sectionDataServices" },
@@ -169,6 +207,10 @@ const pageConfigurations = {
     ],
   },
   technologies: {
+    metadata: {
+      title: "Technologies - Aranv",
+      description: "technologies.",
+    },
     components: [
       { Component: Banner, dataKey: "technologiesBanner" },
       { Component: Technologies, dataKey: "technologies" },
@@ -186,9 +228,39 @@ const pageConfigurations = {
   },
 };
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const pageConfig = pageConfigurations[slug];
+
+  if (!pageConfig) {
+    return {
+      title: "Page Not Found - Aranv Consultancy",
+      description: "The page you are looking for does not exist.",
+    };
+  }
+
+  console.log("pageConfig.title ", pageConfig.metadata.title);
+
+  return {
+    title: pageConfig.metadata.title || "Aranv Consultancy",
+    description:
+      pageConfig.metadata.description || "Explore our services and expertise.",
+    openGraph: {
+      title: pageConfig.metadata.title || "Aranv Consultancy",
+      description:
+        pageConfig.metadata.description ||
+        "Explore our services and expertise.",
+      url: `https://yourwebsite.com/${slug}`,
+      type: "website",
+    },
+  };
+}
+
 export default async function DynamicPage({ params }) {
   const { slug } = await params;
   const pageConfig = pageConfigurations[slug];
+
+  console.log("pageConfig", pageConfig);
 
   if (!pageConfig) {
     return notFound();

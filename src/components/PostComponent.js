@@ -1,5 +1,3 @@
-import React from "react";
-
 const PostComponent = ({ data }) => {
   return (
     <div>

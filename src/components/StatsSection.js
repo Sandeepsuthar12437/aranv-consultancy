@@ -1,5 +1,3 @@
-import React from "react";
-
 const StatsSection = ({ data }) => {
   return (
     <section className="py-[30px] md:py-[60px] xl:py-[110px] 2xl:pt-[163px] 2xl:pb-[151px]">

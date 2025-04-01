@@ -5,15 +5,15 @@ const SectionComponent = ({ data }) => {
     <section
       className={`py-10 xl:pt-28 xl:pb-20 ${data.reverse ? "pt-[52px]" : ""}`}
     >
-      <div className="max-w-[1200px] mx-auto px-[15px]">
+      <div className="container">
         <div
           className={`flex flex-col ${
             data.reverse ? "md:flex-row-reverse" : "md:flex-row"
           } justify-between items-center`}
         >
           <div
-            className={`md:w-[350px] lg:w-[570px] ${
-              !data.reverse ? "pt-8" : "w-full md:w-[54%] mt-5 md:mt-0 order-1"
+            className={`w-full md:w-[54%] lg:w-[55%] ${
+              !data.reverse ? "pt-8" : " order-1"
             }`}
           >
             {data.heading && (

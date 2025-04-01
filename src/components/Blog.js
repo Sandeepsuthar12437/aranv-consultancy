@@ -7,10 +7,14 @@ import SubscribeSection from "../components/SubscribeSection";
 import SocialShare from "../components/SocialShare";
 import ResearchSection from "../components/ResearchSection";
 import data from "../data/data.json";
+import { notFound } from "next/navigation";
 
 const Blog = ({ blogSlug }) => {
   const blog = data[blogSlug];
 
+  if (!blog) {
+    return notFound();
+  }
   return (
     <section>
       <OthreBanner data={blog.bannerdata} />

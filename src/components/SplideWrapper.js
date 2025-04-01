@@ -1,5 +1,4 @@
 "use client";
-import { useRef } from "react";
 import { Splide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
